@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 const SERVICES = [
   {
     icon: 'fa-leaf',
+    img: '/images/ambiance/spa.webp',
     title: 'Consultation en aromathérapie',
     text: 'Un entretien pour comprendre vos besoins et vous orienter vers les huiles adaptées, avec leur mode d’emploi.',
     items: ['Écoute de vos besoins', 'Recommandations d’huiles adaptées', 'Mode d’utilisation détaillé', 'Suivi sur WhatsApp'],
@@ -18,6 +19,7 @@ const SERVICES = [
   },
   {
     icon: 'fa-spa',
+    img: '/images/ambiance/lavande.webp',
     title: 'Conseils bien-être',
     text: 'Intégrer les huiles essentielles à votre routine : détente, sommeil, respiration, énergie.',
     items: ['Routine personnalisée', 'Conseils de dilution', 'Réponses à vos questions', 'Support continu via WhatsApp'],
@@ -25,6 +27,7 @@ const SERVICES = [
   },
   {
     icon: 'fa-wand-magic-sparkles',
+    img: '/images/ambiance/monstera.webp',
     title: 'Accompagnement beauté naturelle',
     text: 'Visage, cheveux, corps : des recettes simples à base d’huiles essentielles et végétales.',
     items: ['Choix selon votre type de peau', 'Recettes cosmétiques maison', 'Sélection de produits adaptés', 'Suivi des résultats'],
@@ -32,6 +35,7 @@ const SERVICES = [
   },
   {
     icon: 'fa-book-open',
+    img: '/images/ambiance/conseillere.webp',
     title: 'Ateliers',
     text: 'Apprendre à utiliser les huiles essentielles en sécurité, en petit groupe. Ouverts aux particuliers et aux professionnels.',
     items: ['Ateliers pratiques en petit groupe', 'Supports fournis', 'Bases de l’aromathérapie', 'Dates annoncées sur nos réseaux'],
@@ -56,9 +60,7 @@ export default async function ServicesPage() {
         <div className="container service-detail-grid">
           {SERVICES.map((sv) => (
             <div key={sv.title} className="service-detail reveal">
-              <div className="service-illustration">
-                <i className={`fas ${sv.icon}`} style={{ color: 'var(--green)' }}></i>
-              </div>
+              <div className="service-illustration" style={{ backgroundImage: `url('${sv.img}')` }} aria-hidden="true" />
               <div className="service-content">
                 <h3>{sv.title}</h3>
                 <p>{sv.text}</p>

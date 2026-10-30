@@ -14,6 +14,21 @@ function Honeypot() {
   );
 }
 
+function Consent() {
+  return (
+    <label className="consent">
+      <input type="checkbox" name="consent" required />
+      <span>
+        J'accepte que Pur'Essence utilise ces informations pour traiter ma demande, comme décrit dans la{' '}
+        <a href="/confidentialite" target="_blank" rel="noopener">
+          politique de confidentialité
+        </a>
+        .
+      </span>
+    </label>
+  );
+}
+
 function Result({ state }: { state: FormState }) {
   if (!state) return null;
   return (
@@ -90,6 +105,7 @@ export function ReviewForm() {
         />
         <span className="char-count">{len}/600</span>
       </div>
+      <Consent />
       <button className="button button-primary" style={{ width: '100%' }} disabled={pending}>
         {pending ? 'Envoi…' : 'Envoyer mon avis'}
       </button>
@@ -191,6 +207,7 @@ export function ConsultationForm() {
         <label htmlFor="c-msg">Précisions (optionnel)</label>
         <textarea id="c-msg" name="message" maxLength={2000} placeholder="Vos besoins, vos questions…" />
       </div>
+      <Consent />
       <button className="button button-primary" style={{ width: '100%' }} disabled={pending || !!dateError}>
         {pending ? 'Envoi…' : 'Envoyer ma demande'}
       </button>
@@ -242,6 +259,7 @@ export function ContactForm() {
         <label htmlFor="ct-msg">Message *</label>
         <textarea id="ct-msg" name="message" required minLength={5} maxLength={2000} rows={5} />
       </div>
+      <Consent />
       <button className="button button-primary" style={{ width: '100%' }} disabled={pending}>
         {pending ? 'Envoi…' : 'Envoyer'}
       </button>

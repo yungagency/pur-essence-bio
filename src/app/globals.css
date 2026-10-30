@@ -2302,29 +2302,53 @@ ul, ol { list-style: none; }
 .product-page .product-thumb { aspect-ratio: 4 / 5; }
 @media (max-width: 900px) { .product-media { position: static; } }
 
-/* Héros avec photo (images de l'ancien site) */
-.hero-photo { background: #f7f2ea; }
-.hero-photo .hero-bg { left: 42%; background-position: 80% center; filter: none; }
+/* Héros avec photo : image entière en fond, texte par-dessus */
+.hero-photo { min-height: 0; aspect-ratio: 1800 / 952; max-height: 92vh; background: #f7f2ea; }
+.hero-photo .hero-bg { inset: 0; background-position: 70% center; filter: none; }
 .hero-photo .hero-overlay {
-  background: linear-gradient(90deg, #f7f2ea 0%, #f7f2ea 42%, rgba(247,242,234,0) 56%),
-    linear-gradient(180deg, rgba(247,242,234,0) 80%, #f7f2ea 100%);
+  background: linear-gradient(90deg, rgba(247,242,234,.93) 0%, rgba(247,242,234,.82) 30%, rgba(247,242,234,.35) 52%, rgba(247,242,234,0) 68%);
 }
 .hero-photo .hero-copy {
   width: auto;
-  max-width: min(540px, 40vw);
+  max-width: min(560px, 46vw);
   margin-left: max(1.25rem, calc((100vw - 1140px) / 2));
   margin-right: 0;
+  padding: 3rem 0;
 }
-.hero-photo .hero-copy h1 { font-size: clamp(2.4rem, 4.2vw, 4.2rem); }
+.hero-photo .hero-copy h1 { font-size: clamp(2.2rem, 4vw, 4rem); }
+.hero-photo .hero-copy p { color: #3d4a3f; }
+.page-hero.hero-photo { aspect-ratio: auto; max-height: none; }
 .page-hero.hero-photo .page-hero-overlay {
-  background: linear-gradient(180deg, rgba(247,242,234,.72) 0%, rgba(247,242,234,.8) 70%, rgba(247,242,234,1) 100%);
+  background: linear-gradient(180deg, rgba(247,242,234,.7) 0%, rgba(247,242,234,.78) 70%, rgba(247,242,234,1) 100%);
 }
-@media (max-width: 760px) {
-  .hero-photo { align-items: flex-start; }
-  .hero-photo .hero-bg { left: 0; bottom: auto; height: 340px; background-position: 82% 20%; }
+@media (max-width: 900px) {
+  .hero-photo { aspect-ratio: auto; max-height: none; min-height: 88svh; align-items: flex-end; }
+  .hero-photo .hero-bg { background-position: 72% top; }
   .hero-photo .hero-overlay {
-    bottom: auto; height: 340px;
-    background: linear-gradient(180deg, rgba(247,242,234,0) 55%, #f7f2ea 100%);
+    background: linear-gradient(180deg, rgba(247,242,234,0) 0%, rgba(247,242,234,.15) 30%, rgba(247,242,234,.85) 55%, rgba(247,242,234,.96) 100%);
   }
-  .hero-photo .hero-copy { max-width: none; margin: 0 auto; width: calc(100% - 2.5rem); padding-top: 330px; padding-bottom: 3rem; }
+  .hero-photo .hero-copy { max-width: none; width: calc(100% - 2.5rem); margin: 0 auto; padding: 0 0 2.5rem; }
 }
+
+/* Correctifs audit (oct. 2026) */
+html, body { overflow-x: clip; }
+.nav-toggle { flex-direction: column; justify-content: center; }
+.stars-input { position: relative; }
+.stars-input input { width: 1px; height: 1px; left: 0; top: 0; }
+.product-grid.grid-3 { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); max-width: 1000px; }
+@media (min-width: 1000px) { .product-grid.grid-3 { grid-template-columns: repeat(3, 1fr); } }
+.quiz-option { color: #fff; }
+.quiz-option i { color: var(--gold-light, #e3c98f); }
+.service-illustration { background-size: cover; background-position: center; min-height: 260px; }
+.consent { display: flex; gap: .6rem; align-items: flex-start; font-size: .85rem; color: var(--muted); margin: .2rem 0 1rem; line-height: 1.5; cursor: pointer; }
+.consent input { margin-top: .2rem; accent-color: var(--accent); width: 16px; height: 16px; flex: none; }
+.consent a { color: var(--accent); text-decoration: underline; }
+.footer-logo { display: inline-block; background: #fff; border-radius: 14px; padding: .45rem .8rem; }
+.footer-logo .logo { height: 46px; }
+.footer-legal a { color: inherit; text-decoration: underline; }
+.legal-page h2 { font-size: 1.2rem; margin: 1.8rem 0 .5rem; }
+.legal-page p, .legal-page li { color: var(--muted); line-height: 1.75; }
+.legal-page ul { padding-left: 1.2rem; list-style: disc; margin: .4rem 0 .8rem; }
+.legal-page table { width: 100%; border-collapse: collapse; font-size: .9rem; margin: .6rem 0 1rem; }
+.legal-page th, .legal-page td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid rgba(0,0,0,.08); vertical-align: top; color: var(--muted); }
+.legal-page th { color: var(--text); font-weight: 600; }
