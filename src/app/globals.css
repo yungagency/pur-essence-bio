@@ -2322,12 +2322,13 @@ ul, ol { list-style: none; }
   background: linear-gradient(180deg, rgba(247,242,234,.7) 0%, rgba(247,242,234,.78) 70%, rgba(247,242,234,1) 100%);
 }
 @media (max-width: 900px) {
-  .hero-photo { aspect-ratio: auto; max-height: none; min-height: 88svh; align-items: flex-end; }
-  .hero-photo .hero-bg { background-position: 72% top; }
+  .hero-photo { aspect-ratio: auto; max-height: none; min-height: 0; display: block; }
+  .hero-photo .hero-bg { bottom: auto; height: min(62vw + 140px, 520px); background-position: 74% 20%; }
   .hero-photo .hero-overlay {
-    background: linear-gradient(180deg, rgba(247,242,234,0) 0%, rgba(247,242,234,.15) 30%, rgba(247,242,234,.85) 55%, rgba(247,242,234,.96) 100%);
+    bottom: auto; height: min(62vw + 140px, 520px);
+    background: linear-gradient(180deg, rgba(247,242,234,0) 0%, rgba(247,242,234,0) 55%, rgba(247,242,234,.85) 85%, #f7f2ea 100%);
   }
-  .hero-photo .hero-copy { max-width: none; width: calc(100% - 2.5rem); margin: 0 auto; padding: 0 0 2.5rem; }
+  .hero-photo .hero-copy { max-width: none; width: calc(100% - 2.5rem); margin: 0 auto; padding: calc(min(62vw + 140px, 520px) - 90px) 0 2.5rem; }
 }
 
 /* Correctifs audit (oct. 2026) */
