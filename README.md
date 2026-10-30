@@ -13,8 +13,8 @@ Réalisé par Yung's Agency.
 | Fiche par produit (`/produits/lavande`…) avec commande WhatsApp pré-remplie et quantité | Produits : ajout, modification, photo, prix, stock, « à la une », publication |
 | Services, À propos, équipe | Avis : publier, refuser, supprimer |
 | Avis clients (publiés après modération) | Demandes : statut, note interne, WhatsApp/appel en un clic, export Excel (CSV) |
-| Réservation de consultation (date, créneau, type) enregistrée en base + envoi WhatsApp | Équipe, FAQ |
-| Contact (enregistré en base + WhatsApp), carte Mimboman | Coordonnées : numéros (Cameroun / Canada), email, adresses, horaires, réseaux |
+| Réservation de consultation (date, créneau, type) enregistrée en base + envoi WhatsApp | Équipe, FAQ, labels/certifications, résultats avant/après |
+| Contact (enregistré en base + WhatsApp), carte Mimboman | Coordonnées : numéros (Cameroun / Canada), email, adresses, horaires, réseaux, chiffres clés |
 | Mentions légales et avertissement santé, sitemap, robots | |
 
 Tant que Supabase n'est pas branché, le site public fonctionne avec les 30 produits de l'ancien site (fichier `src/data/seed-products.ts`). Les formulaires et l'admin ont besoin de la base.
@@ -41,5 +41,6 @@ Tant que Supabase n'est pas branché, le site public fonctionne avec les 30 prod
 
 - Prix et contenances (le tableau de bord indique les produits sans prix).
 - Vrai numéro WhatsApp Canada (Admin → Coordonnées). Il est masqué tant que le champ est vide.
-- Équipe (seul le PDG est créé), photos, liens des réseaux sociaux.
+- Photos de l'équipe et des résultats avant/après, liens des réseaux sociaux.
+- Justificatifs du contenu repris de l'ancien site (ISO 9001, Bio, tests en laboratoire, chiffres, avis) : tout est modifiable ou masquable dans l'admin.
 - Faire relire par un professionnel les textes santé des produits.

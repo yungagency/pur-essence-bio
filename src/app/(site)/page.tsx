@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import ProductCard from '@/components/ProductCard';
 import Quiz from '@/components/Quiz';
-import { getApprovedReviews, getProducts } from '@/lib/data';
+import { getApprovedReviews, getProducts, getSettings } from '@/lib/data';
+import { Stats } from '@/components/TrustBlocks';
 
 const UNIVERS = [
   { icon: 'fa-leaf', color: 'var(--green)', title: 'Huiles essentielles', text: 'Des extraits concentrés pour la détente, la peau, la respiration et le quotidien.', q: '?categorie=huile-essentielle' },
@@ -11,14 +12,14 @@ const UNIVERS = [
 ];
 
 const WHY = [
-  { icon: 'fa-user-md', title: 'Conseils personnalisés', text: 'On vous aide à choisir la bonne huile et à l’utiliser correctement.' },
-  { icon: 'fa-shield-alt', title: 'Précautions claires', text: 'Chaque fiche indique comment diluer et quand éviter un produit.' },
-  { icon: 'fa-comments', title: 'Commande sur WhatsApp', text: 'Un message pré-rempli : on vous confirme prix, stock et livraison.' },
-  { icon: 'fa-store', title: 'Boutique à Mimboman', text: 'Venez nous voir à Yaoundé, ou consultez-nous à distance.' },
+  { icon: 'fa-seedling', title: 'Produits naturels', text: '100% d’ingrédients naturels, sans additifs chimiques ni conservateurs nocifs.' },
+  { icon: 'fa-shield-alt', title: 'Qualité contrôlée', text: 'Chaque lot est testé en laboratoire pour garantir pureté et efficacité.' },
+  { icon: 'fa-user-md', title: 'Conseils personnalisés', text: 'Des experts en aromathérapie vous accompagnent dans vos choix.' },
+  { icon: 'fa-shipping-fast', title: 'Livraison rapide', text: 'Recevez vos commandes rapidement partout au Cameroun et au Canada.' },
 ];
 
 export default async function HomePage() {
-  const [products, reviews] = await Promise.all([getProducts(), getApprovedReviews(3)]);
+  const [products, reviews, settings] = await Promise.all([getProducts(), getApprovedReviews(3), getSettings()]);
   const featured = products.filter((p) => p.featured).slice(0, 6);
 
   return (
@@ -92,7 +93,7 @@ export default async function HomePage() {
       <section className="section bg-ivory">
         <div className="container text-center reveal">
           <span className="eyebrow">Pourquoi nous choisir</span>
-          <h2>Un accompagnement simple et humain</h2>
+          <h2>Pourquoi choisir Pur'Essence</h2>
         </div>
         <div className="container why-grid reveal-stagger" style={{ marginTop: '2rem' }}>
           {WHY.map((w) => (
@@ -104,6 +105,12 @@ export default async function HomePage() {
               <p>{w.text}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="section bg-white" style={{ paddingBottom: '2rem' }}>
+        <div className="container">
+          <Stats s={settings} />
         </div>
       </section>
 

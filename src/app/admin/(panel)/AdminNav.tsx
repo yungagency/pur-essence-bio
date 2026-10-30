@@ -8,6 +8,7 @@ const ITEMS = [
   { href: '/admin/produits', label: 'Produits', key: '' },
   { href: '/admin/avis', label: 'Avis', key: 'avis' },
   { href: '/admin/equipe', label: 'Équipe', key: '' },
+  { href: '/admin/confiance', label: 'Labels et résultats', key: '' },
   { href: '/admin/faq', label: 'FAQ', key: '' },
   { href: '/admin/reglages', label: 'Coordonnées', key: '' },
 ];

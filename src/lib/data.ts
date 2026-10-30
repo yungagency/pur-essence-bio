@@ -1,7 +1,8 @@
 import { cache } from 'react';
 import { createSupabasePublic, isSupabaseConfigured } from './supabase/server';
 import { seedProducts } from '@/data/seed-products';
-import type { Faq, Product, Review, Settings, TeamMember } from './types';
+import type { Certification, Faq, Product, Result, Review, Settings, TeamMember } from './types';
+import { seedCertifications, seedResults, seedReviews, seedTeam } from '@/data/seed-content';
 
 export const DEFAULT_SETTINGS: Settings = {
   phone_cm: '+237 6 50 82 67 38',
@@ -15,6 +16,9 @@ export const DEFAULT_SETTINGS: Settings = {
   instagram: '',
   facebook: '',
   tiktok: '',
+  stat_satisfaction: '98',
+  stat_consultations: '500',
+  stat_clients: '1000',
 };
 
 const SEED_FAQS: Faq[] = [
@@ -50,7 +54,7 @@ export async function getProduct(slug: string): Promise<Product | null> {
 }
 
 export async function getApprovedReviews(limit = 60): Promise<Review[]> {
-  if (!isSupabaseConfigured) return [];
+  if (!isSupabaseConfigured) return seedReviews.slice(0, limit);
   const { data } = await createSupabasePublic()
     .from('reviews')
     .select('*')
@@ -61,7 +65,7 @@ export async function getApprovedReviews(limit = 60): Promise<Review[]> {
 }
 
 export async function getTeam(): Promise<TeamMember[]> {
-  if (!isSupabaseConfigured) return [{ id: 't1', name: 'M. AWAWO William', role: 'PDG', photo_url: null, published: true, sort: 0 }];
+  if (!isSupabaseConfigured) return seedTeam;
   const { data } = await createSupabasePublic().from('team').select('*').eq('published', true).order('sort');
   return (data as TeamMember[]) ?? [];
 }
@@ -70,4 +74,16 @@ export async function getFaqs(): Promise<Faq[]> {
   if (!isSupabaseConfigured) return SEED_FAQS;
   const { data } = await createSupabasePublic().from('faqs').select('*').eq('published', true).order('sort');
   return (data as Faq[]) ?? [];
+}
+
+export async function getCertifications(): Promise<Certification[]> {
+  if (!isSupabaseConfigured) return seedCertifications;
+  const { data } = await createSupabasePublic().from('certifications').select('*').eq('published', true).order('sort');
+  return (data as Certification[]) ?? [];
+}
+
+export async function getResults(): Promise<Result[]> {
+  if (!isSupabaseConfigured) return seedResults;
+  const { data } = await createSupabasePublic().from('results').select('*').eq('published', true).order('sort');
+  return (data as Result[]) ?? [];
 }

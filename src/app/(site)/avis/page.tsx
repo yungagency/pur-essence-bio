@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ReviewForm } from '@/components/forms';
-import { getApprovedReviews } from '@/lib/data';
+import { getApprovedReviews, getResults, getSettings } from '@/lib/data';
+import { Results, Stats } from '@/components/TrustBlocks';
 import { formatDate } from '@/lib/format';
 
 export const metadata: Metadata = {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default async function AvisPage() {
-  const reviews = await getApprovedReviews();
+  const [reviews, results, settings] = await Promise.all([getApprovedReviews(), getResults(), getSettings()]);
   const avg = reviews.length ? reviews.reduce((a, r) => a + r.rating, 0) / reviews.length : 0;
 
   return (
@@ -20,9 +21,14 @@ export default async function AvisPage() {
           <h1>Ils nous ont fait confiance</h1>
           <p>
             {reviews.length > 0
-              ? `${avg.toFixed(1).replace('.', ',')}/5 · ${reviews.length} avis vérifiés`
+              ? `${avg.toFixed(1).replace('.', ',')}/5 · ${reviews.length} avis`
               : 'Soyez parmi les premiers à partager votre expérience.'}
           </p>
+        </div>
+      </section>
+      <section className="section bg-white" style={{ padding: '2rem 0' }}>
+        <div className="container">
+          <Stats s={settings} />
         </div>
       </section>
       <section className="section bg-ivory pattern-leaf" style={{ paddingTop: '2rem' }}>
@@ -69,6 +75,18 @@ export default async function AvisPage() {
           <ReviewForm />
         </div>
       </section>
+      {results.length > 0 && (
+        <section className="section bg-white">
+          <div className="container text-center">
+            <span className="eyebrow">Résultats</span>
+            <h2>Avant / Après</h2>
+            <p className="section-subtitle">Des résultats concrets grâce aux soins naturels Pur'Essence.</p>
+          </div>
+          <div className="container">
+            <Results items={results} />
+          </div>
+        </section>
+      )}
     </>
   );
 }

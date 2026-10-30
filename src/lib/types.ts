@@ -63,6 +63,9 @@ export type Settings = {
   instagram: string;
   facebook: string;
   tiktok: string;
+  stat_satisfaction: string;
+  stat_consultations: string;
+  stat_clients: string;
 };
 
 export const CATEGORY_LABELS: Record<string, string> = {
@@ -93,4 +96,18 @@ export const SETTING_LABELS: Record<keyof Settings, string> = {
   instagram: 'Lien Instagram',
   facebook: 'Lien Facebook',
   tiktok: 'Lien TikTok',
+  stat_satisfaction: 'Chiffre : taux de satisfaction en % (ex. 98) — vide = masqué',
+  stat_consultations: 'Chiffre : consultations réalisées (ex. 500) — vide = masqué',
+  stat_clients: 'Chiffre : clients satisfaits (ex. 1000) — vide = masqué',
+};
+
+export type Certification = { id: string; label: string; icon: string; published: boolean; sort: number };
+export type Result = {
+  id: string;
+  title: string;
+  text: string;
+  before_url: string | null;
+  after_url: string | null;
+  published: boolean;
+  sort: number;
 };

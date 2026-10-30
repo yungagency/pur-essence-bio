@@ -199,10 +199,56 @@ export async function saveSettings(fd: FormData) {
   const { supabase } = await requireAdmin();
   const rows = Object.keys(SETTING_LABELS).map((key) => {
     let value = s(fd, key);
-    if (key.startsWith('whatsapp_')) value = value.replace(/\D/g, '');
+    if (key.startsWith('whatsapp_') || key.startsWith('stat_')) value = value.replace(/\D/g, '');
     return { key, value };
   });
   await supabase.from('settings').upsert(rows);
   refreshSite();
   redirect('/admin/reglages?ok=1');
+}
+
+/* ---------------- Labels / certifications ---------------- */
+export async function saveCertification(fd: FormData) {
+  const { supabase } = await requireAdmin();
+  const id = s(fd, 'id');
+  const row = { label: s(fd, 'label'), icon: s(fd, 'icon') || 'fa-certificate', published: bool(fd, 'published'), sort: int(fd, 'sort') ?? 0 };
+  if (!row.label) return;
+  if (id) await supabase.from('certifications').update(row).eq('id', id);
+  else await supabase.from('certifications').insert(row);
+  refreshSite();
+  revalidatePath('/admin/confiance');
+}
+
+export async function deleteCertification(fd: FormData) {
+  const { supabase } = await requireAdmin();
+  await supabase.from('certifications').delete().eq('id', s(fd, 'id'));
+  refreshSite();
+  revalidatePath('/admin/confiance');
+}
+
+/* ---------------- Résultats avant / après ---------------- */
+export async function saveResult(fd: FormData) {
+  const { supabase } = await requireAdmin();
+  const id = s(fd, 'id');
+  let before_url: string | null = s(fd, 'before_url_old') || null;
+  let after_url: string | null = s(fd, 'after_url_old') || null;
+  try {
+    before_url = (await uploadImage(supabase, fd.get('before'), 'resultats')) ?? before_url;
+    after_url = (await uploadImage(supabase, fd.get('after'), 'resultats')) ?? after_url;
+  } catch {
+    // image invalide : on garde les anciennes
+  }
+  const row = { title: s(fd, 'title'), text: s(fd, 'text'), before_url, after_url, published: bool(fd, 'published'), sort: int(fd, 'sort') ?? 0 };
+  if (!row.title) return;
+  if (id) await supabase.from('results').update(row).eq('id', id);
+  else await supabase.from('results').insert(row);
+  refreshSite();
+  revalidatePath('/admin/confiance');
+}
+
+export async function deleteResult(fd: FormData) {
+  const { supabase } = await requireAdmin();
+  await supabase.from('results').delete().eq('id', s(fd, 'id'));
+  refreshSite();
+  revalidatePath('/admin/confiance');
 }

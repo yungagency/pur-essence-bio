@@ -155,6 +155,39 @@ create policy "lecture publique faq" on public.faqs for select using (published 
 drop policy if exists "admin écrit faq" on public.faqs;
 create policy "admin écrit faq" on public.faqs for all to authenticated using (public.is_admin()) with check (public.is_admin());
 
+
+-- ---------- Labels / certifications ----------
+create table if not exists public.certifications (
+  id uuid primary key default gen_random_uuid(),
+  label text not null,
+  icon text not null default 'fa-certificate',
+  published boolean not null default true,
+  sort integer not null default 0,
+  created_at timestamptz not null default now()
+);
+alter table public.certifications enable row level security;
+drop policy if exists "lecture publique labels" on public.certifications;
+create policy "lecture publique labels" on public.certifications for select using (published or public.is_admin());
+drop policy if exists "admin écrit labels" on public.certifications;
+create policy "admin écrit labels" on public.certifications for all to authenticated using (public.is_admin()) with check (public.is_admin());
+
+-- ---------- Résultats avant / après ----------
+create table if not exists public.results (
+  id uuid primary key default gen_random_uuid(),
+  title text not null,
+  text text not null default '',
+  before_url text,
+  after_url text,
+  published boolean not null default true,
+  sort integer not null default 0,
+  created_at timestamptz not null default now()
+);
+alter table public.results enable row level security;
+drop policy if exists "lecture publique résultats" on public.results;
+create policy "lecture publique résultats" on public.results for select using (published or public.is_admin());
+drop policy if exists "admin écrit résultats" on public.results;
+create policy "admin écrit résultats" on public.results for all to authenticated using (public.is_admin()) with check (public.is_admin());
+
 -- ---------- updated_at ----------
 create or replace function public.touch_updated_at() returns trigger language plpgsql as $$
 begin new.updated_at = now(); return new; end $$;
@@ -190,10 +223,37 @@ insert into public.settings (key, value) values
   ('hours', 'Lundi – Vendredi : 08h00 – 18h00 · Samedi : 09h00 – 15h00 · Dimanche : fermé'),
   ('instagram', ''),
   ('facebook', ''),
-  ('tiktok', '')
+  ('tiktok', ''),
+  ('stat_satisfaction', '98'),
+  ('stat_consultations', '500'),
+  ('stat_clients', '1000')
 on conflict (key) do nothing;
 
-insert into public.team (name, role, sort) values ('M. AWAWO William', 'PDG', 0);
+insert into public.team (name, role, sort) values
+  ('M. AWAWO William', 'PDG', 0),
+  ('Dr. Nathalie M.', 'Responsable Qualité', 1),
+  ('Amina B.', 'Conseillère Bien-être', 2),
+  ('Emmanuel T.', 'Expert Botanique', 3);
+
+insert into public.certifications (label, icon, sort) values
+  ('Bio Certifié', 'fa-leaf', 0),
+  ('Testé en Laboratoire', 'fa-flask', 1),
+  ('Non Testé sur Animaux', 'fa-paw', 2),
+  ('Made in Cameroun & Canada', 'fa-flag', 3),
+  ('Éco-Responsable', 'fa-recycle', 4),
+  ('ISO 9001', 'fa-certificate', 5);
+
+insert into public.results (title, text, sort) values
+  ('Peau revitalisée — Soin Carotte + Palmarosa', 'Après 4 semaines d''utilisation quotidienne, la peau retrouve son éclat naturel et sa souplesse. Les imperfections diminuent significativement.', 0),
+  ('Sommeil retrouvé — Protocole Lavande + Mandarine', 'En 2 semaines de diffusion nocturne, le temps d''endormissement passe de 45 min à 15 min. Un sommeil profond et réparateur retrouvé.', 1);
+
+insert into public.reviews (name, city, product, rating, text, status, created_at) values
+  ('Amina M.', 'Yaoundé', 'Lavande', 5, 'Chaque goutte est une invitation au calme, avec une qualité qui se ressent immédiatement. L''huile de Lavande m''a aidée à retrouver un sommeil paisible après des mois d''insomnie.', 'approved', '2024-06-01'),
+  ('Samuel K.', 'Douala', null, 5, 'Service premium et huiles authentiques. J''ai redécouvert un bien-être profond. La consultation m''a permis de trouver les produits parfaits pour mes besoins.', 'approved', '2025-02-01'),
+  ('Chloé B.', 'Bafoussam', 'Menthe Poivrée', 5, 'Un rituel de luxe qui transforme ma routine quotidienne. Élégance et pureté dans chaque flacon. Je recommande vivement la Menthe Poivrée contre les migraines.', 'approved', '2024-09-01'),
+  ('Marie N.', 'Kribi', 'Palmarosa', 5, 'Les consultations personnalisées m''ont aidée à trouver les produits parfaits pour ma peau. Résultats visibles en 2 semaines ! La Palmarosa est devenue mon indispensable.', 'approved', '2025-04-01'),
+  ('Jean T.', 'Yaoundé', 'Eucalyptus', 4, 'L''Eucalyptus est incroyable pour dégager les voies respiratoires. Depuis que je l''utilise en diffusion dans mon bureau, je suis beaucoup plus productif et concentré.', 'approved', '2024-11-01'),
+  ('Fatima L.', 'Douala', 'Brûle Graisse', 5, 'Le Brûle Graisse est incroyablement efficace ! Combiné aux conseils de l''équipe sur l''alimentation et l''exercice, j''ai vu des résultats remarquables en un mois.', 'approved', '2025-06-01');
 
 insert into public.faqs (question, answer, sort) values
  ('Combien de temps dure une consultation ?', 'Une consultation dure en moyenne 30 à 45 minutes. La première séance peut être un peu plus longue, le temps de bien comprendre vos besoins.', 0),
