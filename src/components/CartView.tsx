@@ -29,13 +29,13 @@ export default function CartView({ whatsappCm, whatsappCa, siteUrl }: Props) {
     "Bonjour Pur'Essence, je souhaite commander :",
     ...items.map((i) => `• ${i.name}${i.size ? ` (${i.size})` : ''} × ${i.qty}`),
     '',
-    name && `Nom : ${name}`,
-    place && `Livraison : ${place}`,
-    note && `Remarque : ${note}`,
+    name ? `Nom : ${name}` : null,
+    place ? `Livraison : ${place}` : null,
+    note ? `Remarque : ${note}` : null,
     'Merci de me confirmer les prix, la disponibilité et la livraison.',
     `(${siteUrl}/commande)`,
   ]
-    .filter((l) => l !== false && l !== undefined && l !== null)
+    .filter((l): l is string => l !== null)
     .join('\n');
 
   return (
