@@ -46,15 +46,6 @@ export default async function ProductPage({ params }: Props) {
         <div className="product-page">
           <div className="product-media">
             <ProductImage url={p.image_url} alt={p.name} label={p.name} category={p.category} />
-                  {identity.map((i) => (
-                    <div key={i.label}>
-                      <dt>{i.label}</dt>
-                      <dd>{i.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            )}
           </div>
           <div>
             <div className="chips">
@@ -87,6 +78,15 @@ export default async function ProductPage({ params }: Props) {
                       <dd>{p.english_name}</dd>
                     </div>
                   )}
+                  {identity.map((i) => (
+                    <div key={i.label}>
+                      <dt>{i.label}</dt>
+                      <dd>{i.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            )}
 
             {p.description && (
               <>
