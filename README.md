@@ -17,18 +17,18 @@ Réalisé par Yung's Agency.
 | Contact (enregistré en base + WhatsApp), carte Mimboman | Coordonnées : numéros (Cameroun / Canada), email, adresses, horaires, réseaux, chiffres clés |
 | Mentions légales et avertissement santé, sitemap, robots | |
 
-Tant que Supabase n'est pas branché, le site public fonctionne avec les 30 produits de l'ancien site (fichier `src/data/seed-products.ts`). Les formulaires et l'admin ont besoin de la base.
+Le catalogue compte **141 produits** issus des fiches techniques du client : 69 huiles essentielles, 35 huiles végétales, 32 synergies, 4 hydrolats ou absolues et la vitamine E. 57 produits ont déjà leur photo, dans `public/images/produits/`. Tant que Supabase n'est pas branché, le site public fonctionne avec ce catalogue (`src/data/seed-products.ts`). Les formulaires et l'admin ont besoin de la base.
 
 ## Mise en route
 
-1. **Supabase** : créer un projet (région Paris `eu-west-3`), puis dans *SQL Editor* exécuter `supabase/schema.sql` en entier. Le fichier crée les tables, les règles de sécurité, le stockage d'images et les 30 produits.
+1. **Supabase** : créer un projet (région Paris `eu-west-3`). Dans *SQL Editor*, exécuter d'abord `supabase/schema.sql` (tables, sécurité, stockage d'images, contenu de départ), puis `supabase/seed-produits.sql` (les 141 produits). **Une seule fois chacun.**
 2. **Compte admin** : dans *Authentication → Users → Add user*, créer l'utilisateur avec email et mot de passe. Ajouter son email à la table `admins` si ce n'est pas `yungagency3@gmail.com` :
    ```sql
    insert into public.admins (email) values ('pur.essencebio2000@gmail.com');
    ```
 3. **Vercel** : importer ce dépôt et ajouter les variables d'environnement (voir `.env.example`) :
    `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SITE_URL`.
-4. **Images de l'ancien site** : copier les dossiers `images/` et `image produit 3D/` dans `public/`. Les chemins des produits pointent déjà dessus (le logo doit être `public/images/logo.png`). On peut ensuite remplacer chaque photo depuis l'admin.
+4. **Logo** : déposer le logo dans `public/images/logo.png` (sinon le nom s'affiche en texte). Les photos manquantes s'ajoutent produit par produit depuis l'admin (filtre « Sans photo »).
 
 ## Sécurité
 
@@ -39,7 +39,8 @@ Tant que Supabase n'est pas branché, le site public fonctionne avec les 30 prod
 
 ## À compléter par le client
 
-- Prix et contenances (le tableau de bord indique les produits sans prix).
+- Prix (le tableau de bord indique les produits sans prix) et 84 photos manquantes (filtre « Sans photo » dans l'admin).
+- 4 synergies importées **non publiées** car elles visent des maladies (AVC, glycémie, tension, cholestérol) : à valider avant publication.
 - Vrai numéro WhatsApp Canada (Admin → Coordonnées). Il est masqué tant que le champ est vide.
 - Photos de l'équipe et des résultats avant/après, liens des réseaux sociaux.
 - Justificatifs du contenu repris de l'ancien site (ISO 9001, Bio, tests en laboratoire, chiffres, avis) : tout est modifiable ou masquable dans l'admin.

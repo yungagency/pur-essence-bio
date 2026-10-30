@@ -15,13 +15,16 @@ export default function ProductCatalog({ products }: { products: Product[] }) {
   const [cat, setCat] = useState(params.get('categorie') ?? '');
   const [use, setUse] = useState(params.get('usage') ?? '');
 
-  const categories = useMemo(() => Array.from(new Set(products.map((p) => p.category))), [products]);
+  const categories = useMemo(
+    () => Object.keys(CATEGORY_LABELS).filter((c) => products.some((p) => p.category === c)),
+    [products]
+  );
 
   const list = useMemo(() => {
     const nq = norm(q.trim());
     return products.filter(
       (p) =>
-        (!nq || norm(`${p.name} ${p.short}`).includes(nq)) &&
+        (!nq || norm(`${p.name} ${p.short} ${p.latin_name ?? ''} ${p.domain ?? ''}`).includes(nq)) &&
         (!cat || p.category === cat) &&
         (!use || p.usage === use)
     );
@@ -35,7 +38,7 @@ export default function ProductCatalog({ products }: { products: Product[] }) {
           type="search"
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="Rechercher un produit (lavande, eucalyptus…)"
+          placeholder="Rechercher : lavande, jojoba, sommeil, Lavandula…"
           aria-label="Rechercher un produit"
         />
       </div>

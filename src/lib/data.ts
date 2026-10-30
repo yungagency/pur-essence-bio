@@ -36,22 +36,32 @@ export const getSettings = cache(async (): Promise<Settings> => {
   return s as Settings;
 });
 
+/** Champs utiles aux listes (catalogue, cartes) : sans la fiche complète, trop lourde à envoyer au navigateur. */
+const LIST_COLUMNS =
+  'id,slug,name,short,category,usage,price_fcfa,volume,image_url,in_stock,featured,published,sort,latin_name,sizes,domain';
+
+function toListItem(p: Product): Product {
+  return { ...p, description: '', benefits: [], usage_tips: '', precautions: null, identity: null, fiche: null, english_name: null, origin: null };
+}
+
 export const getProducts = cache(async (): Promise<Product[]> => {
-  if (!isSupabaseConfigured) return seedProducts;
+  if (!isSupabaseConfigured) return seedProducts.filter((p) => p.published).map(toListItem);
   const { data, error } = await createSupabasePublic()
     .from('products')
-    .select('*')
+    .select(LIST_COLUMNS)
     .eq('published', true)
     .order('sort', { ascending: true })
     .order('name', { ascending: true });
   if (error || !data) return [];
-  return data as Product[];
+  return (data as unknown as Product[]).map((p) => toListItem({ ...p } as Product));
 });
 
-export async function getProduct(slug: string): Promise<Product | null> {
-  const all = await getProducts();
-  return all.find((p) => p.slug === slug) ?? null;
-}
+/** Produit complet (fiche incluse) pour sa page. */
+export const getProduct = cache(async (slug: string): Promise<Product | null> => {
+  if (!isSupabaseConfigured) return seedProducts.find((p) => p.slug === slug && p.published) ?? null;
+  const { data } = await createSupabasePublic().from('products').select('*').eq('slug', slug).eq('published', true).maybeSingle();
+  return (data as Product) ?? null;
+});
 
 export async function getApprovedReviews(limit = 60): Promise<Review[]> {
   if (!isSupabaseConfigured) return seedReviews.slice(0, limit);

@@ -9,20 +9,21 @@ export default function ProductCard({ p }: { p: Product }) {
   return (
     <article className="product-card">
       <Link href={`/produits/${p.slug}`} aria-label={p.name}>
-        <ProductImage url={p.image_url} alt={p.name} />
+        <ProductImage url={p.image_url} alt={p.name} label={p.name} category={p.category} />
       </Link>
       <div className="card-copy">
         <div className="chips">
-          <span className="chip">{USAGE_LABELS[p.usage] ?? p.usage}</span>
+          <span className="chip">{p.category === 'synergie' && p.domain ? p.domain : USAGE_LABELS[p.usage] ?? p.usage}</span>
           {!p.in_stock && <span className="chip out">Rupture</span>}
         </div>
         <h3>
           <Link href={`/produits/${p.slug}`}>{p.name}</Link>
         </h3>
+        {p.latin_name && <p className="latin small">{p.latin_name}</p>}
         <p>{p.short}</p>
         <p className={price ? 'price-tag' : 'price-tag muted'}>
           {price ?? 'Prix sur demande'}
-          {p.volume ? ` · ${p.volume}` : ''}
+          {p.volume ? ` · ${p.volume}` : p.sizes ? ` · ${p.sizes}` : ''}
         </p>
         <div className="card-actions">
           <Link href={`/produits/${p.slug}`} className="button button-outline button-sm">

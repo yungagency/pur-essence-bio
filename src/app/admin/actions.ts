@@ -78,6 +78,19 @@ export async function saveProduct(_prev: { error?: string } | null, fd: FormData
       .filter(Boolean),
     usage_tips: s(fd, 'usage_tips'),
     precautions: s(fd, 'precautions') || null,
+    latin_name: s(fd, 'latin_name') || null,
+    english_name: s(fd, 'english_name') || null,
+    origin: s(fd, 'origin') || null,
+    sizes: s(fd, 'sizes') || null,
+    domain: s(fd, 'domain') || null,
+    fiche: s(fd, 'fiche') || null,
+    identity: s(fd, 'identity')
+      .split('\n')
+      .map((l) => {
+        const i = l.indexOf(':');
+        return i > 0 ? { label: l.slice(0, i).trim(), value: l.slice(i + 1).trim() } : null;
+      })
+      .filter((x): x is { label: string; value: string } => !!x && !!x.label && !!x.value),
     category: s(fd, 'category') || 'huile-essentielle',
     usage: s(fd, 'usage') || 'sante',
     price_fcfa: int(fd, 'price_fcfa'),
@@ -96,6 +109,7 @@ export async function saveProduct(_prev: { error?: string } | null, fd: FormData
     return { error: error.code === '23505' ? 'Ce lien (slug) est déjà utilisé par un autre produit.' : `Erreur : ${error.message}` };
   }
   refreshSite();
+  revalidatePath(`/produits/${slug}`);
   redirect('/admin/produits?ok=1');
 }
 

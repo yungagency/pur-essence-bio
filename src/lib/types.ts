@@ -19,6 +19,13 @@ export type Product = {
   featured: boolean;
   published: boolean;
   sort: number;
+  latin_name: string | null;
+  english_name: string | null;
+  origin: string | null;
+  sizes: string | null;
+  domain: string | null;
+  identity: { label: string; value: string }[] | null;
+  fiche: string | null;
 };
 
 export type Review = {
@@ -71,6 +78,9 @@ export type Settings = {
 export const CATEGORY_LABELS: Record<string, string> = {
   'huile-essentielle': 'Huiles essentielles',
   'huile-vegetale': 'Huiles végétales',
+  synergie: 'Synergies',
+  'hydrolat-absolue': 'Hydrolats & absolues',
+  soin: 'Vitamine E & soins',
   melange: 'Mélanges',
   diffuseur: 'Diffuseurs',
   coffret: 'Coffrets',

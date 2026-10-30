@@ -2268,3 +2268,36 @@ ul, ol { list-style: none; }
 .faq-details summary { list-style: none; }
 .faq-details summary::-webkit-details-marker { display: none; }
 .faq-details[open] summary i { transform: rotate(180deg); }
+
+/* ===== Fiches produits (v2.1) ===== */
+.latin { font-style: italic; color: var(--muted); margin: -.6rem 0 .8rem; }
+.product-card .latin { margin: -.3rem 0 .5rem; font-size: .82rem; }
+.product-media { display: grid; gap: 1.2rem; position: sticky; top: 90px; }
+.identity-card { background: var(--surface-strong); border-radius: var(--radius-sm); box-shadow: var(--shadow); padding: 1.2rem 1.4rem; }
+.identity-title { font-weight: 700; color: var(--accent); margin-bottom: .6rem; font-size: .95rem; }
+.identity-card dl > div { display: grid; grid-template-columns: 40% 1fr; gap: .6rem; padding: .45rem 0; border-top: 1px solid rgba(86,109,78,.08); font-size: .88rem; }
+.identity-card dt { color: var(--muted); }
+.identity-card dd { font-weight: 500; }
+.fiche { margin-top: 1.4rem; display: grid; gap: .6rem; }
+.fiche-section { background: var(--surface-strong); border-radius: var(--radius-sm); border: 1px solid rgba(86,109,78,.08); }
+.fiche-section summary { list-style: none; cursor: pointer; padding: .95rem 1.2rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-weight: 600; color: var(--accent-dark); }
+.fiche-section summary::-webkit-details-marker { display: none; }
+.fiche-section summary i { transition: transform var(--transition); color: var(--muted); font-size: .8rem; }
+.fiche-section[open] summary i { transform: rotate(180deg); }
+.fiche-body { padding: 0 1.2rem 1.1rem; }
+.fiche-body p { color: var(--muted); margin-bottom: .6rem; font-size: .93rem; }
+.fiche-list { margin: .2rem 0 .8rem; }
+.fiche-list li { position: relative; padding-left: 1.2rem; margin-bottom: .35rem; color: var(--muted); font-size: .92rem; }
+.fiche-list li::before { content: ''; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+.fiche-h3 { font-size: .98rem; margin: 1rem 0 .4rem; color: var(--text); }
+.fiche-h4 { font-weight: 600; color: var(--text) !important; margin: .8rem 0 .3rem !important; font-size: .9rem !important; }
+.product-thumb.is-placeholder { background: linear-gradient(150deg, #eef2ea 0%, #f7f2ea 100%); }
+.product-thumb[data-cat='huile-vegetale'].is-placeholder { background: linear-gradient(150deg, #f6ecd6 0%, #faf8f3 100%); }
+.product-thumb[data-cat='synergie'].is-placeholder { background: linear-gradient(150deg, #e9e4f1 0%, #faf8f3 100%); }
+.ph-inner { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .4rem; padding: 1rem; text-align: center; height: 100%; }
+.ph-label { font-weight: 600; color: var(--accent-dark); font-size: 1.05rem; line-height: 1.25; }
+.ph-brand { font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+.product-card .product-thumb { aspect-ratio: 1 / 1; }
+.product-thumb img { object-fit: cover; object-position: center 40%; }
+.product-page .product-thumb { aspect-ratio: 4 / 5; }
+@media (max-width: 900px) { .product-media { position: static; } }

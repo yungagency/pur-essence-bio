@@ -27,6 +27,31 @@ export default function ProductForm({ product: p }: { product: Product | null })
             <span className="hint">Ex. « lavande » → /produits/lavande</span>
           </label>
         </div>
+        <div className="grid-3">
+          <label>
+            Nom botanique (latin)
+            <input type="text" name="latin_name" defaultValue={p?.latin_name ?? ''} placeholder="Ex. Lavandula angustifolia" />
+          </label>
+          <label>
+            Nom anglais
+            <input type="text" name="english_name" defaultValue={p?.english_name ?? ''} />
+          </label>
+          <label>
+            Origine
+            <input type="text" name="origin" defaultValue={p?.origin ?? ''} placeholder="Ex. France" />
+          </label>
+        </div>
+        <div className="grid-2">
+          <label>
+            Contenances proposées
+            <input type="text" name="sizes" defaultValue={p?.sizes ?? ''} placeholder="Ex. 5 ml • 10 ml • 15 ml" />
+            <span className="hint">Séparées par « • » : le client choisit sa contenance avant de commander.</span>
+          </label>
+          <label>
+            Domaine (synergies)
+            <input type="text" name="domain" defaultValue={p?.domain ?? ''} placeholder="Ex. ÉQUILIBRE NERVEUX" />
+          </label>
+        </div>
         <label>
           Phrase courte (carte produit)
           <input type="text" name="short" defaultValue={p?.short} maxLength={140} />
@@ -102,11 +127,28 @@ export default function ProductForm({ product: p }: { product: Product | null })
 
       <div className="panel admin-form">
         <label>
-          Description
+          Présentation
           <textarea name="description" defaultValue={p?.description} rows={5} />
+          <span className="hint">Laissez une ligne vide entre deux paragraphes.</span>
         </label>
         <label>
-          Usages traditionnels (un par ligne)
+          Carte d'identité (une ligne par information)
+          <textarea
+            name="identity"
+            rows={5}
+            defaultValue={(p?.identity ?? []).map((i) => `${i.label} : ${i.value}`).join('\n')}
+            placeholder={"Origine : France\nPartie distillée : Sommités fleuries\nMode d'obtention : Distillation à la vapeur d'eau"}
+          />
+        </label>
+        <label>
+          Fiche complète
+          <textarea name="fiche" defaultValue={p?.fiche ?? ''} rows={18} style={{ fontFamily: 'ui-monospace, monospace', fontSize: '.82rem' }} />
+          <span className="hint">
+            « ## Titre » = section repliable · « ### Sous-titre » · « #### Petit titre » · « - texte » = puce · autre ligne = paragraphe.
+          </span>
+        </label>
+        <label>
+          Points clés (un par ligne, utilisés si la fiche complète est vide)
           <textarea name="benefits" defaultValue={p?.benefits.join('\n')} rows={5} />
           <span className="hint">Évitez les promesses de guérison : préférez « traditionnellement utilisée pour… ».</span>
         </label>

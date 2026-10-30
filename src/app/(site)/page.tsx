@@ -5,10 +5,10 @@ import { getApprovedReviews, getProducts, getSettings } from '@/lib/data';
 import { Stats } from '@/components/TrustBlocks';
 
 const UNIVERS = [
-  { icon: 'fa-leaf', color: 'var(--green)', title: 'Huiles essentielles', text: 'Des extraits concentrés pour la détente, la peau, la respiration et le quotidien.', q: '?categorie=huile-essentielle' },
-  { icon: 'fa-flask', color: '#c2a56f', title: 'Mélanges', text: 'Des synergies prêtes à l’emploi, formulées par Pur’Essence.', q: '?categorie=melange' },
-  { icon: 'fa-spa', color: '#7a9a70', title: 'Bien-être', text: 'Relaxation, sommeil, énergie : trouvez l’huile adaptée à votre besoin.', q: '?usage=relaxation' },
-  { icon: 'fa-wand-magic-sparkles', color: '#b98b5e', title: 'Beauté', text: 'Teint, cheveux, peau : des soins naturels à intégrer à votre routine.', q: '?usage=beaute' },
+  { icon: 'fa-leaf', color: 'var(--green)', title: 'Huiles essentielles', text: 'Plus de 65 huiles essentielles bio, de la lavande vraie au néroli.', q: '?categorie=huile-essentielle' },
+  { icon: 'fa-tint', color: '#c2a56f', title: 'Huiles végétales', text: 'Jojoba, argan, rose musquée… pressées à froid, pour la peau, les cheveux et la cuisine.', q: '?categorie=huile-vegetale' },
+  { icon: 'fa-flask', color: '#8a6fb0', title: 'Synergies', text: 'Des formules prêtes à l’emploi : sommeil, digestion, peau, articulations…', q: '?categorie=synergie' },
+  { icon: 'fa-spa', color: '#b98b5e', title: 'Hydrolats & absolues', text: 'Hamamélis, lotus, orchidée blanche : douceur et parfums d’exception.', q: '?categorie=hydrolat-absolue' },
 ];
 
 const WHY = [

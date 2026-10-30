@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import Fiche from '@/components/Fiche';
 import OrderBox from '@/components/OrderBox';
 import ProductCard from '@/components/ProductCard';
 import ProductImage from '@/components/ProductImage';
@@ -18,7 +19,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const p = await getProduct(slug);
   if (!p) return { title: 'Produit introuvable' };
-  return { title: p.name, description: `${p.name} — ${p.short}`.slice(0, 160) };
+  const prefix = p.category === 'huile-essentielle' ? 'Huile essentielle de ' : p.category === 'huile-vegetale' ? 'Huile végétale de ' : '';
+  return {
+    title: `${prefix}${p.name}${p.latin_name ? ` (${p.latin_name})` : ''}`,
+    description: (p.short || p.description).slice(0, 160),
+    openGraph: p.image_url ? { images: [p.image_url] } : undefined,
+  };
 }
 
 export default async function ProductPage({ params }: Props) {
@@ -26,65 +32,103 @@ export default async function ProductPage({ params }: Props) {
   const [p, all, s] = await Promise.all([getProduct(slug), getProducts(), getSettings()]);
   if (!p) notFound();
 
-  const similar = all.filter((x) => x.slug !== p.slug && x.usage === p.usage).slice(0, 3);
+  const similar = all.filter((x) => x.slug !== p.slug && x.category === p.category && x.usage === p.usage).slice(0, 3);
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pur-essence.vercel.app';
+  const identity = (p.identity ?? []).filter((i) => i.value);
 
   return (
     <section className="section bg-ivory" style={{ paddingTop: '2.5rem' }}>
       <div className="container">
         <nav className="breadcrumb" aria-label="Fil d'Ariane">
-          <Link href="/">Accueil</Link> › <Link href="/produits">Produits</Link> › <span>{p.name}</span>
+          <Link href="/">Accueil</Link> › <Link href="/produits">Produits</Link> ›{' '}
+          <Link href={`/produits?categorie=${p.category}`}>{CATEGORY_LABELS[p.category] ?? p.category}</Link> › <span>{p.name}</span>
         </nav>
         <div className="product-page">
-          <div>
-            <ProductImage url={p.image_url} alt={p.name} />
+          <div className="product-media">
+            <ProductImage url={p.image_url} alt={p.name} label={p.name} category={p.category} />
+                  {identity.map((i) => (
+                    <div key={i.label}>
+                      <dt>{i.label}</dt>
+                      <dd>{i.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            )}
           </div>
           <div>
             <div className="chips">
               <span className="chip">{CATEGORY_LABELS[p.category] ?? p.category}</span>
               <span className="chip">{USAGE_LABELS[p.usage] ?? p.usage}</span>
+              {p.domain && <span className="chip">{p.domain}</span>}
             </div>
             <h1>{p.name}</h1>
-            <p className="lead">{p.short}</p>
+            {p.latin_name && <p className="latin">{p.latin_name}</p>}
+            {p.short && !p.description && <p className="lead">{p.short}</p>}
 
             <OrderBox
               name={p.name}
               price={p.price_fcfa}
               volume={p.volume}
+              sizes={p.sizes}
               inStock={p.in_stock}
               whatsappCm={s.whatsapp_cm}
               whatsappCa={s.whatsapp_ca}
               url={`${siteUrl}/produits/${p.slug}`}
             />
 
-            <h2>Description</h2>
-            <p>{p.description}</p>
+            {identity.length > 0 && (
+              <div className="identity-card" style={{ marginTop: '1.2rem' }}>
+                <p className="identity-title">Carte d'identité</p>
+                <dl>
+                  {p.english_name && (
+                    <div>
+                      <dt>Nom anglais</dt>
+                      <dd>{p.english_name}</dd>
+                    </div>
+                  )}
 
-            {p.benefits.length > 0 && (
+            {p.description && (
               <>
-                <h2>Usages traditionnels</h2>
-                <ul className="benefits">
-                  {p.benefits.map((b) => (
-                    <li key={b}>{b}</li>
-                  ))}
-                </ul>
+                <h2>Présentation</h2>
+                {p.description.split(/\n\s*\n/).map((para, i) => (
+                  <p key={i} style={{ marginBottom: '.8rem' }}>
+                    {para}
+                  </p>
+                ))}
               </>
             )}
 
-            {p.usage_tips && (
+            {p.fiche ? (
+              <Fiche source={p.fiche} />
+            ) : (
               <>
-                <h2>Conseils d'utilisation</h2>
-                <p>{p.usage_tips}</p>
+                {p.benefits.length > 0 && (
+                  <>
+                    <h2>Usages traditionnels</h2>
+                    <ul className="benefits">
+                      {p.benefits.map((b) => (
+                        <li key={b}>{b}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+                {p.usage_tips && (
+                  <>
+                    <h2>Conseils d'utilisation</h2>
+                    <p>{p.usage_tips}</p>
+                  </>
+                )}
               </>
             )}
 
-            <h2>Précautions</h2>
-            <div className="notice">
+            <div className="notice" style={{ marginTop: '1.5rem' }}>
               {p.precautions && <p style={{ marginBottom: '.5rem' }}>{p.precautions}</p>}
               <p>
-                <strong>Toujours diluer</strong> avant application sur la peau, ne pas appliquer près des yeux, tenir hors de
-                portée des enfants. Demandez conseil avant usage en cas de grossesse, d'allaitement, d'épilepsie, chez l'enfant
-                ou si vous suivez un traitement. Ces informations ne remplacent pas l'avis d'un médecin.
+                <strong>Précautions générales :</strong> les huiles essentielles sont très concentrées. Toujours diluer avant
+                application sur la peau, éviter les yeux et les muqueuses, tenir hors de portée des enfants. Demandez conseil
+                avant usage en cas de grossesse, d'allaitement, d'épilepsie, chez l'enfant, en cas de maladie ou de traitement
+                en cours. Ces informations ne remplacent pas l'avis d'un médecin.
               </p>
             </div>
           </div>
