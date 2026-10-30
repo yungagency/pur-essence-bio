@@ -2353,8 +2353,6 @@ html, body { overflow-x: clip; }
 .legal-page table { width: 100%; border-collapse: collapse; font-size: .9rem; margin: .6rem 0 1rem; }
 .legal-page th, .legal-page td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid rgba(0,0,0,.08); vertical-align: top; color: var(--muted); }
 .legal-page th { color: var(--text); font-weight: 600; }
-<<<<<<< HEAD
-=======
 
 /* Panier */
 .cart-link { order: 3; position: relative; display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; color: var(--accent); font-size: 1.15rem; margin-left: auto; flex: none; }
@@ -2382,4 +2380,3 @@ html, body { overflow-x: clip; }
 .cart-empty i { font-size: 2.5rem; color: var(--accent); opacity: .5; }
 .link-button { border: 0; background: none; padding: 0; font: inherit; font-weight: 600; text-decoration: underline; color: inherit; cursor: pointer; }
 @media (max-width: 900px) { .cart-layout { grid-template-columns: 1fr; } .cart-send { position: static; } }
->>>>>>> main
