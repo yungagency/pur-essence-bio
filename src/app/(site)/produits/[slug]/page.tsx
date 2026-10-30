@@ -58,13 +58,13 @@ export default async function ProductPage({ params }: Props) {
             {p.short && !p.description && <p className="lead">{p.short}</p>}
 
             <OrderBox
+              slug={p.slug}
               name={p.name}
               price={p.price_fcfa}
               volume={p.volume}
               sizes={p.sizes}
               inStock={p.in_stock}
               whatsappCm={s.whatsapp_cm}
-              whatsappCa={s.whatsapp_ca}
               url={`${siteUrl}/produits/${p.slug}`}
             />
 

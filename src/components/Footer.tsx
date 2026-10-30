@@ -20,6 +20,7 @@ export default function Footer({ s }: { s: Settings }) {
             <Link href="/produits">Produits</Link>
             <Link href="/services">Services</Link>
             <Link href="/a-propos">À propos</Link>
+            <Link href="/commande">Mon panier</Link>
           </div>
           <div className="footer-col">
             <h4>Accompagnement</h4>

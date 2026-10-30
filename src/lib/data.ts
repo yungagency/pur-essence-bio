@@ -19,6 +19,7 @@ export const DEFAULT_SETTINGS: Settings = {
   stat_satisfaction: '98',
   stat_consultations: '500',
   stat_clients: '1000',
+  order_info: '',
 };
 
 const SEED_FAQS: Faq[] = [
