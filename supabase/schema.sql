@@ -233,7 +233,8 @@ insert into public.settings (key, value) values
   ('tiktok', ''),
   ('stat_satisfaction', '98'),
   ('stat_consultations', '500'),
-  ('stat_clients', '1000')
+  ('stat_clients', '1000'),
+  ('order_info', '')
 on conflict (key) do nothing;
 
 insert into public.team (name, role, sort) values

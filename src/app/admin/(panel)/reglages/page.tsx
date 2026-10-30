@@ -20,8 +20,8 @@ export default async function AdminSettings({ searchParams }: { searchParams: Pr
         {(Object.keys(SETTING_LABELS) as (keyof Settings)[]).map((k) => (
           <label key={k}>
             {SETTING_LABELS[k]}
-            {k === 'hours' ? (
-              <textarea name={k} defaultValue={values[k]} rows={2} />
+            {k === 'hours' || k === 'order_info' ? (
+              <textarea name={k} defaultValue={values[k]} rows={k === 'order_info' ? 5 : 2} />
             ) : (
               <input type="text" name={k} defaultValue={values[k]} />
             )}

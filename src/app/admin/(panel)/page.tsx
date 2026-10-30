@@ -5,9 +5,9 @@ import type { RequestRow } from '@/lib/types';
 
 export default async function Dashboard() {
   const { supabase } = await requireAdmin();
-  const [products, noPrice, pending, newReq, latest] = await Promise.all([
+  const [products, noPhoto, pending, newReq, latest] = await Promise.all([
     supabase.from('products').select('id', { count: 'exact', head: true }),
-    supabase.from('products').select('id', { count: 'exact', head: true }).is('price_fcfa', null),
+    supabase.from('products').select('id', { count: 'exact', head: true }).is('image_url', null),
     supabase.from('reviews').select('id', { count: 'exact', head: true }).eq('status', 'pending'),
     supabase.from('requests').select('id', { count: 'exact', head: true }).eq('status', 'nouveau'),
     supabase.from('requests').select('*').order('created_at', { ascending: false }).limit(6),
@@ -31,9 +31,9 @@ export default async function Dashboard() {
           <b>{products.count ?? 0}</b>
           <span>Produits</span>
         </Link>
-        <Link href="/admin/produits?filtre=sans-prix" className="kpi">
-          <b>{noPrice.count ?? 0}</b>
-          <span>Produits sans prix</span>
+        <Link href="/admin/produits?filtre=sans-photo" className="kpi">
+          <b>{noPhoto.count ?? 0}</b>
+          <span>Produits sans photo</span>
         </Link>
       </div>
 
@@ -69,12 +69,6 @@ export default async function Dashboard() {
         )}
       </div>
 
-      {(noPrice.count ?? 0) > 0 && (
-        <div className="panel notice">
-          <strong>À faire :</strong> {noPrice.count} produit(s) affichent « Prix sur demande ». Ajoutez les prix et contenances
-          dans <Link href="/admin/produits?filtre=sans-prix">Produits</Link>.
-        </div>
-      )}
     </>
   );
 }

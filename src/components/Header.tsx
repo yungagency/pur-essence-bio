@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Logo from './Logo';
+import { cartCount, useCart } from '@/lib/cart';
 
 const LINKS = [
   { href: '/', label: 'Accueil' },
@@ -16,6 +17,7 @@ const LINKS = [
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const count = cartCount(useCart());
   const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href));
 
   return (
@@ -23,6 +25,10 @@ export default function Header() {
       <div className="container header-inner">
         <Link href="/" aria-label="Pur'Essence — accueil" onClick={() => setOpen(false)}>
           <Logo />
+        </Link>
+        <Link href="/commande" className="cart-link" aria-label={`Panier (${count} article${count > 1 ? 's' : ''})`} onClick={() => setOpen(false)}>
+          <i className="fas fa-basket-shopping"></i>
+          {count > 0 && <span className="cart-badge">{count}</span>}
         </Link>
         <button className="nav-toggle" aria-label="Menu" aria-expanded={open} onClick={() => setOpen((o) => !o)}>
           <span></span>

@@ -21,10 +21,11 @@ export default function ProductCard({ p }: { p: Product }) {
         </h3>
         {p.latin_name && <p className="latin small">{p.latin_name}</p>}
         <p>{p.short}</p>
-        <p className={price ? 'price-tag' : 'price-tag muted'}>
-          {price ?? 'Prix sur demande'}
-          {p.volume ? ` · ${p.volume}` : p.sizes ? ` · ${p.sizes}` : ''}
-        </p>
+        {(price || p.volume || p.sizes) && (
+          <p className={price ? 'price-tag' : 'price-tag muted'}>
+            {[price, p.volume || p.sizes].filter(Boolean).join(' · ')}
+          </p>
+        )}
         <div className="card-actions">
           <Link href={`/produits/${p.slug}`} className="button button-outline button-sm">
             Voir le produit

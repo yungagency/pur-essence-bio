@@ -73,6 +73,7 @@ export type Settings = {
   stat_satisfaction: string;
   stat_consultations: string;
   stat_clients: string;
+  order_info: string;
 };
 
 export const CATEGORY_LABELS: Record<string, string> = {
@@ -109,6 +110,7 @@ export const SETTING_LABELS: Record<keyof Settings, string> = {
   stat_satisfaction: 'Chiffre : taux de satisfaction en % (ex. 98) — vide = masqué',
   stat_consultations: 'Chiffre : consultations réalisées (ex. 500) — vide = masqué',
   stat_clients: 'Chiffre : clients satisfaits (ex. 1000) — vide = masqué',
+  order_info: 'Livraison et paiement (affiché sur la page Panier) — ex. zones, délais, frais, moyens de paiement. Vide = masqué',
 };
 
 export type Certification = { id: string; label: string; icon: string; published: boolean; sort: number };
