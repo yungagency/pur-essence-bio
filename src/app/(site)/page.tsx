@@ -24,7 +24,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <section className="hero hero-photo" style={{ minHeight: '82vh' }}>
+      <section className="hero hero-photo">
         <div className="hero-bg" style={{ backgroundImage: "url('/images/ambiance/conseillere.webp')" }} aria-hidden="true" />
         <div className="hero-overlay" aria-hidden="true" />
         <div className="container hero-copy reveal">
@@ -68,7 +68,7 @@ export default async function HomePage() {
             <h2>Nos produits phares</h2>
             <p className="section-subtitle">Une sélection de nos huiles les plus demandées.</p>
           </div>
-          <div className="container product-grid reveal-stagger">
+          <div className="container product-grid grid-3 reveal-stagger">
             {featured.map((p) => (
               <ProductCard key={p.id} p={p} />
             ))}

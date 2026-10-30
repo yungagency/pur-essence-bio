@@ -13,9 +13,13 @@ const str = (fd: FormData, k: string, max = 2000) => {
 
 /** Champ piège invisible : rempli uniquement par les robots. */
 const isBot = (fd: FormData) => str(fd, 'site_web') !== '';
+/** Consentement explicite exigé (loi camerounaise n° 2024/017). */
+const hasConsent = (fd: FormData) => fd.get('consent') === 'on';
+const NO_CONSENT = { ok: false, message: 'Cochez la case de consentement pour envoyer le formulaire.' } as const;
 
 export async function submitReview(_prev: FormState, fd: FormData): Promise<FormState> {
   if (isBot(fd)) return { ok: true, message: 'Merci ! Votre avis sera publié après vérification.' };
+  if (!hasConsent(fd)) return NO_CONSENT;
   const name = str(fd, 'name', 40);
   const city = str(fd, 'city', 40);
   const product = str(fd, 'product', 60);
@@ -35,6 +39,7 @@ export async function submitReview(_prev: FormState, fd: FormData): Promise<Form
 }
 
 export async function submitRequest(_prev: FormState, fd: FormData): Promise<FormState> {
+  if (!hasConsent(fd)) return NO_CONSENT;
   const kind = str(fd, 'kind') === 'consultation' ? 'consultation' : 'contact';
   const name = str(fd, 'name', 80);
   const phone = str(fd, 'phone', 30);

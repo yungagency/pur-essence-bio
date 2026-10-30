@@ -32,7 +32,7 @@ export default async function ProductPage({ params }: Props) {
   const [p, all, s] = await Promise.all([getProduct(slug), getProducts(), getSettings()]);
   if (!p) notFound();
 
-  const similar = all.filter((x) => x.slug !== p.slug && x.category === p.category && x.usage === p.usage).slice(0, 3);
+  const similar = all.filter((x) => x.slug !== p.slug && x.category === p.category && x.usage === p.usage).slice(0, 4);
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pur-essence.vercel.app';
   const identity = (p.identity ?? []).filter((i) => i.value);
 

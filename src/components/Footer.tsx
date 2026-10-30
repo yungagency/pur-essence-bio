@@ -9,7 +9,9 @@ export default function Footer({ s }: { s: Settings }) {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <Logo light />
+            <span className="footer-logo">
+              <Logo />
+            </span>
             <p>Huiles essentielles, huiles végétales et mélanges naturels pour votre bien-être au quotidien.</p>
           </div>
           <div className="footer-col">
@@ -25,6 +27,7 @@ export default function Footer({ s }: { s: Settings }) {
             <Link href="/avis">Avis clients</Link>
             <Link href="/contact">Contact</Link>
             <Link href="/mentions-legales">Mentions & précautions</Link>
+            <Link href="/confidentialite">Confidentialité</Link>
           </div>
           <div className="footer-col">
             <h4>Contact</h4>
@@ -39,6 +42,12 @@ export default function Footer({ s }: { s: Settings }) {
           <div>
             <p>© {new Date().getFullYear()} Pur'Essence. Tous droits réservés.</p>
             <p className="footer-legal">Nos produits et conseils ne remplacent pas un avis médical.</p>
+            <p className="footer-legal">
+              Site réalisé par Dannielle Nnomo ·{' '}
+              <a href="https://yungs-agency.vercel.app" target="_blank" rel="noopener">
+                Yung's Agency
+              </a>
+            </p>
           </div>
           <div className="social-links">
             {s.whatsapp_cm && (

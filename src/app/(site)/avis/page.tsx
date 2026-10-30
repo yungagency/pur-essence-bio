@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 
 export default async function AvisPage() {
   const [reviews, results, settings] = await Promise.all([getApprovedReviews(), getResults(), getSettings()]);
+  const shownResults = results.filter((r) => r.before_url && r.after_url);
   const avg = reviews.length ? reviews.reduce((a, r) => a + r.rating, 0) / reviews.length : 0;
 
   return (
@@ -75,7 +76,7 @@ export default async function AvisPage() {
           <ReviewForm />
         </div>
       </section>
-      {results.length > 0 && (
+      {shownResults.length > 0 && (
         <section className="section bg-white">
           <div className="container text-center">
             <span className="eyebrow">Résultats</span>
@@ -83,7 +84,7 @@ export default async function AvisPage() {
             <p className="section-subtitle">Des résultats concrets grâce aux soins naturels Pur'Essence.</p>
           </div>
           <div className="container">
-            <Results items={results} />
+            <Results items={shownResults} />
           </div>
         </section>
       )}

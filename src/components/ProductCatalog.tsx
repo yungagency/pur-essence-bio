@@ -1,5 +1,5 @@
 'use client';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import ProductCard from './ProductCard';
 import { CATEGORY_LABELS, USAGE_LABELS } from '@/lib/types';
@@ -14,6 +14,9 @@ export default function ProductCatalog({ products }: { products: Product[] }) {
   const [q, setQ] = useState('');
   const [cat, setCat] = useState(params.get('categorie') ?? '');
   const [use, setUse] = useState(params.get('usage') ?? '');
+  const PAGE = 24;
+  const [limit, setLimit] = useState(PAGE);
+  useEffect(() => setLimit(PAGE), [q, cat, use]);
 
   const categories = useMemo(
     () => Object.keys(CATEGORY_LABELS).filter((c) => products.some((p) => p.category === c)),
@@ -67,9 +70,16 @@ export default function ProductCatalog({ products }: { products: Product[] }) {
         <p className="empty-state">Aucun produit ne correspond à votre recherche.</p>
       ) : (
         <div className="product-grid">
-          {list.map((p) => (
+          {list.slice(0, limit).map((p) => (
             <ProductCard key={p.id} p={p} />
           ))}
+        </div>
+      )}
+      {list.length > limit && (
+        <div className="text-center" style={{ marginTop: '2rem' }}>
+          <button type="button" className="button button-outline" onClick={() => setLimit((l) => l + PAGE)}>
+            Afficher plus de produits ({list.length - limit} restants)
+          </button>
         </div>
       )}
     </>

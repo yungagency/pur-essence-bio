@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getSettings } from '@/lib/data';
 
@@ -28,14 +29,21 @@ export default async function MentionsPage() {
 
         <h2 style={{ fontSize: '1.2rem', margin: '1.5rem 0 .5rem' }}>Données personnelles</h2>
         <p className="muted">
-          Les informations envoyées via les formulaires (nom, téléphone, email, message, demande de consultation, avis) sont
-          utilisées uniquement pour vous répondre et organiser votre rendez-vous. Elles ne sont ni vendues ni partagées. Vous
-          pouvez demander leur suppression en écrivant à {s.email}. Les avis publiés n'affichent que le prénom et la ville
-          indiqués.
+          La collecte et l'utilisation de vos données sont décrites dans notre{' '}
+          <Link href="/confidentialite">politique de confidentialité</Link>.
         </p>
 
         <h2 style={{ fontSize: '1.2rem', margin: '1.5rem 0 .5rem' }}>Hébergement</h2>
         <p className="muted">Site hébergé par Vercel Inc. Données stockées chez Supabase.</p>
+
+        <h2 style={{ fontSize: '1.2rem', margin: '1.5rem 0 .5rem' }}>Conception et réalisation</h2>
+        <p className="muted">
+          Site conçu et développé par Dannielle Nnomo, pour{' '}
+          <a href="https://yungs-agency.vercel.app" target="_blank" rel="noopener">
+            Yung's Agency
+          </a>{' '}
+          (Yaoundé, Cameroun).
+        </p>
       </div>
     </section>
   );
