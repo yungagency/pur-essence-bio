@@ -27,7 +27,9 @@ export default async function AboutPage() {
   const [team, certifs] = await Promise.all([getTeam(), getCertifications()]);
   return (
     <>
-      <section className="page-hero hero-static" style={{ height: 'auto', minHeight: 280, padding: '4rem 0 2rem' }}>
+      <section className="page-hero hero-photo" style={{ height: 'auto', minHeight: 280, padding: '4rem 0 2rem' }}>
+        <div className="page-hero-bg" style={{ backgroundImage: "url('/images/ambiance/monstera.webp')" }} aria-hidden="true" />
+        <div className="page-hero-overlay" aria-hidden="true" />
         <div className="container page-hero-content reveal">
           <span className="eyebrow">À propos</span>
           <h1>L'histoire de Pur'Essence</h1>

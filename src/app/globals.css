@@ -2301,3 +2301,30 @@ ul, ol { list-style: none; }
 .product-thumb img { object-fit: cover; object-position: center 40%; }
 .product-page .product-thumb { aspect-ratio: 4 / 5; }
 @media (max-width: 900px) { .product-media { position: static; } }
+
+/* Héros avec photo (images de l'ancien site) */
+.hero-photo { background: #f7f2ea; }
+.hero-photo .hero-bg { left: 42%; background-position: 80% center; filter: none; }
+.hero-photo .hero-overlay {
+  background: linear-gradient(90deg, #f7f2ea 0%, #f7f2ea 42%, rgba(247,242,234,0) 56%),
+    linear-gradient(180deg, rgba(247,242,234,0) 80%, #f7f2ea 100%);
+}
+.hero-photo .hero-copy {
+  width: auto;
+  max-width: min(540px, 40vw);
+  margin-left: max(1.25rem, calc((100vw - 1140px) / 2));
+  margin-right: 0;
+}
+.hero-photo .hero-copy h1 { font-size: clamp(2.4rem, 4.2vw, 4.2rem); }
+.page-hero.hero-photo .page-hero-overlay {
+  background: linear-gradient(180deg, rgba(247,242,234,.72) 0%, rgba(247,242,234,.8) 70%, rgba(247,242,234,1) 100%);
+}
+@media (max-width: 760px) {
+  .hero-photo { align-items: flex-start; }
+  .hero-photo .hero-bg { left: 0; bottom: auto; height: 340px; background-position: 82% 20%; }
+  .hero-photo .hero-overlay {
+    bottom: auto; height: 340px;
+    background: linear-gradient(180deg, rgba(247,242,234,0) 55%, #f7f2ea 100%);
+  }
+  .hero-photo .hero-copy { max-width: none; margin: 0 auto; width: calc(100% - 2.5rem); padding-top: 330px; padding-bottom: 3rem; }
+}

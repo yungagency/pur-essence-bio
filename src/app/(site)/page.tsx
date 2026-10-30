@@ -24,7 +24,9 @@ export default async function HomePage() {
 
   return (
     <>
-      <section className="hero hero-static" style={{ minHeight: '82vh' }}>
+      <section className="hero hero-photo" style={{ minHeight: '82vh' }}>
+        <div className="hero-bg" style={{ backgroundImage: "url('/images/ambiance/conseillere.webp')" }} aria-hidden="true" />
+        <div className="hero-overlay" aria-hidden="true" />
         <div className="container hero-copy reveal">
           <span className="eyebrow">Pur'Essence · Yaoundé</span>
           <h1>Retrouvez l'essence pure de la nature</h1>

@@ -14564,3 +14564,8 @@ La vitamine E désigne une famille de composés comprenant les tocophérols et l
 - Codex Alimentarius.
 - Publications scientifiques indexées dans PubMed sur les tocophérols, les tocotriénols et la vitamine E naturelle.','/images/produits/vitamine-e-naturelle.webp',false,true,1400)
 on conflict (slug) do nothing;
+
+-- Photos ajoutées ensuite (images de l'ancien site)
+update public.products p set image_url = '/images/produits/' || p.slug || '.webp'
+where p.image_url is null
+  and p.slug in ('basilic-tropical','cypres','gaultherie-couchee','menthe-poivree','oliban','palmarosa');

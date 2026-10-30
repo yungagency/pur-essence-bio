@@ -43,7 +43,9 @@ export default async function ServicesPage() {
   const s = await getSettings();
   return (
     <>
-      <section className="page-hero hero-static" style={{ height: 'auto', minHeight: 280, padding: '4rem 0 2rem' }}>
+      <section className="page-hero hero-photo" style={{ height: 'auto', minHeight: 280, padding: '4rem 0 2rem' }}>
+        <div className="page-hero-bg" style={{ backgroundImage: "url('/images/ambiance/lavande.webp')" }} aria-hidden="true" />
+        <div className="page-hero-overlay" aria-hidden="true" />
         <div className="container page-hero-content reveal">
           <span className="eyebrow">Services</span>
           <h1>Un accompagnement sur mesure</h1>

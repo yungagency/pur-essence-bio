@@ -17,7 +17,7 @@ Réalisé par Yung's Agency.
 | Contact (enregistré en base + WhatsApp), carte Mimboman | Coordonnées : numéros (Cameroun / Canada), email, adresses, horaires, réseaux, chiffres clés |
 | Mentions légales et avertissement santé, sitemap, robots | |
 
-Le catalogue compte **141 produits** issus des fiches techniques du client : 69 huiles essentielles, 35 huiles végétales, 32 synergies, 4 hydrolats ou absolues et la vitamine E. 57 produits ont déjà leur photo, dans `public/images/produits/`. Tant que Supabase n'est pas branché, le site public fonctionne avec ce catalogue (`src/data/seed-products.ts`). Les formulaires et l'admin ont besoin de la base.
+Le catalogue compte **141 produits** issus des fiches techniques du client : 69 huiles essentielles, 35 huiles végétales, 32 synergies, 4 hydrolats ou absolues et la vitamine E. 63 produits ont déjà leur photo, dans `public/images/produits/`. Tant que Supabase n'est pas branché, le site public fonctionne avec ce catalogue (`src/data/seed-products.ts`). Les formulaires et l'admin ont besoin de la base.
 
 ## Mise en route
 
@@ -28,7 +28,7 @@ Le catalogue compte **141 produits** issus des fiches techniques du client : 69 
    ```
 3. **Vercel** : importer ce dépôt et ajouter les variables d'environnement (voir `.env.example`) :
    `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SITE_URL`.
-4. **Logo** : déposer le logo dans `public/images/logo.png` (sinon le nom s'affiche en texte). Les photos manquantes s'ajoutent produit par produit depuis l'admin (filtre « Sans photo »).
+4. **Images** : le logo (`public/images/logo.png`) et les visuels d'ambiance (`public/images/ambiance/`) sont en place. Les photos manquantes s'ajoutent produit par produit depuis l'admin (filtre « Sans photo »).
 
 ## Sécurité
 
@@ -39,7 +39,7 @@ Le catalogue compte **141 produits** issus des fiches techniques du client : 69 
 
 ## À compléter par le client
 
-- Prix (le tableau de bord indique les produits sans prix) et 84 photos manquantes (filtre « Sans photo » dans l'admin).
+- Prix (le tableau de bord indique les produits sans prix) et 78 photos manquantes (filtre « Sans photo » dans l'admin).
 - 4 synergies importées **non publiées** car elles visent des maladies (AVC, glycémie, tension, cholestérol) : à valider avant publication.
 - Vrai numéro WhatsApp Canada (Admin → Coordonnées). Il est masqué tant que le champ est vide.
 - Photos de l'équipe et des résultats avant/après, liens des réseaux sociaux.
