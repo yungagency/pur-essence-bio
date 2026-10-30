@@ -10,7 +10,7 @@ Réalisé par Yung's Agency.
 | Côté public | Côté admin (`/admin`) |
 |---|---|
 | Accueil, catalogue avec recherche et filtres | Tableau de bord (demandes, avis à modérer, produits sans prix) |
-| Fiche par produit (`/produits/lavande`…) avec commande WhatsApp pré-remplie et quantité | Produits : ajout, modification, photo, prix, stock, « à la une », publication |
+| Fiche par produit (`/produits/lavande`…), panier (`/commande`) envoyé en un seul message WhatsApp, sans paiement en ligne | Produits : ajout, modification, photo, prix, stock, « à la une », publication |
 | Services, À propos, équipe | Avis : publier, refuser, supprimer |
 | Avis clients (publiés après modération) | Demandes : statut, note interne, WhatsApp/appel en un clic, export Excel (CSV) |
 | Réservation de consultation (date, créneau, type) enregistrée en base + envoi WhatsApp | Équipe, FAQ, labels/certifications, résultats avant/après |
@@ -26,7 +26,7 @@ Le catalogue compte **141 produits** issus des fiches techniques du client : 69 
    ```sql
    insert into public.admins (email) values ('pur.essencebio2000@gmail.com');
    ```
-3. **Vercel** : importer ce dépôt et ajouter les variables d'environnement (voir `.env.example`) :
+3. **Vercel** : importer ce dépôt et ajouter les variables d'environnement (voir `.env.example`). `NEXT_PUBLIC_SITE_URL` = adresse réelle du site (elle apparaît dans les messages WhatsApp) :
    `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SITE_URL`.
 4. **Images** : le logo (`public/images/logo.png`) et les visuels d'ambiance (`public/images/ambiance/`) sont en place. Les photos manquantes s'ajoutent produit par produit depuis l'admin (filtre « Sans photo »).
 
@@ -39,7 +39,7 @@ Le catalogue compte **141 produits** issus des fiches techniques du client : 69 
 
 ## À compléter par le client
 
-- Prix (le tableau de bord indique les produits sans prix) et 78 photos manquantes (filtre « Sans photo » dans l'admin).
+- 78 photos manquantes (les prix ne sont pas affichés pour l'instant ; le champ existe dans l'admin) (filtre « Sans photo » dans l'admin).
 - 4 synergies importées **non publiées** car elles visent des maladies (AVC, glycémie, tension, cholestérol) : à valider avant publication.
 - Vrai numéro WhatsApp Canada (Admin → Coordonnées). Il est masqué tant que le champ est vide.
 - Photos de l'équipe et des résultats avant/après, liens des réseaux sociaux.
