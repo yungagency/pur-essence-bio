@@ -2399,3 +2399,15 @@ html, body { overflow-x: clip; }
   .service-illustration { min-height: 0; width: 100%; }
 }
 .product-page .product-thumb.is-placeholder { aspect-ratio: 1 / 1; }
+
+.site-footer .logo { height: 78px; }
+.site-header .logo { height: 54px; }
+
+/* Mots-clés produits */
+a.mention { color: var(--accent); font-weight: 600; text-decoration: underline; text-decoration-color: rgba(86,109,78,.35); text-underline-offset: 3px; }
+a.mention:hover { text-decoration-color: var(--accent); }
+.keywords { margin-top: 1.2rem; padding: 1.1rem 1.2rem; background: var(--surface-strong); border-radius: var(--radius-sm); box-shadow: var(--shadow); }
+.keyword-list { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .6rem; }
+.keyword { display: inline-flex; align-items: center; gap: .4rem; padding: .45rem .9rem; border-radius: 999px; background: rgba(86,109,78,.08); color: var(--accent-dark, #3f5238); font-size: .88rem; font-weight: 600; transition: background var(--transition); }
+.keyword:hover { background: rgba(86,109,78,.18); }
+.keyword i { font-size: .75rem; color: var(--gold); }
