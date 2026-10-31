@@ -17,11 +17,11 @@ Réalisé par Yung's Agency.
 | Contact (enregistré en base + WhatsApp), carte Mimboman | Coordonnées : numéros (Cameroun / Canada), email, adresses, horaires, réseaux, chiffres clés |
 | Mentions légales et avertissement santé, sitemap, robots | |
 
-Le catalogue compte **141 produits** issus des fiches techniques du client : 69 huiles essentielles, 35 huiles végétales, 32 synergies, 4 hydrolats ou absolues et la vitamine E. 72 produits ont déjà leur photo, dans `public/images/produits/`. Tant que Supabase n'est pas branché, le site public fonctionne avec ce catalogue (`src/data/seed-products.ts`). Les formulaires et l'admin ont besoin de la base.
+Le catalogue compte **142 produits** issus des fiches techniques du client : 70 huiles essentielles (dont le Céleri, en huile essentielle et en huile végétale), 35 huiles végétales, 32 synergies, 4 hydrolats ou absolues et la vitamine E. 72 produits ont déjà leur photo, dans `public/images/produits/`. Tant que Supabase n'est pas branché, le site public fonctionne avec ce catalogue (`src/data/seed-products.ts`). Les formulaires et l'admin ont besoin de la base.
 
 ## Mise en route
 
-1. **Supabase** : créer un projet (région Paris `eu-west-3`). Dans *SQL Editor*, exécuter d'abord `supabase/schema.sql` (tables, sécurité, stockage d'images, contenu de départ), puis `supabase/seed-produits.sql` (les 141 produits). **Une seule fois chacun.**
+1. **Supabase** : créer un projet (région Paris `eu-west-3`). Dans *SQL Editor*, exécuter d'abord `supabase/schema.sql` (tables, sécurité, stockage d'images, contenu de départ), puis `supabase/seed-produits.sql` (les 142 produits). **Une seule fois chacun.** Si `seed-produits.sql` a déjà été exécuté avant le 31 octobre 2026, exécuter en plus `supabase/maj-fiches-2026-10-31.sql` (fiches complétées, Céleri huile essentielle, photos).
 2. **Compte admin** : dans *Authentication → Users → Add user*, créer l'utilisateur avec email et mot de passe. Ajouter son email à la table `admins` si ce n'est pas `yungagency3@gmail.com` :
    ```sql
    insert into public.admins (email) values ('pur.essencebio2000@gmail.com');

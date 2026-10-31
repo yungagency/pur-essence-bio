@@ -2303,7 +2303,7 @@ ul, ol { list-style: none; }
 @media (max-width: 900px) { .product-media { position: static; } }
 
 /* Héros avec photo : image entière en fond, texte par-dessus */
-.hero-photo { min-height: 0; aspect-ratio: 1800 / 952; max-height: 92vh; background: #f7f2ea; }
+.hero-photo { width: 100%; min-height: 0; aspect-ratio: auto; height: clamp(520px, calc(100vw * 952 / 1800), 86vh); max-height: none; background: #f7f2ea; }
 .hero-photo .hero-bg { inset: 0; background-position: 70% center; filter: none; }
 .hero-photo .hero-overlay {
   background: linear-gradient(90deg, rgba(247,242,234,.93) 0%, rgba(247,242,234,.82) 30%, rgba(247,242,234,.35) 52%, rgba(247,242,234,0) 68%);
@@ -2322,7 +2322,7 @@ ul, ol { list-style: none; }
   background: linear-gradient(180deg, rgba(247,242,234,.7) 0%, rgba(247,242,234,.78) 70%, rgba(247,242,234,1) 100%);
 }
 @media (max-width: 900px) {
-  .hero-photo { aspect-ratio: auto; max-height: none; min-height: 0; display: block; }
+  .hero-photo { aspect-ratio: auto; max-height: none; min-height: 0; height: auto; display: block; }
   .hero-photo .hero-bg { bottom: auto; height: min(62vw + 140px, 520px); background-position: 74% 20%; }
   .hero-photo .hero-overlay {
     bottom: auto; height: min(62vw + 140px, 520px);
@@ -2411,3 +2411,12 @@ a.mention:hover { text-decoration-color: var(--accent); }
 .keyword { display: inline-flex; align-items: center; gap: .4rem; padding: .45rem .9rem; border-radius: 999px; background: rgba(86,109,78,.08); color: var(--accent-dark, #3f5238); font-size: .88rem; font-weight: 600; transition: background var(--transition); }
 .keyword:hover { background: rgba(86,109,78,.18); }
 .keyword i { font-size: .75rem; color: var(--gold); }
+
+/* Bandeau d'atouts sous le hero (maquette) */
+.hero-strip { background: #fbf8f2; border-bottom: 1px solid rgba(86,109,78,.08); }
+.hero-strip-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; padding: 1.3rem 0; }
+.hero-strip-item { display: flex; align-items: center; gap: .8rem; }
+.hero-strip-item i { width: 40px; height: 40px; flex: none; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: rgba(86,109,78,.1); color: var(--accent); font-size: 1rem; }
+.hero-strip-item strong { display: block; font-size: .92rem; color: var(--text); }
+.hero-strip-item span { font-size: .8rem; color: var(--muted); }
+@media (max-width: 900px) { .hero-strip-inner { grid-template-columns: repeat(2, 1fr); } }

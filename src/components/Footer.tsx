@@ -40,7 +40,6 @@ export default function Footer({ s }: { s: Settings }) {
         <div className="footer-bottom">
           <div>
             <p>© {new Date().getFullYear()} Pur'Essence. Tous droits réservés.</p>
-            <p className="footer-legal">Nos produits et conseils ne remplacent pas un avis médical.</p>
           </div>
           <div className="social-links">
             {s.whatsapp_cm && (

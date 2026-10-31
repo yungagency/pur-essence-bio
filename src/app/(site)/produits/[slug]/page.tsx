@@ -147,15 +147,11 @@ export default async function ProductPage({ params }: Props) {
               </>
             )}
 
-            <div className="notice" style={{ marginTop: '1.5rem' }}>
-              {p.precautions && <p style={{ marginBottom: '.5rem' }}>{p.precautions}</p>}
-              <p>
-                <strong>Précautions générales :</strong> les huiles essentielles sont très concentrées. Toujours diluer avant
-                application sur la peau, éviter les yeux et les muqueuses, tenir hors de portée des enfants. Demandez conseil
-                avant usage en cas de grossesse, d'allaitement, d'épilepsie, chez l'enfant, en cas de maladie ou de traitement
-                en cours. Ces informations ne remplacent pas l'avis d'un médecin.
-              </p>
-            </div>
+            {p.precautions && (
+              <div className="notice" style={{ marginTop: '1.5rem' }}>
+                <p>{p.precautions}</p>
+              </div>
+            )}
           </div>
         </div>
 

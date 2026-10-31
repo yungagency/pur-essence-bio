@@ -11,6 +11,13 @@ const UNIVERS = [
   { icon: 'fa-spa', color: '#b98b5e', title: 'Hydrolats & absolues', text: 'Hamamélis, lotus, orchidée blanche : douceur et parfums d’exception.', q: '?categorie=hydrolat-absolue' },
 ];
 
+const STRIP = [
+  { icon: 'fa-leaf', title: '100 % naturel', text: 'Purs et authentiques' },
+  { icon: 'fa-flask', title: 'Science & tradition', text: 'Formulés avec expertise' },
+  { icon: 'fa-user-doctor', title: 'Consultation', text: 'En boutique ou à distance' },
+  { icon: 'fa-truck', title: 'Livraison', text: 'Cameroun et Canada' },
+];
+
 const WHY = [
   { icon: 'fa-seedling', title: 'Produits naturels', text: '100% d’ingrédients naturels, sans additifs chimiques ni conservateurs nocifs.' },
   { icon: 'fa-shield-alt', title: 'Qualité contrôlée', text: 'Chaque lot est testé en laboratoire pour garantir pureté et efficacité.' },
@@ -39,6 +46,20 @@ export default async function HomePage() {
               <i className="fas fa-calendar-check"></i> Réserver une consultation
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="hero-strip" aria-label="Nos atouts">
+        <div className="container hero-strip-inner">
+          {STRIP.map((x) => (
+            <div key={x.title} className="hero-strip-item">
+              <i className={`fas ${x.icon}`} aria-hidden="true"></i>
+              <div>
+                <strong>{x.title}</strong>
+                <span>{x.text}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
