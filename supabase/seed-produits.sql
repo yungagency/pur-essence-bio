@@ -1,5 +1,5 @@
--- Catalogue Pur'Essence : 141 produits issus des fiches techniques du client.
--- À exécuter UNE fois, après schema.sql.
+-- Catalogue Pur'Essence : 142 produits issus des fiches techniques du client (textes repris tels quels).
+-- À exécuter UNE fois, après schema.sql. Si ce fichier a déjà été exécuté, utiliser plutôt supabase/maj-fiches-2026-10-31.sql.
 -- 4 synergies sont importées non publiées (allégations à valider) : AVC, glycémie, tension, cholestérol.
 
 insert into public.products (slug,name,short,description,category,usage,latin_name,english_name,origin,sizes,domain,identity,fiche,image_url,featured,published,sort) values
@@ -77,7 +77,11 @@ L''Achillée Millefeuille doit son nom au héros grec Achille, qui, selon la tra
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Huile Essentielle d''Achillée Millefeuille Bio de PUR’ESSENCE est une essence précieuse, particulièrement recherchée pour les soins cutanés, le confort féminin et les massages bien-être. Grâce à son excellente affinité avec les huiles végétales et à sa remarquable complémentarité avec les huiles essentielles florales, elle constitue un ingrédient de choix pour élaborer des synergies haut de gamme.
-Chez PUR''ESSENCE, nous la recommandons pour les personnes souhaitant intégrer une huile essentielle à la fois élégante, polyvalente et inspirée de la tradition botanique.','/images/produits/achillee-millefeuille.webp',false,true,0),
+Chez PUR''ESSENCE, nous la recommandons pour les personnes souhaitant intégrer une huile essentielle à la fois élégante, polyvalente et inspirée de la tradition botanique.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos besoins en santé, bien-être et beauté.
+Contactez l''équipe PUR''ESSENCE et découvrez toute la finesse de l''Huile Essentielle d''Achillée Millefeuille Bio, une essence d''exception issue des paysages naturels du Canada.','/images/produits/achillee-millefeuille.webp',false,true,0),
 ('ail','Ail','Obtenue à partir du bulbe d''ail (Allium sativum), l''huile essentielle d''Ail PUR''ESSENCE est reconnue pour sa concentration exceptionnelle en composés aromatiques soufrés.','Obtenue à partir du bulbe d''ail (Allium sativum), l''huile essentielle d''Ail PUR''ESSENCE est reconnue pour sa concentration exceptionnelle en composés aromatiques soufrés.
 
 Utilisée depuis des siècles dans différentes traditions, elle est particulièrement appréciée pour accompagner le bien-être général, soutenir les défenses naturelles et favoriser une bonne hygiène de vie. Son parfum puissant en fait une huile essentielle à utiliser avec discernement.','huile-essentielle','sante','Allium sativum','Organic Garlic Essential Oil','Bulgarie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Bulgarie"}, {"label": "Partie distillée", "value": "Bulbe"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Sulfurée • Épicée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -141,7 +145,11 @@ L''ail est cultivé depuis plus de 5 000 ans et occupe une place importante dans
 - Popularité : ★★★★☆
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
-En raison de sa puissance aromatique et de sa forte concentration, l''huile essentielle d''Ail mérite une utilisation réfléchie. Bien choisie et correctement associée à une huile végétale adaptée, elle peut s''intégrer à une approche globale de la santé naturelle. Notre équipe est à votre disposition pour vous accompagner dans le choix des associations les plus adaptées à vos besoins.',null,false,true,10),
+En raison de sa puissance aromatique et de sa forte concentration, l''huile essentielle d''Ail mérite une utilisation réfléchie. Bien choisie et correctement associée à une huile végétale adaptée, elle peut s''intégrer à une approche globale de la santé naturelle. Notre équipe est à votre disposition pour vous accompagner dans le choix des associations les plus adaptées à vos besoins.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne est unique, et chaque besoin mérite une réponse adaptée. Les experts PUR''ESSENCE sont à votre écoute pour vous conseiller sur le choix des huiles essentielles, des huiles végétales et des synergies les plus appropriées à vos objectifs de santé, de bien-être ou de beauté.
+Contactez notre équipe et bénéficiez d''un accompagnement personnalisé pour une utilisation responsable et optimale de nos produits.','/images/produits/ail.webp',false,true,10),
 ('aneth','Aneth','Cultivée en France selon les principes de l''agriculture biologique, l''Huile Essentielle d''Aneth Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des…','Cultivée en France selon les principes de l''agriculture biologique, l''Huile Essentielle d''Aneth Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des graines et des sommités fleuries de Anethum graveolens. Appréciée depuis l''Antiquité comme plante aromatique et condimentaire, elle dégage un parfum frais, légèrement anisé et épicé.
 
 En aromathérapie, elle est particulièrement reconnue pour accompagner le confort digestif, favoriser le bien-être général et entrer dans des synergies destinées à la détente.','huile-essentielle','digestion','Anethum graveolens','Dill Essential Oil','France','5 ml • 10 ml • 15 ml • 30 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Graines (fruits) et sommités fleuries"}, {"label": "Mode d''obtention", "value": "Distillation complète à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Aromatique • Herbacée • Épicée • Fraîche • Anisée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml • 30 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -215,7 +223,11 @@ L''aneth est cultivé depuis plus de 5 000 ans. Les Égyptiens, les Grecs et les
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Huile Essentielle d''Aneth Bio est une huile essentielle particulièrement intéressante pour les synergies dédiées au confort digestif et au bien-être après les repas. Son parfum aromatique, frais et légèrement anisé s''associe harmonieusement aux huiles essentielles d''épices et d''agrumes.
-Chez PUR''ESSENCE, nous la recommandons pour les personnes recherchant une approche naturelle favorisant le confort digestif tout en profitant d''une expérience aromatique douce et agréable.','/images/produits/aneth.webp',false,true,20),
+Chez PUR''ESSENCE, nous la recommandons pour les personnes recherchant une approche naturelle favorisant le confort digestif tout en profitant d''une expérience aromatique douce et agréable.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos besoins en santé, bien-être et beauté.
+Contactez l''équipe PUR''ESSENCE et découvrez les qualités de l''Huile Essentielle d''Aneth Bio, une essence aromatique française alliant tradition, fraîcheur et bien-être digestif.','/images/produits/aneth.webp',false,true,20),
 ('anis-etoile','Anis Étoilé','Originaire de Chine, berceau historique de cette épice emblématique, l''Huile Essentielle d''Anis Étoilé Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau…','Originaire de Chine, berceau historique de cette épice emblématique, l''Huile Essentielle d''Anis Étoilé Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des fruits séchés de Illicium verum. Son parfum intensément anisé, chaud et légèrement sucré en fait une huile essentielle très appréciée aussi bien en aromathérapie qu''en diffusion. Traditionnellement utilisée pour accompagner le confort digestif et respiratoire, elle s''intègre également dans les soins de bien-être destinés à favoriser la détente et le confort pendant la saison froide.','huile-essentielle','digestion','Illicium verum','Organic Star Anise Essential Oil','Chine','5 ml • 10 ml • 15 ml • 30 ml',null,'[{"label": "Origine", "value": "Chine"}, {"label": "Partie distillée", "value": "Fruits (étoiles) séchés"}, {"label": "Mode d''obtention", "value": "Distillation complète à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Épicée • Douce • Anisée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml • 30 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
 - Favorise le confort digestif après les repas.
 - Contribue au bien-être des voies respiratoires, notamment en période hivernale.
@@ -285,7 +297,10 @@ L''Anis Étoilé, également appelé Badiane de Chine, est cultivé depuis plus 
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Grâce à son parfum anisé caractéristique et à sa richesse naturelle en trans-anéthole, l''Huile Essentielle d''Anis Étoilé Bio est une alliée de choix pour accompagner le confort digestif et respiratoire tout en créant une atmosphère chaleureuse en diffusion.
-Chez PUR''ESSENCE, nous recommandons de l''utiliser avec modération et toujours dans le respect des précautions d''emploi, en association avec des huiles végétales de qualité pour les applications cutanées.','/images/produits/anis-etoile.webp',false,true,30),
+Chez PUR''ESSENCE, nous recommandons de l''utiliser avec modération et toujours dans le respect des précautions d''emploi, en association avec des huiles végétales de qualité pour les applications cutanées.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos besoins en santé, bien-être et beauté. Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir toute la richesse de l''Huile Essentielle d''Anis Étoilé Bio.','/images/produits/anis-etoile.webp',false,true,30),
 ('arbre-a-the','Arbre à Thé','Originaire d''Australie, l''huile essentielle d''Arbre à thé (Tea Tree) PUR''ESSENCE est l''une des huiles essentielles les plus polyvalentes en aromathérapie.','Originaire d''Australie, l''huile essentielle d''Arbre à thé (Tea Tree) PUR''ESSENCE est l''une des huiles essentielles les plus polyvalentes en aromathérapie. Reconnue pour ses propriétés purifiantes, elle est particulièrement appréciée pour les soins de la peau, l''hygiène du quotidien et le soutien des défenses naturelles.
 
 Véritable indispensable de la trousse familiale, elle accompagne de nombreuses situations du quotidien lorsqu''elle est utilisée de manière appropriée.','huile-essentielle','sante','Melaleuca alternifolia','Tea Tree Essential Oil (organic)','Australie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Australie"}, {"label": "Partie distillée", "value": "Feuilles"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Fraîche • Herbacée • Médicinale"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -354,7 +369,11 @@ L''huile essentielle d''Arbre à thé est l''une des huiles essentielles les plu
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle d''Arbre à thé est souvent considérée comme un incontournable de l''aromathérapie familiale. Sa polyvalence lui permet d''intervenir dans de nombreuses situations du quotidien, notamment pour les soins de la peau, les périodes hivernales et l''hygiène naturelle. Bien associée à une huile végétale ou à d''autres huiles essentielles, elle offre des possibilités très intéressantes.
-Nos experts PUR''ESSENCE sont à votre disposition pour vous aider à choisir les associations les mieux adaptées à vos besoins.',null,false,true,40),
+Nos experts PUR''ESSENCE sont à votre disposition pour vous aider à choisir les associations les mieux adaptées à vos besoins.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne est unique. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être ou de beauté.
+Contactez-nous pour bénéficier de conseils personnalisés et profiter pleinement des bienfaits de l''aromathérapie en toute sécurité.',null,false,true,40),
 ('basilic-tropical','Basilic Tropical','Originaire d''Égypte, l''huile essentielle de Basilic tropical PUR''ESSENCE est particulièrement appréciée pour son action sur le confort digestif, le bien-être nerveux…','Originaire d''Égypte, l''huile essentielle de Basilic tropical PUR''ESSENCE est particulièrement appréciée pour son action sur le confort digestif, le bien-être nerveux et le confort musculaire. Son parfum chaud, épicé et légèrement anisé en fait une huile essentielle de choix pour accompagner les personnes soumises au stress, aux tensions ou aux inconforts digestifs. Polyvalente, elle s''intègre parfaitement dans une approche globale de santé naturelle.','huile-essentielle','sante','Ocimum basilicum ct. méthylchavicol','Tropical Basil Essential Oil','Égypte','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Égypte"}, {"label": "Partie distillée", "value": "Parties aériennes fleuries"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Aromatique • Épicée • Anisée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
 - Favorise le confort digestif en cas de digestion difficile, de ballonnements ou de spasmes digestifs.
 - Contribue au confort intestinal.
@@ -418,7 +437,11 @@ Le basilic est considéré depuis l''Antiquité comme une plante aromatique pré
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Basilic tropical est l''une des meilleures alliées du confort digestif et de la gestion des tensions nerveuses. Elle révèle tout son potentiel lorsqu''elle est intégrée à une synergie personnalisée avec d''autres huiles essentielles et une huile végétale adaptée.
-Nos experts PUR''ESSENCE sont à votre disposition pour vous accompagner dans le choix des associations les plus appropriées.',null,false,true,50),
+Nos experts PUR''ESSENCE sont à votre disposition pour vous accompagner dans le choix des associations les plus appropriées.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne est unique. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être ou de beauté.
+Contactez notre équipe et bénéficiez de conseils personnalisés pour profiter pleinement des bienfaits de l''aromathérapie en toute sécurité.','/images/produits/basilic-tropical.webp',false,true,50),
 ('benjoin-styrax','Benjoin Styrax','Originaire d''Indonésie, le Benjoin Styrax est un arbre dont l''oléorésine aromatique est récoltée traditionnellement par incision de l''écorce.','Originaire d''Indonésie, le Benjoin Styrax est un arbre dont l''oléorésine aromatique est récoltée traditionnellement par incision de l''écorce. L''Huile Essentielle de Benjoin Styrax Bio PUR''ESSENCE se distingue par son parfum doux, balsamique et délicatement vanillé.
 
 Très appréciée en aromathérapie, en cosmétique et en parfumerie naturelle, elle est recherchée pour ses qualités réconfortantes et son exceptionnelle richesse olfactive.','huile-essentielle','relaxation','Styrax benzoin','Benzoin Styrax Essential Oil','Indonésie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Indonésie"}, {"label": "Partie utilisée", "value": "Oléorésine"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau de l''oléorésine de benjoin."}, {"label": "Famille olfactive", "value": "Balsamique • Vanillée • Douce • Ambrée • Chaleureuse"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -491,7 +514,11 @@ Depuis des siècles, le benjoin d''Indonésie est utilisé dans les traditions a
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Huile Essentielle de Benjoin Styrax Bio est une véritable invitation au réconfort. Son parfum balsamique et délicatement vanillé en fait une référence incontournable pour les soins de la peau, les massages relaxants et la parfumerie naturelle.
-Chez PUR''ESSENCE, nous la recommandons particulièrement pour créer des synergies favorisant le bien-être émotionnel, la détente et les soins cosmétiques destinés aux peaux sèches et matures.','/images/produits/benjoin-styrax.webp',false,true,60),
+Chez PUR''ESSENCE, nous la recommandons particulièrement pour créer des synergies favorisant le bien-être émotionnel, la détente et les soins cosmétiques destinés aux peaux sèches et matures.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos besoins en santé, bien-être, beauté et parfumerie naturelle.
+Contactez l''équipe PUR''ESSENCE et découvrez toute la richesse aromatique de l''Huile Essentielle de Benjoin Styrax Bio, une essence précieuse issue de la tradition indonésienne.','/images/produits/benjoin-styrax.webp',false,true,60),
 ('bergamote','Bergamote','Cultivée principalement dans le sud de l''Italie, la Bergamote est un agrume d''exception réputé pour son parfum frais, délicat et raffiné.','Cultivée principalement dans le sud de l''Italie, la Bergamote est un agrume d''exception réputé pour son parfum frais, délicat et raffiné. Son huile essentielle est particulièrement appréciée pour favoriser la détente, accompagner les périodes de stress, soutenir le confort digestif et contribuer à l''équilibre des peaux à imperfections. Son parfum lumineux en fait également une référence incontournable en parfumerie et en aromathérapie.','huile-essentielle','relaxation','Citrus bergamia','Bergamot Essential Oil','Italie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Italie"}, {"label": "Partie distillée", "value": "Zeste du fruit"}, {"label": "Mode d''obtention", "value": "Expression à froid du zeste"}, {"label": "Famille olfactive", "value": "Hespéridée • Fraîche • Fruitée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
 - Favorise le confort digestif en cas de digestion lente, de ballonnements ou de spasmes digestifs.
 - Contribue au bien-être émotionnel lors des périodes de stress, d''anxiété ou de nervosité.
@@ -560,7 +587,11 @@ La Bergamote est principalement cultivée en Calabre, dans le sud de l''Italie, 
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Bergamote PUR''ESSENCE est une alliée précieuse pour les personnes recherchant un meilleur équilibre entre le corps et l''esprit.
-Son parfum frais et réconfortant agit aussi bien sur les émotions que sur le confort digestif et les soins de la peau. Grâce à sa remarquable polyvalence, elle trouve naturellement sa place dans de nombreuses synergies personnalisées proposées par les experts PUR''ESSENCE.',null,false,true,70),
+Son parfum frais et réconfortant agit aussi bien sur les émotions que sur le confort digestif et les soins de la peau. Grâce à sa remarquable polyvalence, elle trouve naturellement sa place dans de nombreuses synergies personnalisées proposées par les experts PUR''ESSENCE.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne est unique et mérite des conseils adaptés. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus appropriées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir tout le potentiel de l''aromathérapie PUR''ESSENCE.',null,false,true,70),
 ('bois-de-ho','Bois de Hô','Originaire des forêts de Taïwan, l''Huile Essentielle de Bois de Hô Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau du bois et des jeunes rameaux de…','Originaire des forêts de Taïwan, l''Huile Essentielle de Bois de Hô Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau du bois et des jeunes rameaux de Cinnamomum camphora chémotype linalol. Très riche en linalol, elle constitue une alternative durable au Bois de Rose.
 
 Son parfum délicatement boisé et floral est apprécié en aromathérapie, en cosmétique naturelle et en parfumerie. Douce et polyvalente, elle s''intègre facilement dans de nombreuses synergies dédiées à la santé, au bien-être et à la beauté.','huile-essentielle','beaute','Cinnamomum camphora ct. linalol','Ho Wood Essential Oil','Taïwan','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Taïwan"}, {"label": "Partie distillée", "value": "Bois et rameaux"}, {"label": "Mode d''obtention", "value": "Distillation complète à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Boisée • Florale • Douce • Fraîche • Légèrement épicée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -635,7 +666,11 @@ Le Bois de Hô est aujourd''hui largement privilégié comme alternative écolog
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Grâce à sa richesse naturelle en linalol, l''Huile Essentielle de Bois de Hô Bio est l''une des huiles essentielles les plus polyvalentes en aromathérapie.
 Elle s''intègre facilement dans les synergies destinées au confort cutané, à la détente émotionnelle, au soutien des défenses naturelles et aux soins cosmétiques.
-Chez PUR''ESSENCE, nous la recommandons comme une huile essentielle de référence pour toute personne recherchant une essence douce, élégante et respectueuse des ressources naturelles.','/images/produits/bois-de-ho.webp',false,true,80),
+Chez PUR''ESSENCE, nous la recommandons comme une huile essentielle de référence pour toute personne recherchant une essence douce, élégante et respectueuse des ressources naturelles.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos besoins en santé, bien-être et beauté.
+Contactez l''équipe PUR''ESSENCE et découvrez toute la douceur de l''Huile Essentielle de Bois de Hô Bio, une essence précieuse issue des forêts de Taïwan, alliant performance aromatique et engagement pour une aromathérapie durable.','/images/produits/bois-de-ho.webp',false,true,80),
 ('bois-de-rose','Bois de Rose','Originaire de la forêt amazonienne brésilienne, l''Huile Essentielle de Bois de Rose Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau du bois et des…','Originaire de la forêt amazonienne brésilienne, l''Huile Essentielle de Bois de Rose Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau du bois et des rameaux d''Aniba rosaeodora, provenant de filières responsables.
 
 Très riche en linalol, elle est appréciée pour son parfum délicatement floral et boisé, ainsi que pour sa grande douceur.
@@ -709,7 +744,11 @@ Le Bois de Rose est un arbre emblématique de la forêt amazonienne. En raison d
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Huile Essentielle de Bois de Rose Bio est l''une des huiles les plus douces et les plus élégantes de l''aromathérapie. Sa richesse naturelle en linalol en fait une alliée précieuse pour accompagner le bien-être émotionnel, les soins des peaux délicates et les préparations cosmétiques de haute qualité.
-Chez PUR''ESSENCE, nous la recommandons aussi bien pour les soins du visage que pour les synergies favorisant la détente, tout en privilégiant des approvisionnements respectueux de la biodiversité amazonienne.','/images/produits/bois-de-rose.webp',false,true,90),
+Chez PUR''ESSENCE, nous la recommandons aussi bien pour les soins du visage que pour les synergies favorisant la détente, tout en privilégiant des approvisionnements respectueux de la biodiversité amazonienne.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos objectifs de santé, de bien-être et de beauté.
+Contactez l''équipe PUR''ESSENCE et découvrez toute la finesse aromatique de l''Huile Essentielle de Bois de Rose Bio, un joyau végétal issu des forêts du Brésil.','/images/produits/bois-de-rose.webp',false,true,90),
 ('bois-de-santal-rouge','Bois de Santal Rouge','Originaire des forêts du sud de l''Inde, l''huile essentielle de Bois de Santal Rouge Bio PUR''ESSENCE est appréciée pour son parfum boisé, profond et raffiné.','Originaire des forêts du sud de l''Inde, l''huile essentielle de Bois de Santal Rouge Bio PUR''ESSENCE est appréciée pour son parfum boisé, profond et raffiné. Symbole de noblesse et de sérénité dans les traditions asiatiques, elle est utilisée depuis des siècles dans les pratiques de méditation, les soins de beauté et les préparations aromatiques.
 
 Son arôme chaleureux favorise une atmosphère propice à la relaxation, tandis que son utilisation dans les soins cosmétiques contribue à préserver la beauté naturelle de la peau.','huile-essentielle','relaxation','Pterocarpus santalinus','Red Sandalwood Essential Oil','Inde','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Inde"}, {"label": "Partie utilisée", "value": "Bois de cœur"}, {"label": "Mode d''obtention", "value": "Distillation du bois"}, {"label": "Famille olfactive", "value": "Boisée • Chaleureuse • Douce • Balsamique"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -781,7 +820,11 @@ Le Bois de Santal Rouge est considéré comme un bois précieux en Inde, où il 
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le Bois de Santal Rouge Bio PUR''ESSENCE séduit par son parfum boisé, chaleureux et profondément apaisant.
-Il constitue un excellent choix pour créer des rituels de relaxation, accompagner les soins de beauté et favoriser le bien-être émotionnel. Associé à l''Oliban, à la Myrrhe, à la Rose de Damas ou à l''Ylang-Ylang, il permet de composer des synergies raffinées offrant une expérience sensorielle unique.','/images/produits/bois-de-santal-rouge.webp',false,true,100),
+Il constitue un excellent choix pour créer des rituels de relaxation, accompagner les soins de beauté et favoriser le bien-être émotionnel. Associé à l''Oliban, à la Myrrhe, à la Rose de Damas ou à l''Ylang-Ylang, il permet de composer des synergies raffinées offrant une expérience sensorielle unique.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne possède des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez l''équipe PUR''ESSENCE pour découvrir toute la richesse de l''huile essentielle de Bois de Santal Rouge Bio et bénéficier de conseils personnalisés pour votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/bois-de-santal-rouge.webp',false,true,100),
 ('cajeput','Cajeput','Originaire d''Indonésie, l''huile essentielle de Cajeput Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles et des jeunes rameaux de Melaleuca…','Originaire d''Indonésie, l''huile essentielle de Cajeput Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles et des jeunes rameaux de Melaleuca cajuputi, cultivé selon les principes de l''agriculture biologique. Son parfum frais, camphré et légèrement eucalypté procure une agréable sensation de pureté et de vitalité.
 
 Très appréciée en aromathérapie, elle accompagne le confort respiratoire, favorise le bien-être musculaire et articulaire, soutient les défenses naturelles et contribue à purifier naturellement l''atmosphère.','huile-essentielle','sante','Melaleuca cajuputi','Cajeput Essential Oil','Indonésie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Indonésie"}, {"label": "Partie distillée", "value": "Feuilles et jeunes rameaux"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Fraîche • Camphrée • Eucalyptusée • Aromatique"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -872,7 +915,11 @@ Le nom « Cajeput » provient du malais kayu putih, qui signifie « bois blanc �
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Cajeput Bio est une alliée incontournable pour accompagner le confort respiratoire, soutenir les défenses naturelles et favoriser le bien-être musculaire. Sa richesse naturelle en 1,8-cinéole et en monoterpènes lui confère un parfum frais et revitalisant particulièrement apprécié pendant les périodes hivernales et après un effort physique.
-Chez PUR''ESSENCE, nous la recommandons volontiers en synergie avec le Ravintsara, le Niaouli, l''Eucalyptus Globulus ou le Pin Sylvestre afin de créer des préparations naturelles haut de gamme adaptées au bien-être de toute la famille, dans le respect des précautions d''emploi.','/images/produits/cajeput.webp',false,true,110),
+Chez PUR''ESSENCE, nous la recommandons volontiers en synergie avec le Ravintsara, le Niaouli, l''Eucalyptus Globulus ou le Pin Sylvestre afin de créer des préparations naturelles haut de gamme adaptées au bien-être de toute la famille, dans le respect des précautions d''emploi.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Cajeput Bio dans votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/cajeput.webp',false,true,110),
 ('camomille-romaine','Camomille Romaine','Cultivée en France selon les principes de l''agriculture biologique, l''huile essentielle de Camomille Romaine Bio PUR''ESSENCE est obtenue par distillation à la vapeur…','Cultivée en France selon les principes de l''agriculture biologique, l''huile essentielle de Camomille Romaine Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités fleuries de Chamaemelum nobile. Son parfum doux, délicatement fruité et herbacé est particulièrement apprécié pour créer une atmosphère de calme et de sérénité. Reconnue comme l''une des huiles essentielles les plus douces en aromathérapie, elle accompagne le bien-être émotionnel, favorise la relaxation et contribue au confort des peaux sensibles.','huile-essentielle','relaxation','Chamaemelum nobile','Roman Chamomile Essential Oil','France','2 ml • 5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Sommités fleuries"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Florale • Herbacée • Douce • Fruité"}, {"label": "Conditionnements disponibles", "value": "2 ml • 5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
 - Contribue à favoriser la détente du corps et de l''esprit.
 - Accompagne les périodes de stress, de nervosité et de tension.
@@ -942,7 +989,11 @@ La Camomille Romaine est cultivée en Europe depuis l''Antiquité. Son nom vient
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Camomille Romaine Bio est une référence incontournable pour favoriser la relaxation et accompagner les périodes de stress. Sa grande douceur en fait également un excellent choix pour les soins destinés aux peaux sensibles.
-Chez PUR''ESSENCE, nous la recommandons en association avec la Lavande Vraie, le Petit Grain Bigarade ou la Mandarine Rouge afin de créer des synergies harmonieuses dédiées au bien-être, au sommeil et à l''équilibre émotionnel.','/images/produits/camomille-romaine.webp',true,true,120),
+Chez PUR''ESSENCE, nous la recommandons en association avec la Lavande Vraie, le Petit Grain Bigarade ou la Mandarine Rouge afin de créer des synergies harmonieuses dédiées au bien-être, au sommeil et à l''équilibre émotionnel.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne possède des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez l''équipe PUR''ESSENCE pour découvrir toute la douceur de l''huile essentielle de Camomille Romaine Bio et bénéficier de conseils personnalisés pour votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/camomille-romaine.webp',true,true,120),
 ('camphre','Camphre','Originaire de Taïwan, l''huile essentielle de Camphre PUR''ESSENCE est reconnue pour son effet tonifiant et rafraîchissant.','Originaire de Taïwan, l''huile essentielle de Camphre PUR''ESSENCE est reconnue pour son effet tonifiant et rafraîchissant.
 
 Traditionnellement utilisée en aromathérapie, elle est particulièrement appréciée pour accompagner le confort musculaire, articulaire et circulatoire. Elle est également recherchée par les sportifs avant ou après un effort physique et lors des massages destinés à soulager les sensations d''inconfort.','huile-essentielle','sante','Cinnamomum camphora','Camphor Essential Oil','Taïwan','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Taïwan"}, {"label": "Partie distillée", "value": "Bois"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Boisée • Fraîche • Camphrée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1013,7 +1064,11 @@ Le camphrier (Cinnamomum camphora) est un arbre majestueux pouvant vivre plusieu
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Camphre PUR''ESSENCE est un excellent choix pour les personnes actives, les sportifs et toute personne souhaitant retrouver un meilleur confort musculaire ou articulaire.
 Grâce à son effet tonifiant et rafraîchissant, elle s''intègre parfaitement dans des synergies ciblées pour la récupération physique et le bien-être locomoteur.
-Les experts PUR''ESSENCE peuvent vous aider à élaborer une formule personnalisée selon vos besoins.',null,false,true,130),
+Les experts PUR''ESSENCE peuvent vous aider à élaborer une formule personnalisée selon vos besoins.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne est unique. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être ou de beauté.
+Contactez notre équipe et profitez de conseils personnalisés pour intégrer l''huile essentielle de Camphre dans votre routine de santé naturelle, en toute sécurité.',null,false,true,130),
 ('cannelle','Cannelle','Originaire du Sri Lanka, l''huile essentielle de Cannelle PUR''ESSENCE est l''une des huiles essentielles les plus précieuses et les plus puissantes en aromathérapie.','Originaire du Sri Lanka, l''huile essentielle de Cannelle PUR''ESSENCE est l''une des huiles essentielles les plus précieuses et les plus puissantes en aromathérapie. Réputée pour ses remarquables propriétés purifiantes et tonifiantes, elle est traditionnellement utilisée pour soutenir les défenses naturelles, accompagner le confort digestif et favoriser la vitalité. Son utilisation nécessite toutefois une grande prudence en raison de sa forte concentration en composés aromatiques.','huile-essentielle','energie','Cinnamomum verum','Cinnamon Bark Essential Oil','Sri Lanka','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Sri Lanka"}, {"label": "Partie distillée", "value": "Écorce"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Épicée • Chaude • Boisée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
 - Contribue au soutien des défenses naturelles de l''organisme.
 - Accompagne le confort digestif en cas de digestion difficile, de ballonnements ou de fermentation intestinale.
@@ -1081,7 +1136,11 @@ La véritable cannelle de Ceylan (Cinnamomum verum), originaire du Sri Lanka, es
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Cannelle PUR''ESSENCE est une véritable référence pour soutenir les défenses naturelles, le confort digestif et la vitalité.
-En raison de sa très grande puissance, elle doit toujours être utilisée avec discernement et dans des synergies soigneusement élaborées. Bien dosée et correctement associée, elle offre un potentiel remarquable dans une approche globale de santé naturelle.',null,false,true,140),
+En raison de sa très grande puissance, elle doit toujours être utilisée avec discernement et dans des synergies soigneusement élaborées. Bien dosée et correctement associée, elle offre un potentiel remarquable dans une approche globale de santé naturelle.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne est unique et chaque objectif nécessite une approche adaptée. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus appropriées à vos besoins de santé, de bien-être et de beauté.
+Contactez notre équipe et bénéficiez de conseils personnalisés pour utiliser l''huile essentielle de Cannelle en toute sécurité et profiter pleinement de ses remarquables propriétés.','/images/produits/cannelle.webp',false,true,140),
 ('carotte','Carotte','Originaire de France, l''huile essentielle de Carotte PUR''ESSENCE est une huile précieuse, réputée pour ses propriétés régénérantes et revitalisantes.','Originaire de France, l''huile essentielle de Carotte PUR''ESSENCE est une huile précieuse, réputée pour ses propriétés régénérantes et revitalisantes.
 
 Très appréciée en aromathérapie et en cosmétique naturelle, elle accompagne les soins des peaux matures, ternes ou fatiguées et soutient les fonctions naturelles de détoxification de l''organisme, notamment celles du foie. Son action douce en fait une alliée de choix pour préserver l''éclat de la peau et le bien-être général.','huile-essentielle','beaute','Daucus carota','Carrot Seed Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Graines"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Terreuse • Herbacée • Légèrement boisée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1151,7 +1210,11 @@ Contrairement à ce que son nom pourrait laisser penser, l''huile essentielle de
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Carotte PUR''ESSENCE est une alliée incontournable des soins de la peau et des programmes de bien-être. Son intérêt réside dans sa capacité à accompagner naturellement la régénération cutanée tout en soutenant les fonctions physiologiques de détoxification.
-En synergie avec les huiles végétales et d''autres huiles essentielles PUR''ESSENCE, elle permet de créer des soins personnalisés, adaptés aux besoins de chaque personne.',null,false,true,150),
+En synergie avec les huiles végétales et d''autres huiles essentielles PUR''ESSENCE, elle permet de créer des soins personnalisés, adaptés aux besoins de chaque personne.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque peau et chaque organisme ont des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''aromathérapie PUR''ESSENCE.','/images/produits/carotte.webp',false,true,150),
 ('ciste-ladanifere','Ciste Ladanifère','Originaire d''Espagne, l''huile essentielle de Ciste Ladanifère Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des rameaux feuillés et des jeunes…','Originaire d''Espagne, l''huile essentielle de Ciste Ladanifère Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des rameaux feuillés et des jeunes brindilles de Cistus ladanifer, cultivé selon les principes de l''agriculture biologique. Son parfum profond, résineux, ambré et légèrement balsamique évoque les paysages méditerranéens baignés de soleil.
 
 Très appréciée en aromathérapie, cette huile essentielle est reconnue pour accompagner la régénération de la peau, favoriser le bien-être circulatoire et soutenir l''équilibre émotionnel. Sa rareté et sa richesse aromatique en font une huile d''exception, particulièrement recherchée dans les soins cutanés haut de gamme.','huile-essentielle','beaute','Cistus ladanifer','Rock Rose Essential Oil','Espagne','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Espagne"}, {"label": "Partie distillée", "value": "Rameaux feuillés et jeunes brindilles"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Résineuse • Ambrée • Herbacée • Balsamique"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1243,7 +1306,11 @@ Le Ciste ladanifère est un arbrisseau emblématique du bassin méditerranéen. 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Ciste Ladanifère Bio est une huile rare et précieuse, particulièrement appréciée pour les soins cutanés haut de gamme et l''accompagnement du bien-être émotionnel.
 Chez PUR''ESSENCE, nous la recommandons volontiers dans les synergies destinées aux peaux matures, aux soins du visage et aux massages favorisant le confort circulatoire.
-Son parfum résineux, élégant et profondément méditerranéen s''associe harmonieusement à la Rose de Damas, à l''Hélichryse Italienne, à l''Oliban et à la Myrrhe pour créer des préparations naturelles d''une grande richesse aromatique.','/images/produits/ciste-ladanifere.webp',false,true,160),
+Son parfum résineux, élégant et profondément méditerranéen s''associe harmonieusement à la Rose de Damas, à l''Hélichryse Italienne, à l''Oliban et à la Myrrhe pour créer des préparations naturelles d''une grande richesse aromatique.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir toute la richesse de l''huile essentielle de Ciste Ladanifère Bio dans votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/ciste-ladanifere.webp',false,true,160),
 ('citron','Citron','Originaire d''Italie, l''huile essentielle de Citron PUR''ESSENCE est obtenue par expression à froid des zestes de fruits soigneusement sélectionnés.','Originaire d''Italie, l''huile essentielle de Citron PUR''ESSENCE est obtenue par expression à froid des zestes de fruits soigneusement sélectionnés.
 
 Appréciée pour son parfum frais, tonique et vivifiant, elle est une référence incontournable en aromathérapie. Elle est traditionnellement utilisée pour favoriser le confort digestif, soutenir les fonctions naturelles du foie, purifier l''air ambiant et apporter énergie, concentration et bonne humeur.','huile-essentielle','energie','Citrus limon','Lemon Essential Oil','Italie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Italie"}, {"label": "Partie utilisée", "value": "Zeste du fruit"}, {"label": "Mode d''obtention", "value": "Expression à froid du zeste"}, {"label": "Famille olfactive", "value": "Hespéridée • Fraîche • Citronnée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1330,7 +1397,11 @@ Le citronnier est cultivé depuis des siècles dans les régions méditerranéen
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Citron PUR''ESSENCE est un incontournable de l''aromathérapie familiale. Sa grande polyvalence en fait une alliée précieuse pour le confort digestif, le soutien des fonctions hépatiques, la purification de l''air et les soins de la peau.
-Correctement utilisée et intégrée dans des synergies personnalisées, elle apporte une réponse naturelle à de nombreux besoins quotidiens tout en diffusant une agréable sensation de fraîcheur et de vitalité.',null,false,true,170),
+Correctement utilisée et intégrée dans des synergies personnalisées, elle apporte une réponse naturelle à de nombreux besoins quotidiens tout en diffusant une agréable sensation de fraîcheur et de vitalité.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne possède des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir toutes les possibilités offertes par l''aromathérapie PUR''ESSENCE.',null,false,true,170),
 ('citronnelle','Citronnelle','Originaire d''Indonésie, l''huile essentielle de Citronnelle PUR''ESSENCE est reconnue dans le monde entier pour son parfum frais et citronné ainsi que pour son…','Originaire d''Indonésie, l''huile essentielle de Citronnelle PUR''ESSENCE est reconnue dans le monde entier pour son parfum frais et citronné ainsi que pour son remarquable pouvoir répulsif contre les moustiques et autres insectes.
 
 En aromathérapie, elle est également appréciée pour favoriser le confort musculaire et articulaire, purifier l''air ambiant et contribuer à une atmosphère saine et agréable.','huile-essentielle','sante','Cymbopogon winterianus','Citronella Essential Oil','Indonésie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Indonésie"}, {"label": "Partie distillée", "value": "Parties aériennes (feuilles)"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Citronnée • Herbacée • Fraîche"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1416,7 +1487,11 @@ La Citronnelle est cultivée depuis des siècles dans les régions tropicales d'
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Citronnelle PUR''ESSENCE est bien plus qu''un simple répulsif naturel contre les moustiques. Grâce à ses propriétés purifiantes, tonifiantes et apaisantes, elle constitue une alliée précieuse pour le confort musculaire, le bien-être articulaire et l''assainissement de l''environnement.
-Intégrée dans une synergie adaptée, elle offre une solution naturelle, efficace et polyvalente pour toute la famille.',null,false,true,180),
+Intégrée dans une synergie adaptée, elle offre une solution naturelle, efficace et polyvalente pour toute la famille.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque besoin est unique. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe et découvrez des solutions naturelles personnalisées pour protéger votre famille, prendre soin de votre corps et profiter pleinement des bienfaits de l''aromathérapie PUR''ESSENCE.','/images/produits/citronnelle.webp',false,true,180),
 ('clou-de-girofle','Clou de Girofle','Originaire de Madagascar, l''huile essentielle de Clou de Girofle PUR''ESSENCE est obtenue par distillation des boutons floraux séchés du giroflier.','Originaire de Madagascar, l''huile essentielle de Clou de Girofle PUR''ESSENCE est obtenue par distillation des boutons floraux séchés du giroflier. Très riche en eugénol, elle est considérée comme l''une des huiles essentielles les plus puissantes en aromathérapie.
 
 Elle est traditionnellement utilisée pour soutenir les défenses naturelles, favoriser le confort bucco-dentaire, accompagner le bien-être digestif et contribuer à la vitalité de l''organisme.','huile-essentielle','energie','Syzygium aromaticum','Clove Bud Essential Oil','Madagascar','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Madagascar"}, {"label": "Partie distillée", "value": "Boutons floraux (clous)"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Épicée • Chaude • Boisée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1502,7 +1577,11 @@ Le giroflier est un arbre tropical originaire des îles Moluques, aujourd''hui l
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Clou de Girofle PUR''ESSENCE est une véritable référence pour soutenir les défenses naturelles, le confort bucco-dentaire et la vitalité.
-Sa richesse en eugénol lui confère une puissance exceptionnelle qui impose une utilisation prudente et toujours bien dosée. Intégrée dans des synergies adaptées, elle offre un potentiel remarquable pour accompagner naturellement de nombreux besoins de santé et de bien-être.',null,false,true,190),
+Sa richesse en eugénol lui confère une puissance exceptionnelle qui impose une utilisation prudente et toujours bien dosée. Intégrée dans des synergies adaptées, elle offre un potentiel remarquable pour accompagner naturellement de nombreux besoins de santé et de bien-être.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne est unique et mérite des conseils adaptés. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus appropriées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe et bénéficiez d''un accompagnement personnalisé pour utiliser l''huile essentielle de Clou de Girofle en toute sécurité et profiter pleinement de ses remarquables propriétés.','/images/produits/clou-de-girofle.webp',false,true,190),
 ('curcuma','Curcuma','Originaire du Sri Lanka, l''huile essentielle de Curcuma PUR''ESSENCE est obtenue par distillation du rhizome de Curcuma longa, une plante emblématique de la médecine…','Originaire du Sri Lanka, l''huile essentielle de Curcuma PUR''ESSENCE est obtenue par distillation du rhizome de Curcuma longa, une plante emblématique de la médecine traditionnelle asiatique.
 
 Reconnue pour ses propriétés digestives, hépatiques, articulaires et antioxydantes, elle est particulièrement appréciée pour favoriser le bien-être général, soutenir les mécanismes naturels de détoxification et accompagner le confort des articulations.','huile-essentielle','sante','Curcuma longa','Turmeric Essential Oil','Sri Lanka','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Sri Lanka"}, {"label": "Partie distillée", "value": "Rhizome"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Épicée • Terreuse • Chaude"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1587,7 +1666,11 @@ Le curcuma est utilisé depuis plus de 4 000 ans dans les médecines traditionne
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Curcuma PUR''ESSENCE est une alliée précieuse pour accompagner le confort digestif, le bien-être hépatique et le maintien de la mobilité articulaire.
-Grâce à sa richesse en composés aromatiques aux propriétés antioxydantes, elle s''intègre parfaitement dans une approche préventive de la santé. En synergie avec d''autres huiles essentielles et des huiles végétales PUR''ESSENCE, elle permet de créer des formules personnalisées répondant aux besoins de chacun.',null,false,true,200),
+Grâce à sa richesse en composés aromatiques aux propriétés antioxydantes, elle s''intègre parfaitement dans une approche préventive de la santé. En synergie avec d''autres huiles essentielles et des huiles végétales PUR''ESSENCE, elle permet de créer des formules personnalisées répondant aux besoins de chacun.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne possède des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir tout le potentiel de l''huile essentielle de Curcuma dans votre démarche de santé naturelle.','/images/produits/curcuma.webp',false,true,200),
 ('cypres','Cyprès','Originaire d''Italie, l''huile essentielle de Cyprès PUR''ESSENCE est obtenue par distillation des rameaux feuillés et des cônes du Cupressus sempervirens.','Originaire d''Italie, l''huile essentielle de Cyprès PUR''ESSENCE est obtenue par distillation des rameaux feuillés et des cônes du Cupressus sempervirens.
 
 Reconnue pour ses propriétés circulatoires, décongestionnantes et équilibrantes, elle est particulièrement appréciée pour favoriser le confort veineux, accompagner les jambes lourdes, soutenir le drainage lymphatique et contribuer au bien-être respiratoire. Son parfum boisé et résineux procure également une agréable sensation de calme et de stabilité.','huile-essentielle','sante','Cupressus sempervirens','Cypress Essential Oil','Italie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Italie"}, {"label": "Partie distillée", "value": "Rameaux feuillés et cônes"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Boisée • Résineuse • Fraîche"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1672,7 +1755,11 @@ Le Cyprès toujours vert est un arbre emblématique des paysages méditerranéen
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Cyprès toujours vert PUR''ESSENCE est une référence pour accompagner le confort veineux, le drainage lymphatique et le bien-être respiratoire. Son action tonique sur la circulation et ses propriétés équilibrantes en font une alliée précieuse aussi bien dans les programmes minceur que dans les soins des jambes lourdes.
-En synergie avec des huiles végétales et d''autres huiles essentielles PUR''ESSENCE, elle offre une réponse naturelle et personnalisée à de nombreux besoins.',null,false,true,210),
+En synergie avec des huiles végétales et d''autres huiles essentielles PUR''ESSENCE, elle offre une réponse naturelle et personnalisée à de nombreux besoins.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque organisme est unique et mérite une approche personnalisée. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir les nombreuses possibilités offertes par l''huile essentielle de Cyprès toujours vert.','/images/produits/cypres.webp',false,true,210),
 ('cedre','Cèdre','Originaire des majestueuses montagnes de l''Atlas au Maroc, l''huile essentielle de Cèdre PUR''ESSENCE est réputée pour ses propriétés drainantes, circulatoires et…','Originaire des majestueuses montagnes de l''Atlas au Maroc, l''huile essentielle de Cèdre PUR''ESSENCE est réputée pour ses propriétés drainantes, circulatoires et équilibrantes. Son parfum boisé, profond et réconfortant favorise également l''ancrage et la sérénité.
 
 Très appréciée en aromathérapie et en cosmétique naturelle, elle accompagne les soins des jambes lourdes, les massages minceur ainsi que les soins du cuir chevelu.','huile-essentielle','sante','Cedrus atlantica','Atlas Cedar Essential Oil','Maroc','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Maroc"}, {"label": "Partie distillée", "value": "Bois"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Boisée • Balsamique • Sèche"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1742,7 +1829,90 @@ Le Cèdre de l''Atlas est un arbre emblématique des montagnes marocaines pouvan
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Cèdre PUR''ESSENCE est une référence pour les soins circulatoires, les massages drainants et le bien-être capillaire.
-Elle révèle tout son potentiel lorsqu''elle est intégrée dans une synergie personnalisée associant des huiles essentielles complémentaires et une huile végétale adaptée. Son parfum boisé apporte également une dimension apaisante qui favorise l''équilibre émotionnel.',null,false,true,220),
+Elle révèle tout son potentiel lorsqu''elle est intégrée dans une synergie personnalisée associant des huiles essentielles complémentaires et une huile végétale adaptée. Son parfum boisé apporte également une dimension apaisante qui favorise l''équilibre émotionnel.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne est unique et mérite des conseils adaptés. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe et découvrez des solutions naturelles personnalisées pour prendre soin de votre circulation, de votre silhouette, de vos cheveux et de votre bien-être au quotidien.','/images/produits/cedre.webp',false,true,220),
+('celeri-huile-essentielle','Céleri (huile essentielle)','Cultivée en France selon les principes de l''agriculture biologique, l''Huile Essentielle de Céleri Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des…','Cultivée en France selon les principes de l''agriculture biologique, l''Huile Essentielle de Céleri Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des graines de Apium graveolens. Son parfum végétal, chaud et légèrement épicé en fait une huile essentielle particulièrement appréciée en aromathérapie.
+
+Traditionnellement utilisée dans les synergies destinées au confort digestif, au bien-être hépatique et à la détente générale, elle est également recherchée pour son caractère aromatique original.','huile-essentielle','digestion','Apium graveolens','Celery Seed Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Graines (fruits)"}, {"label": "Mode d''obtention", "value": "Distillation complète à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Herbacée • Épicée • Verte • Chaude • Aromatique"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
+- Favorise le confort digestif après les repas.
+- Contribue au bon fonctionnement des fonctions naturelles de détoxification de l''organisme.
+- Participe au bien-être hépatique.
+- Accompagne le confort articulaire et musculaire lors des massages.
+- Favorise une agréable sensation de légèreté.
+
+## 🌿 Bienfaits pour le bien-être
+- Procure une sensation de détente et d''équilibre.
+- Favorise le bien-être après les excès alimentaires.
+- Contribue à retrouver une agréable sensation de vitalité.
+- Diffuse une fragrance végétale chaude et réconfortante.
+
+## ✨ Bienfaits pour la beauté
+- Entre dans certaines préparations cosmétiques naturelles.
+- Apporte une note végétale originale aux soins aromatiques.
+- Contribue à parfumer les huiles de massage.
+- S''intègre harmonieusement aux préparations bien-être.
+
+## 🌿 Les huiles végétales PUR''ESSENCE recommandées
+Pour une utilisation cutanée, associez l''Huile Essentielle de Céleri Bio avec :
+- Huile végétale de Jojoba : idéale pour tous les types de peau.
+- Huile végétale de Pépins de Raisin : légère et pénétrante.
+- Huile végétale de Macadamia : parfaite pour les massages.
+- Huile végétale d''Amande Douce : apporte douceur et confort.
+- Huile végétale de Kukui : adaptée aux massages ciblés.
+
+## 🤝 Les synergies PUR''ESSENCE
+
+### 🌿 Bien-être hépatique et digestif
+Céleri + Citron + Romarin à Verbénone
+
+### 🍃 Après un repas copieux
+Céleri + Gingembre + Cardamome
+
+### 💆 Confort articulaire
+Céleri + Genévrier + Eucalyptus Citronné
+
+### 😌 Relaxation
+Céleri + Lavande Vraie + Petit Grain Bigarade
+
+## 💡 PUR''ESSENCE vous conseille
+- Toujours diluer cette huile essentielle dans une huile végétale avant toute application cutanée.
+- Elle s''associe parfaitement aux huiles essentielles de Citron, Romarin à Verbénone, Genévrier et Gingembre.
+- Son parfum aromatique apporte une note végétale originale aux huiles de massage et aux préparations aromatiques.
+
+## Conseils d''utilisation
+À utiliser en massage après dilution, en diffusion ou dans les préparations aromatiques adaptées. Respecter les dosages recommandés et effectuer un test cutané avant toute première utilisation.
+
+## Précautions d''emploi
+- Usage externe uniquement.
+- Toujours diluer avant application cutanée.
+- Effectuer un test cutané préalable.
+- Éviter toute exposition au soleil ou aux rayons UV pendant 6 à 8 heures après une application cutanée, en raison d''un risque de photosensibilisation lié à certains constituants.
+- Déconseillée chez la femme enceinte ou allaitante sans avis d''un professionnel de santé.
+- Déconseillée chez les jeunes enfants.
+- Éviter le contact avec les yeux et les muqueuses.
+- Tenir hors de portée des enfants.
+- Conserver à l''abri de la chaleur et de la lumière.
+
+## 🌍 Le saviez-vous ?
+Bien avant d''être cultivé comme légume, le céleri était considéré comme une plante aromatique précieuse dans les civilisations grecque et romaine. Ses graines étaient utilisées pour leur parfum caractéristique et entraient dans diverses préparations traditionnelles.
+
+## ⭐ L''Indice PUR''ESSENCE
+- Polyvalence : ★★★★★
+- Facilité d''utilisation : ★★★★☆
+- Association avec les huiles végétales : ★★★★★
+- Potentiel de synergies : ★★★★★
+- Popularité : ★★★★☆
+
+## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
+L''Huile Essentielle de Céleri Bio est une référence de choix pour élaborer des synergies orientées vers le confort digestif, le bien-être hépatique et les massages de récupération. Son excellente complémentarité avec le Citron, le Romarin à Verbénone et le Genévrier en fait une huile essentielle particulièrement polyvalente.
+Chez PUR''ESSENCE, nous la recommandons aux personnes recherchant une essence aromatique originale, à intégrer avec discernement dans des protocoles de bien-être personnalisés.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos besoins en santé, bien-être et beauté.
+Contactez l''équipe PUR''ESSENCE et découvrez les multiples atouts de l''Huile Essentielle de Céleri Bio, une essence aromatique française alliant tradition botanique, élégance et polyvalence.',null,false,true,225),
 ('eucalyptus-citronne','Eucalyptus Citronné','Originaire d''Australie, l''huile essentielle d''Eucalyptus citronné PUR''ESSENCE est obtenue par distillation des feuilles du Corymbia citriodora.','Originaire d''Australie, l''huile essentielle d''Eucalyptus citronné PUR''ESSENCE est obtenue par distillation des feuilles du Corymbia citriodora.
 
 Très riche en citronellal, elle est reconnue pour ses propriétés apaisantes, particulièrement appréciées en cas d''inconforts musculaires et articulaires. Son parfum frais et citronné en fait également une excellente alliée pour éloigner naturellement les moustiques et créer une atmosphère agréable.','huile-essentielle','sante','Corymbia citriodora (anciennement Eucalyptus citriodora)','Lemon Eucalyptus Essential Oil','Australie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Australie"}, {"label": "Partie distillée", "value": "Feuilles"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Citronnée • Fraîche • Boisée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1828,7 +1998,11 @@ Bien que son nom évoque le citron, l''Eucalyptus citronné n''appartient pas à
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle d''Eucalyptus citronné PUR''ESSENCE est une référence incontournable pour accompagner naturellement le confort articulaire et musculaire. Son exceptionnelle richesse en citronellal lui confère également des propriétés apaisantes et répulsives très recherchées.
-Intégrée dans une synergie adaptée avec des huiles végétales PUR''ESSENCE, elle constitue une alliée précieuse pour les sportifs, les personnes souffrant d''inconforts articulaires et tous ceux qui recherchent une protection naturelle contre les moustiques.',null,false,true,230),
+Intégrée dans une synergie adaptée avec des huiles végétales PUR''ESSENCE, elle constitue une alliée précieuse pour les sportifs, les personnes souffrant d''inconforts articulaires et tous ceux qui recherchent une protection naturelle contre les moustiques.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne a des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle d''Eucalyptus citronné dans votre démarche de santé naturelle.',null,false,true,230),
 ('eucalyptus-globulus','Eucalyptus globulus','Originaire d''Australie, l''huile essentielle d''Eucalyptus globulus PUR''ESSENCE est obtenue par distillation des feuilles du majestueux eucalyptus.','Originaire d''Australie, l''huile essentielle d''Eucalyptus globulus PUR''ESSENCE est obtenue par distillation des feuilles du majestueux eucalyptus. Très riche en 1,8-cinéole (eucalyptol), elle est reconnue comme l''une des huiles essentielles majeures pour le bien-être respiratoire.
 
 Elle est traditionnellement utilisée pour favoriser le dégagement des voies respiratoires, purifier l''air ambiant et accompagner l''organisme pendant les périodes hivernales.','huile-essentielle','sante','Eucalyptus globulus','Eucalyptus Globulus Essential Oil','Australie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Australie"}, {"label": "Partie distillée", "value": "Feuilles"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Fraîche • Camphrée • Boisée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1914,7 +2088,11 @@ L''Eucalyptus globulus peut atteindre plus de 60 mètres de hauteur et figure pa
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle d''Eucalyptus globulus PUR''ESSENCE est un incontournable de l''aromathérapie respiratoire. Grâce à sa richesse en 1,8-cinéole, elle accompagne efficacement le confort des voies respiratoires, l''assainissement de l''air et le soutien des défenses naturelles.
-Utilisée dans des synergies adaptées avec les huiles essentielles PUR''ESSENCE et une huile végétale appropriée, elle devient une alliée précieuse pour toute la famille, tout en respectant les précautions d''emploi.',null,false,true,240),
+Utilisée dans des synergies adaptées avec les huiles essentielles PUR''ESSENCE et une huile végétale appropriée, elle devient une alliée précieuse pour toute la famille, tout en respectant les précautions d''emploi.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir toutes les possibilités offertes par l''huile essentielle d''Eucalyptus globulus dans une approche naturelle de votre santé.','/images/produits/eucalyptus-globulus.webp',false,true,240),
 ('fenouil','Fenouil','L''Huile Essentielle de Fenouil Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des graines de Foeniculum vulgare var.','L''Huile Essentielle de Fenouil Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des graines de Foeniculum vulgare var. dulce, cultivé en France selon les principes de l''agriculture biologique.
 
 Appréciée depuis l''Antiquité pour son parfum anisé caractéristique, cette huile essentielle est traditionnellement utilisée en aromathérapie pour accompagner le confort digestif, le bien-être féminin et la sensation de légèreté après les repas. Son arôme doux et chaleureux en fait également une huile essentielle très appréciée en diffusion et dans les préparations bien-être.','huile-essentielle','digestion','Foeniculum vulgare var. dulce','Fennel Essential Oil','France','5 ml • 10 ml • 15 ml • 30 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Graines (fruits)"}, {"label": "Mode d''obtention", "value": "Distillation complète à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Anisée • Douce • Herbacée • Chaude • Épicée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml • 30 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -1989,7 +2167,11 @@ Le fenouil est cultivé depuis plus de 2 000 ans autour du bassin méditerranée
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Huile Essentielle de Fenouil Bio est une référence incontournable pour les synergies orientées vers le confort digestif et le bien-être féminin. Son parfum anisé, chaleureux et réconfortant s''associe parfaitement aux huiles essentielles digestives comme la Cardamome, le Gingembre, l''Aneth ou le Citron.
-Chez PUR''ESSENCE, nous recommandons son utilisation avec discernement et dans le respect des précautions d''emploi, afin de profiter pleinement de sa richesse aromatique et de sa remarquable polyvalence.','/images/produits/fenouil.webp',false,true,250),
+Chez PUR''ESSENCE, nous recommandons son utilisation avec discernement et dans le respect des précautions d''emploi, afin de profiter pleinement de sa richesse aromatique et de sa remarquable polyvalence.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos besoins en santé, bien-être et beauté.
+Contactez l''équipe PUR''ESSENCE et découvrez toute la richesse aromatique de l''Huile Essentielle de Fenouil Bio, une essence française d''exception alliant tradition botanique, qualité biologique et polyvalence.','/images/produits/fenouil.webp',false,true,250),
 ('gaultherie-couchee','Gaulthérie couchée','Originaire des montagnes du Népal, l''huile essentielle de Gaulthérie PUR''ESSENCE est obtenue par distillation des feuilles après une étape naturelle de fermentation,…','Originaire des montagnes du Népal, l''huile essentielle de Gaulthérie PUR''ESSENCE est obtenue par distillation des feuilles après une étape naturelle de fermentation, indispensable à la formation du salicylate de méthyle, son principal constituant.
 
 Très réputée pour ses propriétés apaisantes, elle constitue l''une des huiles essentielles de référence pour le confort musculaire, articulaire et tendineux. Elle est particulièrement appréciée des sportifs avant et après l''effort.','huile-essentielle','sante','Gaultheria fragrantissima (ou Gaultheria procumbens selon la source botanique)','Wintergreen Essential Oil','Népal','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Népal"}, {"label": "Partie distillée", "value": "Feuilles"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau après fermentation des feuilles"}, {"label": "Famille olfactive", "value": "Fraîche • Camphrée • Balsamique"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -2076,7 +2258,11 @@ La Gaulthérie pousse naturellement dans les régions montagneuses d''Asie, nota
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Gaulthérie PUR''ESSENCE est une alliée incontournable des sportifs et de toutes les personnes souhaitant préserver leur confort musculaire et articulaire
-. Grâce à sa richesse exceptionnelle en salicylate de méthyle, elle procure une sensation de détente rapide et s''intègre parfaitement dans les protocoles de récupération. Son utilisation demande toutefois une grande prudence en raison de sa puissance et de ses contre-indications. Une dilution adaptée et le respect des précautions d''emploi sont indispensables.',null,false,true,260),
+. Grâce à sa richesse exceptionnelle en salicylate de méthyle, elle procure une sensation de détente rapide et s''intègre parfaitement dans les protocoles de récupération. Son utilisation demande toutefois une grande prudence en raison de sa puissance et de ses contre-indications. Une dilution adaptée et le respect des précautions d''emploi sont indispensables.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque besoin est unique. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir comment intégrer l''huile essentielle de Gaulthérie dans vos programmes de récupération sportive, de confort musculaire et de bien-être articulaire en toute sécurité.','/images/produits/gaultherie-couchee.webp',false,true,260),
 ('genevrier','Genévrier','Originaire des montagnes de Macédoine, l''huile essentielle de Genévrier PUR''ESSENCE est obtenue par distillation des baies du Juniperus communis.','Originaire des montagnes de Macédoine, l''huile essentielle de Genévrier PUR''ESSENCE est obtenue par distillation des baies du Juniperus communis.
 
 Utilisée depuis l''Antiquité pour ses vertus purifiantes, elle est aujourd''hui reconnue en aromathérapie pour favoriser le drainage naturel de l''organisme, soutenir le confort articulaire, accompagner la circulation et contribuer au bien-être général. Son parfum boisé et résineux procure une agréable sensation de fraîcheur et de vitalité.','huile-essentielle','sante','Juniperus communis','Juniper Berry Essential Oil','Macédoine','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Macédoine"}, {"label": "Partie distillée", "value": "Baies (galbules)"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Boisée • Balsamique • Fraîche"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -2164,7 +2350,11 @@ Le Genévrier est un arbuste emblématique des régions montagneuses d''Europe e
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Genévrier PUR''ESSENCE est une alliée de choix pour accompagner les programmes de détoxification, de drainage et de confort articulaire. Grâce à son action tonique sur les fonctions d''élimination et à ses propriétés purifiantes, elle trouve naturellement sa place dans une approche globale de la santé.
-En synergie avec les huiles essentielles et les huiles végétales PUR''ESSENCE, elle permet de créer des formules personnalisées répondant aux besoins de chacun.',null,false,true,270),
+En synergie avec les huiles essentielles et les huiles végétales PUR''ESSENCE, elle permet de créer des formules personnalisées répondant aux besoins de chacun.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne possède des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Genévrier dans votre démarche de santé naturelle.','/images/produits/genevrier.webp',false,true,270),
 ('gingembre','Gingembre','Originaire d''Inde, berceau historique du gingembre, l''huile essentielle de Gingembre PUR''ESSENCE est obtenue par distillation à la vapeur d''eau de son rhizome.','Originaire d''Inde, berceau historique du gingembre, l''huile essentielle de Gingembre PUR''ESSENCE est obtenue par distillation à la vapeur d''eau de son rhizome. Utilisée depuis des milliers d''années dans les médecines traditionnelles asiatiques, elle est réputée pour ses propriétés toniques, digestives et réchauffantes.
 
 Son parfum chaud, épicé et légèrement citronné stimule les sens, favorise la vitalité et accompagne naturellement le bien-être digestif, musculaire et émotionnel.','huile-essentielle','sante','Zingiber officinale','Ginger Essential Oil','Inde','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Inde"}, {"label": "Partie distillée", "value": "Rhizome"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Épicée • Chaude • Boisée • Légèrement citronnée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -2256,7 +2446,11 @@ Le gingembre est cultivé en Inde depuis plus de 5 000 ans et fait partie des pl
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Gingembre PUR''ESSENCE est une véritable source d''énergie naturelle. Elle accompagne aussi bien le confort digestif que la vitalité générale et le bien-être musculaire.
-Son effet réchauffant, tonique et stimulant en fait une huile essentielle incontournable pour les personnes actives, les sportifs et toutes celles souhaitant retrouver énergie et confort digestif. Associée aux huiles essentielles et aux huiles végétales PUR''ESSENCE, elle permet de créer des synergies naturelles particulièrement efficaces.',null,false,true,280),
+Son effet réchauffant, tonique et stimulant en fait une huile essentielle incontournable pour les personnes actives, les sportifs et toutes celles souhaitant retrouver énergie et confort digestif. Associée aux huiles essentielles et aux huiles végétales PUR''ESSENCE, elle permet de créer des synergies naturelles particulièrement efficaces.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir tout le potentiel de l''huile essentielle de Gingembre dans votre démarche de santé naturelle.',null,false,true,280),
 ('geranium-rosat','Géranium rosat','Originaire de cultures françaises sélectionnées, l''huile essentielle de Géranium rosat est obtenue par distillation des parties aériennes fleuries du Pelargonium…','Originaire de cultures françaises sélectionnées, l''huile essentielle de Géranium rosat est obtenue par distillation des parties aériennes fleuries du Pelargonium graveolens. Son parfum délicatement floral, rappelant la rose, en fait une huile essentielle très appréciée en cosmétique naturelle et en aromathérapie.
 
 Réputée pour ses propriétés équilibrantes, purifiantes, circulatoires et apaisantes, elle est une alliée précieuse pour la santé, le bien-être et la beauté.','huile-essentielle','beaute','Pelargonium graveolens','Rose Geranium Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Parties aériennes fleuries (feuilles et fleurs)"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Florale • Rosée • Verte"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -2343,7 +2537,11 @@ Bien qu''originaire d''Afrique australe, le Géranium rosat est aujourd''hui cul
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Géranium rosat PUR''ESSENCE est l''une des huiles essentielles les plus complètes en aromathérapie. Elle associe harmonieusement les bienfaits pour la peau, la circulation, l''équilibre émotionnel et la protection naturelle contre les insectes.
 Grâce à sa remarquable tolérance cutanée lorsqu''elle est correctement diluée et à sa grande polyvalence, elle mérite une place de choix dans toute trousse d''aromathérapie familiale.
-En synergie avec les huiles végétales PUR''ESSENCE, elle offre des solutions naturelles adaptées à de nombreux besoins.',null,false,true,290),
+En synergie avec les huiles végétales PUR''ESSENCE, elle offre des solutions naturelles adaptées à de nombreux besoins.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque peau et chaque organisme sont uniques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir toutes les possibilités offertes par l''huile essentielle de Géranium rosat dans votre démarche de santé naturelle.',null,false,true,290),
 ('houx','Houx','L''Huile Essentielle de Houx Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles et des jeunes rameaux de Ilex opaca, un arbre emblématique des…','L''Huile Essentielle de Houx Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles et des jeunes rameaux de Ilex opaca, un arbre emblématique des forêts nord-américaines. Originaire du Canada, cette essence rare se distingue par son parfum frais, vert et légèrement boisé, évoquant la pureté des grands espaces forestiers.
 
 Son caractère aromatique en fait une huile essentielle recherchée pour les synergies de bien-être, les soins corporels et la diffusion d''une ambiance naturelle et apaisante.','huile-essentielle','relaxation','Ilex opaca','American Holly Essential Oil','Canada','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Canada"}, {"label": "Partie distillée", "value": "Feuilles et jeunes rameaux"}, {"label": "Mode d''obtention", "value": "Distillation complète à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Verte • Boisée • Herbacée • Fraîche • Légèrement balsamique"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -2417,7 +2615,11 @@ Le Houx américain (Ilex opaca) est un arbre emblématique des forêts d''Améri
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Rare et originale, l''Huile Essentielle de Houx Bio séduit avant tout par son identité olfactive évoquant les grandes forêts canadiennes. Elle trouve naturellement sa place dans les synergies orientées vers la détente, la diffusion d''ambiances boisées et les massages bien-être.
-En raison du peu de données scientifiques disponibles sur cette essence, PUR''ESSENCE recommande une utilisation prudente, principalement pour ses qualités aromatiques et son intérêt dans les compositions parfumées.',null,false,true,300),
+En raison du peu de données scientifiques disponibles sur cette essence, PUR''ESSENCE recommande une utilisation prudente, principalement pour ses qualités aromatiques et son intérêt dans les compositions parfumées.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos besoins en santé, bien-être et beauté.
+Contactez l''équipe PUR''ESSENCE et découvrez l''originalité de l''Huile Essentielle de Houx Bio, une essence rare inspirée de la richesse des forêts canadiennes.',null,false,true,300),
 ('hysope-officinale','Hysope officinale','Cultivée en France dans des conditions favorables à l''obtention d''une huile essentielle de haute qualité, l''Hysope officinale (Hyssopus officinalis) est une plante…','Cultivée en France dans des conditions favorables à l''obtention d''une huile essentielle de haute qualité, l''Hysope officinale (Hyssopus officinalis) est une plante aromatique méditerranéenne utilisée depuis l''Antiquité.
 
 Son huile essentielle est appréciée pour accompagner le confort respiratoire, soutenir l''organisme lors des changements de saison et favoriser la récupération physique. Son parfum frais, herbacé et légèrement camphré apporte une sensation de pureté et de vitalité.','huile-essentielle','sante','Hyssopus officinalis','Hyssop Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Sommités fleuries"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Herbacée • Camphrée • Aromatique"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -2507,7 +2709,11 @@ L''Hysope est une plante emblématique des jardins méditerranéens et des monas
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle d''Hysope est une huile de spécialiste. Très appréciée pour accompagner le confort respiratoire et soutenir la vitalité, elle offre des propriétés remarquables lorsqu''elle est utilisée correctement. En raison de la présence de cétones dans certaines variétés, son utilisation nécessite toutefois une vigilance particulière.
-Chez PUR''ESSENCE, nous recommandons de privilégier un accompagnement personnalisé afin de bénéficier pleinement de ses bienfaits tout en respectant les règles de sécurité.','/images/produits/hysope-officinale.webp',false,true,310),
+Chez PUR''ESSENCE, nous recommandons de privilégier un accompagnement personnalisé afin de bénéficier pleinement de ses bienfaits tout en respectant les règles de sécurité.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle d''Hysope dans votre démarche de santé naturelle.','/images/produits/hysope-officinale.webp',false,true,310),
 ('helichryse-italienne','Hélichryse italienne','Originaire des régions ensoleillées de la côte adriatique, l''huile essentielle d''Hélichryse italienne PUR''ESSENCE est obtenue par distillation des sommités fleuries…','Originaire des régions ensoleillées de la côte adriatique, l''huile essentielle d''Hélichryse italienne PUR''ESSENCE est obtenue par distillation des sommités fleuries de Helichrysum italicum. Connue sous le nom d''« Immortelle », cette plante doit son surnom à ses fleurs qui conservent longtemps leur éclat après la cueillette.
 
 En aromathérapie, cette huile essentielle est particulièrement réputée pour favoriser la régénération cutanée, soutenir le confort circulatoire et accompagner le bien-être musculaire et articulaire. Véritable joyau aromatique, elle est également très recherchée dans les soins anti-âge haut de gamme.','huile-essentielle','sante','Helichrysum italicum','Helichrysum Essential Oil (Immortelle Essential Oil)','Croatie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Croatie"}, {"label": "Partie distillée", "value": "Sommités fleuries"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Herbacée • Mielleuse • Épicée • Chaude"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -2596,7 +2802,11 @@ Le nom « Immortelle » provient de la remarquable capacité de ses fleurs à co
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle d''Hélichryse italienne est souvent considérée comme l''une des huiles essentielles les plus nobles en aromathérapie. Sa remarquable capacité à accompagner la régénération cutanée, le confort circulatoire et la récupération après les petits traumatismes en fait un incontournable des trousses familiales et des soins professionnels.
-En synergie avec les huiles végétales PUR''ESSENCE, elle offre des solutions naturelles particulièrement performantes pour préserver la beauté de la peau et favoriser le bien-être musculaire et circulatoire.',null,false,true,320),
+En synergie avec les huiles végétales PUR''ESSENCE, elle offre des solutions naturelles particulièrement performantes pour préserver la beauté de la peau et favoriser le bien-être musculaire et circulatoire.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle d''Hélichryse italienne dans votre démarche de santé naturelle.',null,false,true,320),
 ('jasmin','Jasmin','Cultivé dans les régions ensoleillées de l''Inde, le Jasmin Bio PUR''ESSENCE est issu des délicates fleurs de Jasminum grandiflorum, récoltées à la main à l''aube afin…','Cultivé dans les régions ensoleillées de l''Inde, le Jasmin Bio PUR''ESSENCE est issu des délicates fleurs de Jasminum grandiflorum, récoltées à la main à l''aube afin de préserver toute leur richesse aromatique. Son parfum floral, chaud, envoûtant et raffiné en fait l''une des essences les plus prestigieuses au monde.
 
 Recherché aussi bien en aromathérapie qu''en haute parfumerie, le Jasmin accompagne l''équilibre émotionnel, favorise le bien-être féminin et sublime naturellement la peau.','huile-essentielle','relaxation','Jasminum grandiflorum','Jasmine Essential Oil','Inde','2 ml • 5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Inde"}, {"label": "Partie distillée", "value": "Fleurs"}, {"label": "Mode d''obtention", "value": "Extraction traditionnelle des fleurs fraîches, suivie d''un procédé permettant d''obtenir une essence aromatique de très haute qualité."}, {"label": "Famille olfactive", "value": "Florale • Suave • Exotique • Sensuelle"}, {"label": "Conditionnements disponibles", "value": "2 ml • 5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -2669,7 +2879,11 @@ En Inde, le jasmin est surnommé « la reine de la nuit », car ses fleurs déga
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le Jasmin Bio est l''une des essences florales les plus précieuses de l''aromathérapie et de la parfumerie.
 Chez PUR''ESSENCE, nous le recommandons pour accompagner le bien-être émotionnel, favoriser la détente et enrichir les soins cosmétiques haut de gamme.
-Associé à la Rose de Damas, à l''Ylang-Ylang ou au Néroli, il offre une expérience sensorielle d''une rare élégance et transforme chaque soin en un véritable rituel de bien-être.','/images/produits/jasmin.webp',false,true,330),
+Associé à la Rose de Damas, à l''Ylang-Ylang ou au Néroli, il offre une expérience sensorielle d''une rare élégance et transforme chaque soin en un véritable rituel de bien-être.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne est unique. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez l''équipe PUR''ESSENCE pour découvrir toute la richesse de l''huile essentielle de Jasmin Bio et bénéficier de conseils personnalisés dans votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/jasmin.webp',false,true,330),
 ('laurier-noble','Laurier Noble','Originaire de Turquie, l''huile essentielle de Laurier Noble PUR''ESSENCE est obtenue par distillation à la vapeur d''eau de ses feuilles aromatiques.','Originaire de Turquie, l''huile essentielle de Laurier Noble PUR''ESSENCE est obtenue par distillation à la vapeur d''eau de ses feuilles aromatiques. Symbole de victoire, de sagesse et d''excellence depuis l''Antiquité, le Laurier Noble est aujourd''hui l''une des huiles essentielles les plus polyvalentes en aromathérapie.
 
 Appréciée pour son action purifiante, tonique et stimulante, elle accompagne le confort bucco-dentaire, soutient les défenses naturelles et favorise la confiance en soi ainsi que les performances intellectuelles.','huile-essentielle','sante','Laurus nobilis','Bay Laurel Essential Oil','Turquie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Turquie"}, {"label": "Partie distillée", "value": "Feuilles"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Aromatique • Épicée • Fraîche • Herbacée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -2760,7 +2974,11 @@ Dans la Grèce et la Rome antiques, le Laurier Noble était le symbole de la vic
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Laurier Noble PUR''ESSENCE est une huile d''exception qui allie puissance aromatique et grande polyvalence. Elle accompagne aussi bien le confort bucco-dentaire que le soutien des défenses naturelles, tout en étant une référence pour renforcer la confiance en soi et la concentration.
 Grâce à ses nombreuses possibilités de synergies, elle trouve naturellement sa place dans une trousse d''aromathérapie familiale ou professionnelle.
-Chez PUR''ESSENCE, nous la recommandons particulièrement aux étudiants, aux enseignants, aux conférenciers, aux dirigeants et à toutes les personnes souhaitant développer leurs performances intellectuelles et leur assurance.',null,false,true,340),
+Chez PUR''ESSENCE, nous la recommandons particulièrement aux étudiants, aux enseignants, aux conférenciers, aux dirigeants et à toutes les personnes souhaitant développer leurs performances intellectuelles et leur assurance.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir tout le potentiel de l''huile essentielle de Laurier Noble dans votre démarche de santé naturelle.',null,false,true,340),
 ('lavande-vraie','Lavande Vraie','Cultivée sur les hauts plateaux de Provence en France, l''huile essentielle de Lavande Vraie PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités…','Cultivée sur les hauts plateaux de Provence en France, l''huile essentielle de Lavande Vraie PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités fleuries de Lavandula angustifolia.
 
 Considérée comme l''une des huiles essentielles les plus nobles et les plus polyvalentes, elle est appréciée pour son parfum délicat et ses nombreuses applications en santé naturelle, en bien-être et en cosmétique.
@@ -2854,7 +3072,11 @@ La Lavande Vraie est cultivée depuis des siècles sur les plateaux ensoleillés
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Lavande Vraie PUR''ESSENCE est souvent considérée comme la référence absolue en aromathérapie. Sa grande douceur, sa remarquable polyvalence et son excellente tolérance en font une alliée précieuse pour accompagner le sommeil, la relaxation, le confort cutané et le bien-être émotionnel.
-Grâce à ses nombreuses possibilités de synergies avec les huiles essentielles et les huiles végétales PUR''ESSENCE, elle mérite pleinement sa place parmi les indispensables de toute trousse d''aromathérapie familiale.',null,false,true,350),
+Grâce à ses nombreuses possibilités de synergies avec les huiles essentielles et les huiles végétales PUR''ESSENCE, elle mérite pleinement sa place parmi les indispensables de toute trousse d''aromathérapie familiale.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir tout le potentiel de l''huile essentielle de Lavande Vraie dans votre démarche de santé naturelle.',null,false,true,350),
 ('lavandin','Lavandin','Cultivé dans les magnifiques champs de Provence, en France, le Lavandin (Lavandula × intermedia) est un hybride naturel issu de la Lavande vraie (Lavandula…','Cultivé dans les magnifiques champs de Provence, en France, le Lavandin (Lavandula × intermedia) est un hybride naturel issu de la Lavande vraie (Lavandula angustifolia) et de la Lavande aspic (Lavandula latifolia).
 
 Son rendement élevé en huile essentielle et son parfum floral, frais et puissant en font l''une des huiles essentielles les plus utilisées au monde. Polyvalente, elle est particulièrement appréciée pour favoriser la détente, accompagner le confort musculaire, purifier l''air ambiant et contribuer au bien-être quotidien de toute la famille.','huile-essentielle','relaxation','Lavandula × intermedia','Lavandin Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Sommités fleuries"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Florale • Aromatique • Camphrée • Fraîche"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -2944,7 +3166,11 @@ Le Lavandin est un hybride naturel découvert au début du XXᵉ siècle entre l
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Lavandin PUR''ESSENCE est un incontournable pour toute la famille. Elle associe les qualités relaxantes de la Lavande vraie à une action particulièrement intéressante sur le confort musculaire grâce à sa richesse en camphre.
 Son excellente polyvalence, son parfum agréable et son rapport qualité-prix en font une huile essentielle de premier choix pour les massages, la diffusion atmosphérique, la détente et le bien-être quotidien.
-Chez PUR''ESSENCE, nous la recommandons comme l''une des huiles essentielles indispensables à avoir toujours à portée de main.',null,false,true,360),
+Chez PUR''ESSENCE, nous la recommandons comme l''une des huiles essentielles indispensables à avoir toujours à portée de main.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Lavandin dans votre démarche de santé naturelle.',null,false,true,360),
 ('lemongrass','Lemongrass','Originaire du Guatemala, l''huile essentielle de Lemongrass PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles de Cymbopogon flexuosus.','Originaire du Guatemala, l''huile essentielle de Lemongrass PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles de Cymbopogon flexuosus. Son parfum intensément citronné, frais et tonique en fait une huile essentielle très appréciée en diffusion comme en massage.
 
 Reconnue pour accompagner le confort musculaire et articulaire, favoriser une bonne circulation et assainir l''atmosphère, elle est également utilisée dans les soins cosmétiques purifiants et comme répulsif naturel contre les insectes.','huile-essentielle','sante','Cymbopogon flexuosus','Lemongrass Essential Oil','Guatemala','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Guatemala"}, {"label": "Partie distillée", "value": "Parties aériennes (feuilles)"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Citronnée • Herbacée • Verte • Fraîche"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3036,7 +3262,11 @@ Le Lemongrass est utilisé depuis des siècles dans les médecines traditionnell
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Lemongrass PUR''ESSENCE est une excellente alliée pour les personnes actives et les sportifs. Elle accompagne efficacement les massages destinés au confort musculaire, au bien-être circulatoire et au raffermissement cutané.
 Son parfum tonique en fait également une huile essentielle idéale pour stimuler l''énergie, purifier l''air ambiant et créer une atmosphère fraîche et dynamique.
-Grâce à ses nombreuses possibilités de synergies avec les huiles végétales PUR''ESSENCE, elle constitue un incontournable des soins naturels de santé, de bien-être et de beauté.',null,false,true,370),
+Grâce à ses nombreuses possibilités de synergies avec les huiles végétales PUR''ESSENCE, elle constitue un incontournable des soins naturels de santé, de bien-être et de beauté.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Lemongrass dans votre démarche de santé naturelle.',null,false,true,370),
 ('litsea-cubeba','Litsea cubeba','L''Huile Essentielle de Litsea cubeba Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des petits fruits aromatiques de Litsea cubeba.','L''Huile Essentielle de Litsea cubeba Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des petits fruits aromatiques de Litsea cubeba.
 
 Très appréciée pour sa fragrance intensément citronnée, fraîche et tonifiante, elle est largement utilisée en aromathérapie, en diffusion atmosphérique et en cosmétique naturelle. Son parfum lumineux favorise une ambiance positive et rafraîchissante, tandis que sa grande richesse en citrals en fait une huile essentielle de choix pour les synergies dédiées au bien-être.','huile-essentielle','relaxation','Litsea cubeba','Litsea Cubeba Essential Oil','Brésil','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Brésil"}, {"label": "Partie distillée", "value": "Fruits"}, {"label": "Mode d''obtention", "value": "Distillation complète à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Fraîche • Citronnée • Fruitée • Vive • Légèrement épicée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3109,7 +3339,11 @@ Surnommé « Poivre de montagne » ou « May Chang », Litsea cubeba est appréc
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Huile Essentielle de Litsea cubeba Bio est une excellente alternative aux agrumes pour ceux qui recherchent une fragrance citronnée intense et durable. Très appréciée en diffusion comme en cosmétique, elle favorise une ambiance positive et s''intègre facilement dans de nombreuses synergies destinées à la relaxation, au bien-être émotionnel et aux soins de la peau.
-Chez PUR''ESSENCE, nous la recommandons pour ses qualités olfactives remarquables et sa grande polyvalence.','/images/produits/litsea-cubeba.webp',false,true,380),
+Chez PUR''ESSENCE, nous la recommandons pour ses qualités olfactives remarquables et sa grande polyvalence.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos besoins en santé, bien-être et beauté.
+Contactez l''équipe PUR''ESSENCE et découvrez toute la fraîcheur de l''Huile Essentielle de Litsea cubeba Bio, une essence citronnée d''exception pour vos rituels de santé, de bien-être et de beauté.','/images/produits/litsea-cubeba.webp',false,true,380),
 ('mandarine-rouge','Mandarine Rouge','Originaire des vergers ensoleillés d''Italie, l''huile essentielle de Mandarine Rouge PUR''ESSENCE est obtenue par expression à froid des zestes de fruits parfaitement…','Originaire des vergers ensoleillés d''Italie, l''huile essentielle de Mandarine Rouge PUR''ESSENCE est obtenue par expression à froid des zestes de fruits parfaitement mûrs de Citrus reticulata.
 
 Son parfum délicatement fruité, doux et réconfortant en fait l''une des huiles essentielles d''agrumes les plus appréciées. Reconnue pour favoriser la détente, accompagner le sommeil et contribuer au confort digestif, elle trouve naturellement sa place dans les routines de bien-être de toute la famille.','huile-essentielle','relaxation','Citrus reticulata','Red Mandarin Essential Oil','Italie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Italie"}, {"label": "Partie distillée", "value": "Zeste du fruit"}, {"label": "Mode d''obtention", "value": "Expression à froid des zestes"}, {"label": "Famille olfactive", "value": "Fruitée • Agrumée • Douce • Sucrée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3199,7 +3433,11 @@ La Mandarine Rouge est récoltée plus tardivement que la mandarine verte, lorsq
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Mandarine Rouge PUR''ESSENCE est l''une des plus douces et des plus réconfortantes parmi les huiles essentielles d''agrumes. Elle constitue une alliée privilégiée pour accompagner les personnes sujettes au stress, aux difficultés d''endormissement ou aux inconforts digestifs liés aux tensions émotionnelles. Son parfum délicatement fruité favorise la détente, la bonne humeur et la convivialité.
-Chez PUR''ESSENCE, nous la recommandons particulièrement pour les diffusions en soirée, les massages relaxants et les synergies destinées à favoriser un sommeil naturel et un équilibre émotionnel durable.',null,false,true,390),
+Chez PUR''ESSENCE, nous la recommandons particulièrement pour les diffusions en soirée, les massages relaxants et les synergies destinées à favoriser un sommeil naturel et un équilibre émotionnel durable.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Mandarine Rouge dans votre démarche de santé naturelle.',null,false,true,390),
 ('marjolaine','Marjolaine','Cultivée sous le climat ensoleillé de l''Inde, l''Huile Essentielle de Marjolaine Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités fleuries…','Cultivée sous le climat ensoleillé de l''Inde, l''Huile Essentielle de Marjolaine Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités fleuries de Origanum majorana.
 
 Appréciée depuis l''Antiquité pour son parfum doux, chaud et herbacé, elle est particulièrement reconnue en aromathérapie pour accompagner la relaxation, favoriser l''équilibre émotionnel et contribuer au confort musculaire. Sa douceur en fait une huile essentielle incontournable pour les synergies destinées au bien-être.','huile-essentielle','relaxation','Origanum majorana','Sweet Marjoram Essential Oil','Inde','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Inde"}, {"label": "Partie distillée", "value": "Sommités fleuries et feuilles"}, {"label": "Mode d''obtention", "value": "Distillation complète à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Herbacée • Douce • Épicée • Légèrement camphrée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3271,7 +3509,11 @@ Surnommée dans l''Antiquité « la plante du bonheur », la marjolaine était c
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Huile Essentielle de Marjolaine Bio est une référence incontournable pour accompagner les personnes soumises au stress, aux tensions nerveuses ou à la fatigue du quotidien. Sa douceur aromatique et sa remarquable polyvalence en font une alliée précieuse des massages relaxants, des synergies favorisant le sommeil et des soins de bien-être.
-Chez PUR''ESSENCE, nous la recommandons pour instaurer un véritable rituel de détente et d''équilibre émotionnel.','/images/produits/marjolaine.webp',false,true,400),
+Chez PUR''ESSENCE, nous la recommandons pour instaurer un véritable rituel de détente et d''équilibre émotionnel.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos besoins en santé, bien-être et beauté.
+Contactez l''équipe PUR''ESSENCE et découvrez les nombreuses qualités de l''Huile Essentielle de Marjolaine Bio, une essence douce et apaisante issue des cultures biologiques de l''Inde.','/images/produits/marjolaine.webp',false,true,400),
 ('menthe-poivree','Menthe Poivrée','Cultivée dans les régions favorables de l''Inde, l''huile essentielle de Menthe Poivrée PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des parties aériennes…','Cultivée dans les régions favorables de l''Inde, l''huile essentielle de Menthe Poivrée PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des parties aériennes de Mentha piperita. Très riche en menthol, elle procure une sensation immédiate de fraîcheur et de tonicité.
 
 Référence incontournable en aromathérapie, elle accompagne le confort digestif, favorise la concentration, soutient le bien-être musculaire et participe au maintien d''une sensation de vitalité au quotidien.','huile-essentielle','energie','Mentha piperita','Peppermint Essential Oil','Inde','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Inde"}, {"label": "Partie distillée", "value": "Parties aériennes (feuilles et sommités fleuries)"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Mentholée • Fraîche • Herbacée • Vive"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3364,7 +3606,11 @@ La Menthe Poivrée est un hybride naturel issu de la Menthe aquatique (Mentha aq
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Menthe Poivrée est l''une des huiles essentielles les plus puissantes et les plus polyvalentes de l''aromathérapie moderne. Grâce à sa richesse naturelle en menthol, elle procure une sensation de fraîcheur immédiate et accompagne efficacement le confort digestif, le bien-être musculaire et les performances intellectuelles. Sa puissance d''action impose toutefois une utilisation prudente et adaptée.
-Chez PUR''ESSENCE, nous recommandons de l''utiliser de préférence dans le cadre de synergies personnalisées afin de bénéficier pleinement de ses nombreux atouts tout en respectant les précautions d''emploi.',null,false,true,410),
+Chez PUR''ESSENCE, nous recommandons de l''utiliser de préférence dans le cadre de synergies personnalisées afin de bénéficier pleinement de ses nombreux atouts tout en respectant les précautions d''emploi.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir tout le potentiel de l''huile essentielle de Menthe Poivrée dans votre démarche de santé naturelle.','/images/produits/menthe-poivree.webp',false,true,410),
 ('muscade','Muscade','Originaire des îles aux Épices, en Indonésie, l''Huile Essentielle de Muscade Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des graines de Myristica…','Originaire des îles aux Épices, en Indonésie, l''Huile Essentielle de Muscade Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des graines de Myristica fragrans. Réputée depuis des siècles dans les traditions culinaires et aromatiques, elle séduit par son parfum chaud, épicé et réconfortant.
 
 En aromathérapie, elle est particulièrement appréciée pour accompagner le confort digestif, favoriser le bien-être musculaire et soutenir la vitalité. Son caractère chaleureux en fait une huile essentielle de choix pour les massages et les synergies réconfortantes.','huile-essentielle','sante','Myristica fragrans','Nutmeg Essential Oil','Indonésie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Indonésie"}, {"label": "Partie distillée", "value": "Graines (noix de muscade)"}, {"label": "Mode d''obtention", "value": "Distillation complète à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Épicée • Chaude • Boisée • Douce • Aromatique"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3439,7 +3685,11 @@ La muscade est originaire des célèbres îles Banda, en Indonésie, autrefois s
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Huile Essentielle de Muscade Bio est une huile essentielle chaleureuse et stimulante, particulièrement appréciée dans les synergies de massage destinées au confort musculaire et au bien-être digestif.
 Son parfum épicé apporte également une note réconfortante aux compositions aromatiques. En raison de sa richesse en composés aromatiques puissants, elle doit toujours être utilisée avec modération et correctement diluée.
-Chez PUR''ESSENCE, nous la recommandons comme une alliée précieuse pour les massages bien-être et les synergies tonifiantes.','/images/produits/muscade.webp',false,true,420),
+Chez PUR''ESSENCE, nous la recommandons comme une alliée précieuse pour les massages bien-être et les synergies tonifiantes.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos besoins en santé, bien-être et beauté.
+Contactez l''équipe PUR''ESSENCE et découvrez toute la richesse aromatique de l''Huile Essentielle de Muscade Bio, une essence épicée emblématique des îles aux Épices d''Indonésie.','/images/produits/muscade.webp',false,true,420),
 ('myrrhe','Myrrhe','Originaire de Somalie, l''huile essentielle de Myrrhe PUR''ESSENCE est obtenue par distillation à la vapeur d''eau de la gomme-résine naturellement exsudée du Commiphora…','Originaire de Somalie, l''huile essentielle de Myrrhe PUR''ESSENCE est obtenue par distillation à la vapeur d''eau de la gomme-résine naturellement exsudée du Commiphora myrrha. Son parfum profond, chaud, résineux et légèrement épicé est apprécié depuis des millénaires dans les traditions médicinales, les soins corporels et les pratiques spirituelles.
 
 Véritable huile essentielle de prestige, elle est reconnue pour accompagner le confort de la peau, favoriser le bien-être bucco-dentaire, soutenir les défenses naturelles et instaurer une profonde sensation de sérénité.','huile-essentielle','sante','Commiphora myrrha','Myrrh Essential Oil','Somalie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Somalie"}, {"label": "Partie distillée", "value": "Gomme-résine"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Balsamique • Résineuse • Boisée • Chaude • Épicée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3530,7 +3780,11 @@ La Myrrhe est l''une des plus anciennes substances aromatiques connues de l''hum
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Myrrhe est une huile d''exception, réservée aux amateurs d''aromathérapie de qualité. Son parfum profond et résineux invite à la sérénité, tandis que sa richesse aromatique en fait une alliée précieuse pour accompagner le confort de la peau, le bien-être bucco-dentaire et l''équilibre émotionnel.
-Chez PUR''ESSENCE, nous la recommandons tout particulièrement dans les soins destinés aux peaux matures, les synergies de relaxation et les diffusions favorisant le recentrage. Son caractère noble et intemporel en fait une huile essentielle incontournable dans une collection haut de gamme.','/images/produits/myrrhe.webp',false,true,430),
+Chez PUR''ESSENCE, nous la recommandons tout particulièrement dans les soins destinés aux peaux matures, les synergies de relaxation et les diffusions favorisant le recentrage. Son caractère noble et intemporel en fait une huile essentielle incontournable dans une collection haut de gamme.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Myrrhe dans votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/myrrhe.webp',false,true,430),
 ('myrte-rouge','Myrte Rouge','Cultivée en France, l''huile essentielle de Myrte Rouge PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles et des jeunes rameaux de Myrtus communis.','Cultivée en France, l''huile essentielle de Myrte Rouge PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles et des jeunes rameaux de Myrtus communis. Son parfum frais, délicatement balsamique et aromatique en fait une huile essentielle très appréciée en diffusion comme en massage.
 
 Traditionnellement utilisée pour accompagner le confort respiratoire et favoriser une respiration aisée, elle contribue également au bien-être émotionnel, au confort cutané et au maintien de la vitalité.','huile-essentielle','sante','Myrtus communis (chimotype cinéole)','Red Myrtle Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Feuilles et rameaux"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Fraîche • Herbacée • Balsamique • Légèrement camphrée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3621,7 +3875,11 @@ Le Myrte est un arbuste emblématique du bassin méditerranéen. Depuis l''Antiq
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Myrte Rouge est une excellente alliée pour accompagner le confort respiratoire tout en douceur. Son parfum frais et balsamique favorise une respiration agréable, tandis que ses propriétés équilibrantes en font une huile essentielle particulièrement intéressante lors des périodes de fatigue saisonnière ou de stress.
 Grâce à son excellente tolérance et à sa complémentarité avec les huiles essentielles respiratoires majeures, elle constitue un choix de qualité pour toute trousse d''aromathérapie familiale.
-Chez PUR''ESSENCE, nous la recommandons aussi bien en diffusion qu''en massage, toujours dans le respect des précautions d''emploi.',null,false,true,440),
+Chez PUR''ESSENCE, nous la recommandons aussi bien en diffusion qu''en massage, toujours dans le respect des précautions d''emploi.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir tout le potentiel de l''huile essentielle de Myrte Rouge dans votre démarche de santé naturelle.',null,false,true,440),
 ('niaouli','Niaouli','Originaire de Madagascar, l''huile essentielle de Niaouli PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles et des jeunes rameaux de Melaleuca…','Originaire de Madagascar, l''huile essentielle de Niaouli PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles et des jeunes rameaux de Melaleuca quinquenervia. Appréciée pour son parfum frais, camphré et légèrement boisé, elle est l''une des huiles essentielles les plus polyvalentes en aromathérapie.
 
 Traditionnellement utilisée pour accompagner le confort respiratoire, soutenir les défenses naturelles et favoriser le bien-être de la peau, elle constitue également une excellente alliée lors des changements de saison.','huile-essentielle','sante','Melaleuca quinquenervia','Niaouli Essential Oil','Madagascar','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Madagascar"}, {"label": "Partie distillée", "value": "Feuilles et jeunes rameaux"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Fraîche • Camphrée • Boisée • Herbacée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3712,7 +3970,11 @@ Le Niaouli appartient à la même grande famille botanique que le Tea Tree et le
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Niaouli PUR''ESSENCE est une véritable alliée du quotidien grâce à sa remarquable polyvalence.
 Elle accompagne efficacement le confort respiratoire, soutient les défenses naturelles et contribue au bien-être de la peau et de la circulation. Sa bonne tolérance et sa complémentarité avec des huiles essentielles telles que le Ravintsara, le Tea Tree, le Saro ou l''Eucalyptus globulus en font un incontournable de toute trousse d''aromathérapie.
-Chez PUR''ESSENCE, nous la recommandons particulièrement lors des changements de saison, en diffusion ou en massage, toujours après dilution dans une huile végétale adaptée.',null,false,true,450),
+Chez PUR''ESSENCE, nous la recommandons particulièrement lors des changements de saison, en diffusion ou en massage, toujours après dilution dans une huile végétale adaptée.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Niaouli dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,450),
 ('neroli','Néroli','Cultivée au Maroc selon les principes de l''agriculture biologique, l''huile essentielle de Néroli Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des…','Cultivée au Maroc selon les principes de l''agriculture biologique, l''huile essentielle de Néroli Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des délicates fleurs du Bigaradier (Citrus × aurantium var. amara).
 
 Véritable joyau de l''aromathérapie et de la haute parfumerie, elle séduit par son parfum floral raffiné, frais et légèrement miellé. Très appréciée pour accompagner le bien-être émotionnel, favoriser la relaxation et sublimer la peau, elle fait partie des huiles essentielles les plus prestigieuses et les plus précieuses au monde.','huile-essentielle','relaxation','Citrus × aurantium var. amara','Neroli Essential Oil','Maroc','2 ml • 5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Maroc"}, {"label": "Partie distillée", "value": "Fleurs fraîches de Bigaradier"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Florale • Fraîche • Verte • Délicate"}, {"label": "Conditionnements disponibles", "value": "2 ml • 5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3784,7 +4046,11 @@ Le nom « Néroli » provient d''Anne-Marie de La Trémoille, princesse de Nerol
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Néroli Bio est l''une des plus précieuses de l''aromathérapie. Son parfum floral d''une grande finesse accompagne naturellement la relaxation, le bien-être émotionnel et les soins des peaux délicates.
-Chez PUR''ESSENCE, nous la recommandons volontiers en synergie avec la Rose de Damas, le Jasmin, la Camomille Romaine ou le Petit Grain Bigarade afin de créer des compositions aromatiques haut de gamme, aussi bien pour le bien-être que pour la beauté.','/images/produits/neroli.webp',true,true,460),
+Chez PUR''ESSENCE, nous la recommandons volontiers en synergie avec la Rose de Damas, le Jasmin, la Camomille Romaine ou le Petit Grain Bigarade afin de créer des compositions aromatiques haut de gamme, aussi bien pour le bien-être que pour la beauté.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne est unique. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez l''équipe PUR''ESSENCE pour découvrir toute la noblesse de l''huile essentielle de Néroli Bio et bénéficier de conseils personnalisés pour votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/neroli.webp',true,true,460),
 ('oliban','Oliban','Originaire de Somalie, l''huile essentielle d''Oliban PUR''ESSENCE est obtenue par distillation à la vapeur d''eau de la gomme-résine du Boswellia carterii.','Originaire de Somalie, l''huile essentielle d''Oliban PUR''ESSENCE est obtenue par distillation à la vapeur d''eau de la gomme-résine du Boswellia carterii.
 
 Son parfum noble, résineux, balsamique et subtilement citronné en fait une huile essentielle emblématique de l''aromathérapie haut de gamme.
@@ -3876,7 +4142,11 @@ L''Oliban, également appelé Encens, est récolté depuis plus de 5 000 ans dan
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle d''Oliban est l''une des grandes références de l''aromathérapie premium. Sa richesse aromatique, sa remarquable polyvalence et son excellente tolérance en font une alliée précieuse pour accompagner le confort respiratoire, favoriser un profond équilibre émotionnel et préserver la beauté des peaux matures.
-Chez PUR''ESSENCE, nous la recommandons tout particulièrement en diffusion pour instaurer une atmosphère sereine, ainsi qu''en synergie avec la Myrrhe, l''Hélichryse italienne ou la Rose Musquée pour des soins d''exception. Véritable trésor aromatique, l''Oliban mérite une place privilégiée dans toute collection d''huiles essentielles haut de gamme.',null,false,true,470),
+Chez PUR''ESSENCE, nous la recommandons tout particulièrement en diffusion pour instaurer une atmosphère sereine, ainsi qu''en synergie avec la Myrrhe, l''Hélichryse italienne ou la Rose Musquée pour des soins d''exception. Véritable trésor aromatique, l''Oliban mérite une place privilégiée dans toute collection d''huiles essentielles haut de gamme.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle d''Oliban dans votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/oliban.webp',false,true,470),
 ('orange-douce','Orange Douce','Originaire d''Italie, l''huile essentielle d''Orange Douce PUR''ESSENCE est obtenue par expression à froid des zestes de Citrus sinensis.','Originaire d''Italie, l''huile essentielle d''Orange Douce PUR''ESSENCE est obtenue par expression à froid des zestes de Citrus sinensis. Son parfum délicatement fruité, doux et chaleureux évoque immédiatement la convivialité, le bien-être et la sérénité.
 
 Très appréciée en aromathérapie familiale, elle favorise la détente, accompagne le bien-être digestif et contribue à instaurer une ambiance réconfortante. Grâce à sa douceur olfactive, elle est également très utilisée dans les soins cosmétiques naturels et les préparations parfumées.','huile-essentielle','relaxation','Citrus sinensis','Sweet Orange Essential Oil','Italie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Italie"}, {"label": "Partie distillée", "value": "Zeste du fruit"}, {"label": "Mode d''obtention", "value": "Expression à froid des zestes"}, {"label": "Famille olfactive", "value": "Agrumée • Douce • Fruitée • Sucrée • Chaleureuse"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3966,7 +4236,11 @@ L''Oranger doux est cultivé depuis des siècles dans le bassin méditerranéen.
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle d''Orange Douce est une véritable invitation à la détente et au bien-être. Son parfum doux et chaleureux apaise les tensions, favorise un climat émotionnel positif et accompagne le confort digestif au quotidien.
 Très polyvalente, elle trouve sa place aussi bien dans les synergies de diffusion que dans les soins corporels et cosmétiques.
-Chez PUR''ESSENCE, nous la recommandons comme une huile essentielle incontournable pour toute la famille (en respectant les précautions d''emploi), grâce à son excellente tolérance, son parfum universellement apprécié et sa parfaite complémentarité avec les autres huiles essentielles d''agrumes, les huiles florales et les huiles végétales PUR''ESSENCE.',null,false,true,480),
+Chez PUR''ESSENCE, nous la recommandons comme une huile essentielle incontournable pour toute la famille (en respectant les précautions d''emploi), grâce à son excellente tolérance, son parfum universellement apprécié et sa parfaite complémentarité avec les autres huiles essentielles d''agrumes, les huiles florales et les huiles végétales PUR''ESSENCE.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle d''Orange Douce dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,480),
 ('origan','Origan','Originaire des montagnes ensoleillées de Grèce, l''huile essentielle d''Origan Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités fleuries…','Originaire des montagnes ensoleillées de Grèce, l''huile essentielle d''Origan Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités fleuries d''Origanum vulgare subsp. hirtum, cultivé selon les principes de l''agriculture biologique. Son parfum intense, chaud, épicé et herbacé témoigne de sa richesse aromatique exceptionnelle.
 
 Considérée comme l''une des huiles essentielles majeures de l''aromathérapie, elle est traditionnellement utilisée pour accompagner les défenses naturelles de l''organisme, favoriser le bien-être digestif et soutenir la vitalité lors des périodes de fatigue ou des changements de saison.','huile-essentielle','sante','Origanum vulgare subsp. hirtum','Oregano Essential Oil','Grèce','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Grèce"}, {"label": "Partie distillée", "value": "Sommités fleuries"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Épicée • Herbacée • Puissante • Chaude"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -4060,7 +4334,11 @@ L''Origan est considéré depuis l''Antiquité comme une plante sacrée en Grèc
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle d''Origan Bio est une huile d''exception, réservée aux utilisateurs avertis en raison de sa très forte concentration en composés aromatiques. Elle constitue une référence pour accompagner les défenses naturelles, soutenir la vitalité et favoriser le bien-être digestif. Sa puissance impose toutefois une utilisation rigoureuse, avec une dilution importante et le respect des précautions d''emploi.
-Chez PUR''ESSENCE, nous recommandons de l''intégrer dans des synergies personnalisées afin d''optimiser ses bienfaits tout en garantissant une utilisation confortable et sécurisée.',null,false,true,490),
+Chez PUR''ESSENCE, nous recommandons de l''intégrer dans des synergies personnalisées afin d''optimiser ses bienfaits tout en garantissant une utilisation confortable et sécurisée.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle d''Origan Bio dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,490),
 ('palmarosa','Palmarosa','Originaire d''Inde, l''huile essentielle de Palmarosa Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des parties aériennes fleuries de Cymbopogon…','Originaire d''Inde, l''huile essentielle de Palmarosa Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des parties aériennes fleuries de Cymbopogon martinii var. motia, cultivé selon les principes de l''agriculture biologique.
 
 Son parfum délicatement floral, aux notes évoquant la rose fraîche, en fait une huile essentielle très appréciée en aromathérapie, en cosmétique naturelle et en parfumerie.
@@ -4151,7 +4429,11 @@ Le Palmarosa appartient à la même famille botanique que la Citronnelle et le L
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Palmarosa Bio est une véritable référence pour les soins de la peau et le bien-être au quotidien. Son parfum floral raffiné, sa douceur d''utilisation et sa remarquable polyvalence en font une alliée de choix pour accompagner les peaux à imperfections, les peaux matures et les soins corporels.
-Chez PUR''ESSENCE, nous la recommandons également dans les synergies destinées à favoriser l''équilibre émotionnel, la détente et la fraîcheur. Grâce à son excellente affinité avec les huiles végétales et les huiles essentielles florales, elle mérite une place de choix dans toute collection d''aromathérapie haut de gamme.',null,false,true,500),
+Chez PUR''ESSENCE, nous la recommandons également dans les synergies destinées à favoriser l''équilibre émotionnel, la détente et la fraîcheur. Grâce à son excellente affinité avec les huiles végétales et les huiles essentielles florales, elle mérite une place de choix dans toute collection d''aromathérapie haut de gamme.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Palmarosa Bio dans votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/palmarosa.webp',false,true,500),
 ('pamplemousse','Pamplemousse','Originaire d''Israël, l''huile essentielle de Pamplemousse PUR''ESSENCE est obtenue par expression à froid des zestes de Citrus paradisi.','Originaire d''Israël, l''huile essentielle de Pamplemousse PUR''ESSENCE est obtenue par expression à froid des zestes de Citrus paradisi. Son parfum frais, fruité et légèrement acidulé procure une sensation immédiate de vitalité et de légèreté.
 
 Très appréciée en aromathérapie, elle accompagne le bien-être circulatoire, favorise une ambiance tonique et positive, contribue à purifier la peau et trouve naturellement sa place dans les soins minceur et les préparations cosmétiques naturelles.','huile-essentielle','energie','Citrus paradisi','Grapefruit Essential Oil','Israël','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Israël"}, {"label": "Partie distillée", "value": "Zeste du fruit"}, {"label": "Mode d''obtention", "value": "Expression à froid des zestes"}, {"label": "Famille olfactive", "value": "Agrumée • Fruitée • Fraîche • Légèrement acidulée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -4240,7 +4522,11 @@ Le Pamplemousse est un agrume relativement récent dans l''histoire de la botani
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Pamplemousse est une alliée incontournable pour retrouver énergie, légèreté et vitalité. Son parfum frais et vivifiant stimule naturellement le moral tout en accompagnant les massages destinés au bien-être circulatoire et aux soins raffermissants.
-Grâce à ses excellentes affinités avec les autres huiles essentielles d''agrumes, les huiles drainantes et les huiles végétales PUR''ESSENCE, elle s''intègre parfaitement dans les routines de santé, de beauté et de bien-être. Son utilisation nécessite toutefois une attention particulière en raison de son caractère photosensibilisant.',null,false,true,510),
+Grâce à ses excellentes affinités avec les autres huiles essentielles d''agrumes, les huiles drainantes et les huiles végétales PUR''ESSENCE, elle s''intègre parfaitement dans les routines de santé, de beauté et de bien-être. Son utilisation nécessite toutefois une attention particulière en raison de son caractère photosensibilisant.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Pamplemousse dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,510),
 ('patchouli','Patchouli','Originaire d''Indonésie, l''huile essentielle de Patchouli PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles séchées de Pogostemon cablin.','Originaire d''Indonésie, l''huile essentielle de Patchouli PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles séchées de Pogostemon cablin. Son parfum intense, boisé, terreux et légèrement balsamique est mondialement reconnu en parfumerie fine où il constitue une note de fond incontournable.
 
 En aromathérapie, cette huile essentielle est particulièrement appréciée pour accompagner le bien-être circulatoire, favoriser le confort de la peau, soutenir l''équilibre émotionnel et contribuer à une sensation générale de détente. Sa richesse aromatique et sa remarquable polyvalence en font une huile essentielle d''exception.','huile-essentielle','relaxation','Pogostemon cablin','Patchouli Essential Oil','Indonésie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Indonésie"}, {"label": "Partie distillée", "value": "Feuilles séchées"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Boisée • Terreuse • Balsamique • Orientale • Profonde"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -4330,7 +4616,11 @@ Originaire d''Asie du Sud-Est, le Patchouli est utilisé depuis des siècles pou
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Patchouli PUR''ESSENCE est une huile noble qui associe efficacité, élégance et richesse aromatique. Elle constitue une référence incontournable pour accompagner le bien-être circulatoire, préserver la beauté de la peau et favoriser un profond équilibre émotionnel. Son parfum boisé, intense et raffiné en fait également une huile essentielle très recherchée en parfumerie naturelle.
-Chez PUR''ESSENCE, nous la recommandons aussi bien pour les soins corporels que pour les synergies de diffusion et les préparations cosmétiques premium. Grâce à sa remarquable polyvalence et à son excellente tolérance, elle mérite une place de choix dans toute collection d''aromathérapie haut de gamme.',null,false,true,520),
+Chez PUR''ESSENCE, nous la recommandons aussi bien pour les soins corporels que pour les synergies de diffusion et les préparations cosmétiques premium. Grâce à sa remarquable polyvalence et à son excellente tolérance, elle mérite une place de choix dans toute collection d''aromathérapie haut de gamme.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Patchouli dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,520),
 ('petit-grain-bigarade','Petit Grain Bigarade','Originaire de France, l''huile essentielle de Petit Grain Bigarade PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles et des jeunes rameaux du…','Originaire de France, l''huile essentielle de Petit Grain Bigarade PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles et des jeunes rameaux du Bigaradier (Citrus aurantium subsp. amara). Son parfum délicat, frais, vert et floral en fait l''une des huiles essentielles les plus appréciées pour favoriser la détente et l''équilibre émotionnel.
 
 Réputée pour sa grande douceur d''utilisation, elle accompagne le bien-être nerveux, favorise un sommeil de qualité, contribue à l''équilibre de la peau et trouve également une place de choix en parfumerie naturelle.','huile-essentielle','relaxation','Citrus aurantium subsp. amara','Petitgrain Bigarade Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Feuilles et jeunes rameaux"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Verte • Florale • Hespéridée • Fraîche • Légèrement boisée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -4419,7 +4709,11 @@ Le Bigaradier est un arbre exceptionnel dont trois huiles essentielles différen
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Petit Grain Bigarade est l''une des plus belles alliées de l''équilibre émotionnel. Sa douceur, sa remarquable tolérance et son parfum raffiné en font une huile essentielle de choix pour accompagner les périodes de stress, favoriser un sommeil réparateur et créer une atmosphère de sérénité. Elle est également très appréciée dans les soins des peaux mixtes et grasses grâce à ses propriétés équilibrantes.
-Chez PUR''ESSENCE, nous la recommandons aussi bien en diffusion qu''en massage, où elle révèle pleinement son potentiel dans des synergies associant les huiles essentielles d''agrumes, les huiles florales et les huiles végétales de notre gamme.',null,false,true,530),
+Chez PUR''ESSENCE, nous la recommandons aussi bien en diffusion qu''en massage, où elle révèle pleinement son potentiel dans des synergies associant les huiles essentielles d''agrumes, les huiles florales et les huiles végétales de notre gamme.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Petit Grain Bigarade dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,530),
 ('pin-sylvestre','Pin Sylvestre','Originaire des immenses forêts de Finlande, l''huile essentielle de Pin Sylvestre Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des aiguilles de Pinus…','Originaire des immenses forêts de Finlande, l''huile essentielle de Pin Sylvestre Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des aiguilles de Pinus sylvestris, issues de l''agriculture biologique. Son parfum frais, résineux, boisé et balsamique évoque la pureté des paysages nordiques et procure immédiatement une sensation d''air pur.
 
 Réputée pour sa grande richesse aromatique, elle accompagne le confort respiratoire, soutient la vitalité physique et mentale, favorise le bien-être musculaire et contribue à purifier naturellement l''atmosphère.','huile-essentielle','sante','Pinus sylvestris','Scots Pine Essential Oil','Finlande','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Finlande"}, {"label": "Partie distillée", "value": "Aiguilles"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Résineuse • Boisée • Fraîche • Balsamique"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -4510,7 +4804,11 @@ Le Pin Sylvestre est l''un des conifères les plus répandus d''Europe et peut v
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Pin Sylvestre Bio PUR''ESSENCE est une alliée incontournable pour accompagner le bien-être respiratoire, soutenir la vitalité et favoriser le confort musculaire. Son parfum authentique, évoquant les vastes forêts finlandaises, procure une sensation immédiate de fraîcheur et de pureté.
-Chez PUR''ESSENCE, nous la recommandons particulièrement pendant les périodes hivernales, pour les sportifs et pour toute personne souhaitant retrouver énergie et confort respiratoire. Grâce à sa remarquable complémentarité avec le Ravintsara, le Niaouli, l''Eucalyptus Globulus ou la Gaulthérie, elle constitue un indispensable de toute trousse d''aromathérapie haut de gamme.',null,false,true,540),
+Chez PUR''ESSENCE, nous la recommandons particulièrement pendant les périodes hivernales, pour les sportifs et pour toute personne souhaitant retrouver énergie et confort respiratoire. Grâce à sa remarquable complémentarité avec le Ravintsara, le Niaouli, l''Eucalyptus Globulus ou la Gaulthérie, elle constitue un indispensable de toute trousse d''aromathérapie haut de gamme.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Pin Sylvestre Bio dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,540),
 ('poivre-blanc','Poivre Blanc','Originaire du Vietnam, l''huile essentielle de Poivre Blanc PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des baies mûres décortiquées de Piper nigrum.','Originaire du Vietnam, l''huile essentielle de Poivre Blanc PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des baies mûres décortiquées de Piper nigrum. Son parfum est plus subtil, plus rond et plus délicat que celui du Poivre Noir, avec des notes boisées et chaleureuses très appréciées en aromathérapie et en parfumerie naturelle.
 
 Reconnue pour ses propriétés tonifiantes et réchauffantes, elle accompagne le confort musculaire et articulaire, favorise le bien-être digestif et contribue à retrouver énergie, vitalité et équilibre.','huile-essentielle','sante','Piper nigrum','White Pepper Essential Oil','Vietnam','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Vietnam"}, {"label": "Partie distillée", "value": "Baies mûres décortiquées (Poivre blanc)"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Épicée • Boisée • Douce • Chaude"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -4603,7 +4901,11 @@ Le Poivre Blanc provient des mêmes fruits que le Poivre Noir, mais les baies so
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Poivre Blanc constitue une alternative élégante au Poivre Noir pour les personnes recherchant un parfum plus subtil tout en bénéficiant de propriétés tonifiantes et réchauffantes.
 Elle accompagne efficacement les massages musculaires, le confort digestif et le soutien de la vitalité. Son profil aromatique raffiné en fait également un excellent choix pour les synergies de diffusion et les préparations cosmétiques premium.
-Chez PUR''ESSENCE, nous la recommandons aux amateurs d''aromathérapie souhaitant associer efficacité, finesse olfactive et qualité exceptionnelle.',null,false,true,550),
+Chez PUR''ESSENCE, nous la recommandons aux amateurs d''aromathérapie souhaitant associer efficacité, finesse olfactive et qualité exceptionnelle.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Poivre Blanc dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,550),
 ('poivre-noir','Poivre Noir','Originaire d''Inde, berceau historique du poivre, l''huile essentielle de Poivre Noir PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des baies séchées de…','Originaire d''Inde, berceau historique du poivre, l''huile essentielle de Poivre Noir PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des baies séchées de Piper nigrum. Son parfum chaud, épicé, boisé et légèrement piquant en fait une huile essentielle très prisée en aromathérapie.
 
 Reconnue pour ses propriétés tonifiantes et réchauffantes, elle accompagne le confort musculaire et articulaire, favorise le bien-être digestif et soutient l''organisme lors des périodes de fatigue physique ou mentale.','huile-essentielle','sante','Piper nigrum','Black Pepper Essential Oil','Inde','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Inde"}, {"label": "Partie distillée", "value": "Baies (fruits) séchées"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Épicée • Boisée • Chaude • Sèche"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -4695,7 +4997,11 @@ Surnommé le « roi des épices », le Poivre Noir est cultivé en Inde depuis p
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Poivre Noir est une référence pour les personnes recherchant une solution naturelle afin d''accompagner le confort musculaire, articulaire et digestif. Son parfum épicé et chaleureux stimule les sens et favorise une sensation de vitalité retrouvée. Elle s''intègre parfaitement aux huiles de massage destinées aux sportifs, aux personnes actives ou à celles qui souhaitent retrouver davantage d''énergie au quotidien.
-Chez PUR''ESSENCE, nous la recommandons en synergie avec des huiles essentielles complémentaires et toujours diluée dans une huile végétale adaptée afin d''optimiser son efficacité et son confort d''utilisation.',null,false,true,560),
+Chez PUR''ESSENCE, nous la recommandons en synergie avec des huiles essentielles complémentaires et toujours diluée dans une huile végétale adaptée afin d''optimiser son efficacité et son confort d''utilisation.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Poivre Noir dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,560),
 ('pomelo','Pomelo','Originaire des vergers ensoleillés d''Argentine, l''huile essentielle de Pomelo Bio PUR''ESSENCE est obtenue par expression à froid des zestes du fruit, permettant de…','Originaire des vergers ensoleillés d''Argentine, l''huile essentielle de Pomelo Bio PUR''ESSENCE est obtenue par expression à froid des zestes du fruit, permettant de préserver toute la richesse de ses composés aromatiques. Son parfum frais, fruité, légèrement acidulé et vivifiant procure une agréable sensation de légèreté. Très appréciée en aromathérapie pour accompagner le bien-être général, elle trouve également sa place dans les soins de beauté et les préparations destinées à créer une atmosphère énergisante.','huile-essentielle','beaute','Citrus × paradisi','Pomelo Essential Oil','Argentine','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Argentine"}, {"label": "Partie utilisée", "value": "Zeste du fruit"}, {"label": "Mode d''obtention", "value": "Expression à froid des zestes"}, {"label": "Famille olfactive", "value": "Hespéridée • Fraîche • Fruitée • Tonique"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
 - Contribue à favoriser une sensation de vitalité et de tonus.
 - Accompagne le confort digestif dans le cadre d''une bonne hygiène de vie.
@@ -4766,7 +5072,11 @@ Le Pomelo est cultivé dans les régions subtropicales d''Argentine, où les con
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Pomelo Bio est une excellente alliée pour insuffler fraîcheur, vitalité et bonne humeur au quotidien. Son parfum fruité et énergisant en fait un choix privilégié pour la diffusion atmosphérique, les massages tonifiants et les soins des peaux mixtes à grasses.
-Chez PUR''ESSENCE, nous recommandons de l''associer au Citron, à l''Orange Douce, au Gingembre ou au Cyprès afin de créer des synergies harmonieuses favorisant le bien-être et la beauté naturelle.','/images/produits/pomelo.webp',false,true,570),
+Chez PUR''ESSENCE, nous recommandons de l''associer au Citron, à l''Orange Douce, au Gingembre ou au Cyprès afin de créer des synergies harmonieuses favorisant le bien-être et la beauté naturelle.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne est unique. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez l''équipe PUR''ESSENCE pour découvrir toute la fraîcheur de l''huile essentielle de Pomelo Bio et bénéficier de conseils personnalisés pour votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/pomelo.webp',false,true,570),
 ('ravintsara','Ravintsara','Originaire des hauts plateaux de Madagascar, l''huile essentielle de Ravintsara Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles de…','Originaire des hauts plateaux de Madagascar, l''huile essentielle de Ravintsara Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des feuilles de Cinnamomum camphora CT 1,8-cinéole, cultivé selon les principes de l''agriculture biologique. Son parfum frais, camphré et légèrement eucalyptus évoque immédiatement la pureté et la vitalité.
 
 Référence incontournable de l''aromathérapie moderne, cette huile essentielle est reconnue pour accompagner les défenses naturelles, favoriser le confort respiratoire, soutenir la vitalité de l''organisme et contribuer au bien-être général, notamment pendant les périodes hivernales et les changements de saison.','huile-essentielle','sante','Cinnamomum camphora CT 1,8-cinéole','Organic Ravintsara Essential Oil','Madagascar','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Madagascar"}, {"label": "Partie distillée", "value": "Feuilles"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Fraîche • Camphrée • Eucalyptus • Herbacée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -4857,7 +5167,11 @@ Le mot « Ravintsara » signifie « feuille bonne à tout » en malgache. Bien q
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Ravintsara Bio est un véritable incontournable de l''aromathérapie familiale. Sa remarquable polyvalence, son excellente tolérance lorsqu''elle est utilisée conformément aux recommandations et son parfum frais en font une alliée précieuse tout au long de l''année.
-Chez PUR''ESSENCE, nous la recommandons particulièrement pour accompagner les défenses naturelles, favoriser le confort respiratoire et soutenir l''organisme pendant les périodes de fatigue ou de changements de saison. Associée à des huiles essentielles comme le Niaouli, le Tea Tree, le Pin Sylvestre ou le Citron, elle révèle tout son potentiel dans des synergies efficaces et harmonieuses.',null,false,true,580),
+Chez PUR''ESSENCE, nous la recommandons particulièrement pour accompagner les défenses naturelles, favoriser le confort respiratoire et soutenir l''organisme pendant les périodes de fatigue ou de changements de saison. Associée à des huiles essentielles comme le Niaouli, le Tea Tree, le Pin Sylvestre ou le Citron, elle révèle tout son potentiel dans des synergies efficaces et harmonieuses.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Ravintsara Bio dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,580),
 ('romarin-a-verbenone','Romarin à Verbénone','Originaire des régions ensoleillées du Maroc, l''huile essentielle de Romarin à Verbénone Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités…','Originaire des régions ensoleillées du Maroc, l''huile essentielle de Romarin à Verbénone Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités fleuries de Salvia rosmarinus CT verbénone, cultivé selon les principes de l''agriculture biologique. Son parfum frais, herbacé et délicatement camphré reflète la richesse aromatique de cette plante méditerranéenne.
 
 Ce chémotype, particulièrement recherché en aromathérapie, est reconnu pour accompagner le bien-être hépatique, favoriser le confort digestif, soutenir la beauté de la peau et des cheveux et contribuer à l''équilibre général de l''organisme.','huile-essentielle','beaute','Salvia rosmarinus CT verbénone (anciennement Rosmarinus officinalis CT verbénone)','Organic Rosemary Verbenone Essential Oil','Maroc','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Maroc"}, {"label": "Partie distillée", "value": "Sommités fleuries"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Herbacée • Fraîche • Camphrée • Légèrement fruitée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -4949,7 +5263,11 @@ Le romarin possède plusieurs chémotypes, chacun présentant une composition ar
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Romarin à Verbénone Bio est une huile d''exception qui associe douceur, polyvalence et richesse aromatique. Elle constitue une référence pour accompagner le bien-être hépatique, favoriser le confort digestif et prendre soin de la peau ainsi que des cheveux.
-Chez PUR''ESSENCE, nous la recommandons également pour les personnes souhaitant intégrer une approche globale de la vitalité et de l''équilibre naturel de l''organisme. Grâce à son excellente complémentarité avec le Citron, le Gingembre, le Tea Tree ou encore le Cèdre de l''Atlas, elle trouve toute sa place dans des synergies haut de gamme adaptées à un usage quotidien.',null,false,true,590),
+Chez PUR''ESSENCE, nous la recommandons également pour les personnes souhaitant intégrer une approche globale de la vitalité et de l''équilibre naturel de l''organisme. Grâce à son excellente complémentarité avec le Citron, le Gingembre, le Tea Tree ou encore le Cèdre de l''Atlas, elle trouve toute sa place dans des synergies haut de gamme adaptées à un usage quotidien.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Romarin à Verbénone Bio dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,590),
 ('rose-de-damas','Rose de Damas','Cultivée au cœur de la célèbre Vallée des Roses en Bulgarie, l''huile essentielle de Rose de Damas Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des…','Cultivée au cœur de la célèbre Vallée des Roses en Bulgarie, l''huile essentielle de Rose de Damas Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des pétales fraîchement récoltés de Rosa damascena, issus de l''agriculture biologique. Réputée pour sa rareté et son exceptionnelle qualité aromatique, cette huile essentielle développe un parfum floral d''une finesse incomparable, symbole d''élégance et de raffinement.
 
 Véritable joyau de l''aromathérapie et de la haute parfumerie, elle accompagne le bien-être émotionnel, favorise l''équilibre de la peau et participe à une expérience sensorielle unique.','huile-essentielle','relaxation','Rosa damascena','Damask Rose Essential Oil','Bulgarie','2 ml • 5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Bulgarie"}, {"label": "Partie distillée", "value": "Pétales de fleurs"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Florale • Rosée • Douce • Élégante"}, {"label": "Conditionnements disponibles", "value": "2 ml • 5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -5040,7 +5358,11 @@ La célèbre Vallée des Roses, située en Bulgarie, est reconnue dans le monde 
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Rose de Damas Bio représente l''excellence de l''aromathérapie. Son parfum exceptionnel, sa rareté et sa richesse aromatique en font une huile d''exception pour accompagner l''équilibre émotionnel et sublimer naturellement la peau.
-Chez PUR''ESSENCE, nous la recommandons tout particulièrement pour les soins haut de gamme du visage, les synergies dédiées au bien-être féminin et les préparations destinées à favoriser la relaxation profonde. Associée à l''Hélichryse Italienne, au Géranium Rosat, à l''Ylang-Ylang ou à la Rose Musquée, elle révèle toute sa noblesse et offre une expérience sensorielle incomparable.','/images/produits/rose-de-damas.webp',true,true,600),
+Chez PUR''ESSENCE, nous la recommandons tout particulièrement pour les soins haut de gamme du visage, les synergies dédiées au bien-être féminin et les préparations destinées à favoriser la relaxation profonde. Associée à l''Hélichryse Italienne, au Géranium Rosat, à l''Ylang-Ylang ou à la Rose Musquée, elle révèle toute sa noblesse et offre une expérience sensorielle incomparable.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne possède des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir toute la noblesse de l''huile essentielle de Rose de Damas Bio dans votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/rose-de-damas.webp',true,true,600),
 ('santal','Santal','Originaire d''Inde, l''huile essentielle de Santal Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau du bois de cœur de Santalum album, arbre emblématique…','Originaire d''Inde, l''huile essentielle de Santal Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau du bois de cœur de Santalum album, arbre emblématique des traditions spirituelles asiatiques.
 
 Son parfum boisé, crémeux, chaud et profondément apaisant en fait l''une des huiles essentielles les plus nobles de l''aromathérapie et de la haute parfumerie. A
@@ -5115,7 +5437,11 @@ Le santal blanc est considéré depuis des millénaires comme un bois sacré en 
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Santal Bio est une véritable référence en aromathérapie haut de gamme. Son parfum boisé, doux et enveloppant favorise naturellement la détente, le recentrage et le bien-être émotionnel.
-Chez PUR''ESSENCE, nous la recommandons également dans les soins des peaux matures et les préparations destinées à la méditation. Associée à la Rose de Damas, au Jasmin, à l''Ylang-Ylang, à l''Oliban ou à la Myrrhe, elle révèle toute la richesse de son caractère noble et intemporel.','/images/produits/santal.webp',false,true,610),
+Chez PUR''ESSENCE, nous la recommandons également dans les soins des peaux matures et les préparations destinées à la méditation. Associée à la Rose de Damas, au Jasmin, à l''Ylang-Ylang, à l''Oliban ou à la Myrrhe, elle révèle toute la richesse de son caractère noble et intemporel.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne possède des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez l''équipe PUR''ESSENCE pour découvrir toute la noblesse de l''huile essentielle de Santal Bio et bénéficier de conseils personnalisés pour votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/santal.webp',false,true,610),
 ('sarriette-des-montagnes','Sarriette des Montagnes','Originaire de France, l''huile essentielle de Sarriette des Montagnes Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités fleuries de Satureja…','Originaire de France, l''huile essentielle de Sarriette des Montagnes Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités fleuries de Satureja montana, cultivée selon les principes de l''agriculture biologique. Son parfum intense, chaud, épicé et herbacé traduit sa remarquable richesse aromatique.
 
 Considérée comme l''une des huiles essentielles les plus puissantes de l''aromathérapie, elle est traditionnellement utilisée pour accompagner les défenses naturelles, favoriser le confort digestif, soutenir la vitalité et contribuer au bien-être général, notamment lors des périodes de fatigue ou des changements de saison.','huile-essentielle','sante','Satureja montana','Winter Savory Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Sommités fleuries"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Épicée • Herbacée • Chaude • Puissante"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -5209,7 +5535,11 @@ La Sarriette des montagnes est utilisée depuis l''Antiquité comme plante aroma
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Sarriette des Montagnes PUR''ESSENCE est une huile d''exception, particulièrement appréciée pour accompagner les défenses naturelles, soutenir la vitalité et favoriser le confort digestif. Sa puissance aromatique, liée à sa richesse naturelle en phénols, en fait une huile essentielle réservée à un usage réfléchi et rigoureux.
-Chez PUR''ESSENCE, nous recommandons de toujours l''utiliser fortement diluée et de privilégier des synergies personnalisées avec des huiles essentielles plus douces telles que le Ravintsara, le Tea Tree ou le Citron. Cette approche permet d''optimiser son potentiel tout en assurant une utilisation confortable et sécurisée.',null,false,true,620),
+Chez PUR''ESSENCE, nous recommandons de toujours l''utiliser fortement diluée et de privilégier des synergies personnalisées avec des huiles essentielles plus douces telles que le Ravintsara, le Tea Tree ou le Citron. Cette approche permet d''optimiser son potentiel tout en assurant une utilisation confortable et sécurisée.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Sarriette des Montagnes Bio dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,620),
 ('sauge-sclaree','Sauge Sclarée','Originaire de France, l''huile essentielle de Sauge Sclarée Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités fleuries et des feuilles de…','Originaire de France, l''huile essentielle de Sauge Sclarée Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des sommités fleuries et des feuilles de Salvia sclarea, cultivée selon les principes de l''agriculture biologique. Son parfum délicatement herbacé, floral et légèrement musqué en fait une huile essentielle très appréciée en aromathérapie, en cosmétique naturelle et en parfumerie.
 
 Reconnue pour accompagner le bien-être féminin, favoriser l''équilibre émotionnel et contribuer à la beauté de la peau et des cheveux, elle constitue une huile essentielle d''une grande finesse, particulièrement adaptée aux personnes recherchant harmonie et sérénité.','huile-essentielle','beaute','Salvia sclarea','Clary Sage Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Sommités fleuries et feuilles"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Herbacée • Florale • Douce • Musquée"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -5301,7 +5631,11 @@ Le nom « Sclarée » provient du latin clarus, qui signifie « clair ». Au Moy
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Sauge Sclarée est une huile de choix pour accompagner le bien-être féminin, favoriser la détente et prendre soin naturellement de la peau et des cheveux. Son parfum doux, floral et légèrement musqué procure une sensation immédiate d''harmonie et de sérénité.
-Chez PUR''ESSENCE, nous la recommandons particulièrement dans les synergies destinées à soutenir l''équilibre émotionnel, le confort féminin et la beauté capillaire. Grâce à son excellente complémentarité avec le Géranium Rosat, le Petit Grain Bigarade, la Lavande Vraie ou le Romarin à Verbénone, elle trouve pleinement sa place dans une approche naturelle globale du bien-être.',null,false,true,630),
+Chez PUR''ESSENCE, nous la recommandons particulièrement dans les synergies destinées à soutenir l''équilibre émotionnel, le confort féminin et la beauté capillaire. Grâce à son excellente complémentarité avec le Géranium Rosat, le Petit Grain Bigarade, la Lavande Vraie ou le Romarin à Verbénone, elle trouve pleinement sa place dans une approche naturelle globale du bien-être.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Sauge Sclarée Bio dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,630),
 ('thym','Thym','Cultivé dans les terroirs ensoleillés de France, l’huile essentielle de Thym Bio PUR''ESSENCE est obtenu par distillation à la vapeur d''eau des sommités fleuries de…','Cultivé dans les terroirs ensoleillés de France, l’huile essentielle de Thym Bio PUR''ESSENCE est obtenu par distillation à la vapeur d''eau des sommités fleuries de Thymus vulgaris CT linalol, issues de l''agriculture biologique. Ce chémotype se distingue par sa richesse naturelle en linalol, qui lui confère une grande douceur d''utilisation par rapport aux autres thyms.
 
 Son parfum aromatique, herbacé et délicatement floral en fait une huile essentielle particulièrement appréciée pour accompagner les défenses naturelles, favoriser le confort respiratoire, soutenir le bien-être de la peau et contribuer à l''équilibre général de l''organisme.','huile-essentielle','sante','Thymus vulgaris CT linalol','Thyme Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Sommités fleuries"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Herbacée • Aromatique • Douce • Légèrement florale"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -5392,7 +5726,11 @@ Le thym est utilisé depuis plus de deux mille ans. Les Égyptiens l''employaien
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Thym à Linalol Bio constitue un excellent choix pour les personnes recherchant une huile essentielle à la fois efficace et particulièrement douce.
-Chez PUR''ESSENCE, nous la recommandons pour accompagner les défenses naturelles, favoriser le confort respiratoire et soutenir la vitalité de toute la famille. Grâce à sa remarquable polyvalence, elle s''associe parfaitement au Ravintsara, au Tea Tree, au Niaouli ou encore au Citron pour créer des synergies naturelles, équilibrées et adaptées aux besoins du quotidien.',null,false,true,640),
+Chez PUR''ESSENCE, nous la recommandons pour accompagner les défenses naturelles, favoriser le confort respiratoire et soutenir la vitalité de toute la famille. Grâce à sa remarquable polyvalence, elle s''associe parfaitement au Ravintsara, au Tea Tree, au Niaouli ou encore au Citron pour créer des synergies naturelles, équilibrées et adaptées aux besoins du quotidien.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Thym à Linalol Bio dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,640),
 ('terebenthine','Térébenthine','Originaire des vastes forêts françaises, l''huile essentielle de Térébenthine Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau de l''oléorésine de Pinus…','Originaire des vastes forêts françaises, l''huile essentielle de Térébenthine Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau de l''oléorésine de Pinus pinaster, issue de l''agriculture biologique. Son parfum frais, résineux, boisé et balsamique évoque les forêts de pins et procure une agréable sensation de pureté.
 
 Traditionnellement utilisée en aromathérapie, elle est reconnue pour accompagner le confort respiratoire, favoriser le bien-être musculaire et articulaire, soutenir la vitalité et contribuer à purifier naturellement l''atmosphère.','huile-essentielle','sante','Pinus pinaster','Organic Turpentine Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Résine (oléorésine)"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Résineuse • Boisée • Fraîche • Balsamique"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -5483,7 +5821,11 @@ La térébenthine est utilisée depuis l''Antiquité. Les résines de pin étaie
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Térébenthine Bio est une excellente alliée pour accompagner le confort respiratoire, favoriser le bien-être musculaire et retrouver une agréable sensation de vitalité. Son parfum authentique, résineux et balsamique apporte une véritable bouffée d''air pur.
-Chez PUR''ESSENCE, nous la recommandons particulièrement en synergie avec le Pin Sylvestre, le Ravintsara, le Niaouli ou la Gaulthérie pour élaborer des préparations haut de gamme adaptées aux besoins des sportifs, des personnes actives ou durant les changements de saison. Comme toutes les huiles essentielles riches en monoterpènes, elle s''utilise de préférence diluée et dans le respect des précautions d''emploi.',null,false,true,650),
+Chez PUR''ESSENCE, nous la recommandons particulièrement en synergie avec le Pin Sylvestre, le Ravintsara, le Niaouli ou la Gaulthérie pour élaborer des préparations haut de gamme adaptées aux besoins des sportifs, des personnes actives ou durant les changements de saison. Comme toutes les huiles essentielles riches en monoterpènes, elle s''utilise de préférence diluée et dans le respect des précautions d''emploi.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Térébenthine Bio dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,650),
 ('verveine-exotique','Verveine Exotique','Originaire des montagnes du Vietnam, l''huile essentielle de Verveine Exotique Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des fruits de Litsea…','Originaire des montagnes du Vietnam, l''huile essentielle de Verveine Exotique Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des fruits de Litsea cubeba, issus de l''agriculture biologique. Son parfum intensément citronné, frais et légèrement fruité procure une sensation immédiate de bien-être et de légèreté.
 
 Très appréciée en aromathérapie, elle accompagne la détente, favorise l''équilibre émotionnel, contribue au confort musculaire et articulaire et apporte une note vivifiante aux préparations cosmétiques ainsi qu''aux mélanges pour diffusion.','huile-essentielle','sante','Litsea cubeba','May Chang Essential Oil','Vietnam','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Vietnam"}, {"label": "Partie distillée", "value": "Fruits"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Citronnée • Fraîche • Fruitée • Vive"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -5574,7 +5916,11 @@ Malgré son nom, la Verveine Exotique n''appartient pas au même genre botanique
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle de Verveine Exotique Bio est l''une des plus belles huiles essentielles citronnées de l''aromathérapie.
-Chez PUR''ESSENCE, nous la recommandons pour accompagner les périodes de stress, favoriser la détente et soutenir le confort musculaire et articulaire. Son parfum lumineux et réconfortant en fait également une référence pour la diffusion atmosphérique. Grâce à son excellente complémentarité avec la Lavande Vraie, le Petit Grain Bigarade, les agrumes ou l''Eucalyptus Citronné, elle permet de créer des synergies haut de gamme, aussi agréables qu''efficaces.',null,false,true,660),
+Chez PUR''ESSENCE, nous la recommandons pour accompagner les périodes de stress, favoriser la détente et soutenir le confort musculaire et articulaire. Son parfum lumineux et réconfortant en fait également une référence pour la diffusion atmosphérique. Grâce à son excellente complémentarité avec la Lavande Vraie, le Petit Grain Bigarade, les agrumes ou l''Eucalyptus Citronné, elle permet de créer des synergies haut de gamme, aussi agréables qu''efficaces.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle de Verveine Exotique Bio dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,660),
 ('vetiver','Vétiver','Cultivé sur les terres fertiles d''Haïti, le Vétiver est reconnu dans le monde entier pour la qualité exceptionnelle de son huile essentielle.','Cultivé sur les terres fertiles d''Haïti, le Vétiver est reconnu dans le monde entier pour la qualité exceptionnelle de son huile essentielle.
 
 Obtenue par distillation des racines, l''Huile Essentielle de Vétiver Bio PUR''ESSENCE dévoile un parfum profond, boisé, chaud et légèrement fumé, très recherché en haute parfumerie.
@@ -5648,7 +5994,11 @@ Haïti est mondialement reconnue comme l''un des principaux producteurs d''huile
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Huile Essentielle de Vétiver Bio est l''une des plus nobles huiles essentielles de la famille des boisées. Son parfum profond favorise l''ancrage, la sérénité et la détente, tandis que son utilisation en massage accompagne le confort des jambes et des muscles.
-Chez PUR''ESSENCE, nous la recommandons aussi bien pour les soins de bien-être que pour les préparations cosmétiques haut de gamme et les créations de parfums naturels, où elle apporte une signature olfactive incomparable.','/images/produits/vetiver.webp',false,true,670),
+Chez PUR''ESSENCE, nous la recommandons aussi bien pour les soins de bien-être que pour les préparations cosmétiques haut de gamme et les créations de parfums naturels, où elle apporte une signature olfactive incomparable.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, huiles végétales, hydrolats et synergies les mieux adaptés à vos objectifs de santé, de bien-être et de beauté.
+Contactez l''équipe PUR''ESSENCE et découvrez toute l''élégance et la richesse aromatique de l''Huile Essentielle de Vétiver Bio, un trésor naturel issu des terres d''Haïti.','/images/produits/vetiver.webp',false,true,670),
 ('ylang-ylang','Ylang-Ylang','Originaire de Madagascar, l''huile essentielle d''Ylang-Ylang Bio PUR''ESSENCE est obtenue par distillation complète à la vapeur d''eau des fleurs fraîches de Cananga…','Originaire de Madagascar, l''huile essentielle d''Ylang-Ylang Bio PUR''ESSENCE est obtenue par distillation complète à la vapeur d''eau des fleurs fraîches de Cananga odorata, cultivées selon les principes de l''agriculture biologique. Son parfum floral, exotique, riche et sensuel en fait l''une des huiles essentielles les plus prestigieuses de l''aromathérapie et de la haute parfumerie.
 
 Traditionnellement utilisée pour favoriser la relaxation, accompagner l''équilibre émotionnel, sublimer les cheveux et embellir la peau, elle est également très appréciée pour créer une atmosphère chaleureuse, harmonieuse et raffinée.','huile-essentielle','beaute','Cananga odorata','Ylang-Ylang Essential Oil','Madagascar','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Madagascar"}, {"label": "Partie distillée", "value": "Fleurs"}, {"label": "Mode d''obtention", "value": "Distillation complète à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Florale • Exotique • Suave • Sensuelle"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -5740,7 +6090,11 @@ Le nom « Ylang-Ylang » signifie « fleur des fleurs » dans certaines langues 
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''huile essentielle d''Ylang-Ylang Bio est l''une des huiles les plus précieuses de l''aromathérapie. Son parfum floral exceptionnel en fait une alliée de choix pour accompagner la détente, favoriser l''équilibre émotionnel et sublimer naturellement la peau et les cheveux.
-Chez PUR''ESSENCE, nous la recommandons particulièrement dans les synergies destinées à la relaxation, au bien-être féminin et aux soins capillaires. Associée à la Lavande Vraie, à la Sauge Sclarée, au Géranium Rosat ou à l''Orange Douce, elle révèle toute sa richesse aromatique et contribue à créer des préparations naturelles haut de gamme.',null,false,true,680),
+Chez PUR''ESSENCE, nous la recommandons particulièrement dans les synergies destinées à la relaxation, au bien-être féminin et aux soins capillaires. Associée à la Lavande Vraie, à la Sauge Sclarée, au Géranium Rosat ou à l''Orange Douce, elle révèle toute sa richesse aromatique et contribue à créer des préparations naturelles haut de gamme.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle d''Ylang-Ylang Bio dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,680),
 ('aloe-vera','Aloe Vera','Le Macérât Huileux d''Aloe Vera PUR''ESSENCE associe les propriétés adoucissantes et apaisantes de l''Aloe vera aux qualités nourrissantes d''une huile végétale de support.','Le Macérât Huileux d''Aloe Vera PUR''ESSENCE associe les propriétés adoucissantes et apaisantes de l''Aloe vera aux qualités nourrissantes d''une huile végétale de support.
 
 Il est particulièrement apprécié pour les soins des peaux sèches, sensibles ou fragilisées.
@@ -5818,6 +6172,12 @@ Son utilisation régulière contribue à maintenir une peau souple, confortable 
 ## 🥗 Le Saviez-vous ?
 Contrairement à une idée largement répandue, l''Aloe vera ne produit pas d''huile. Les produits appelés « huile d''Aloe vera » sont en réalité des macérâts huileux, obtenus par la macération du gel ou d''extraits d''Aloe vera dans une huile végétale.
 Cette méthode permet d''associer les propriétés de l''Aloe vera aux bienfaits nourrissants de l''huile support.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix du macérât huileux le plus adapté à vos soins de beauté, à votre bien-être et à vos préparations d''aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Scientific Cooperative on Phytotherapy (ESCOP).
@@ -5908,6 +6268,12 @@ En alimentation, lorsqu''elle est utilisée de manière adaptée, elle contribue
 ## 🥗 Le Saviez-vous ?
 L''amande est consommée depuis des millénaires dans les régions méditerranéennes. Son huile est naturellement riche en acide oléique (oméga-9) et en vitamine E, deux constituants appréciés pour leur rôle dans la protection des cellules contre le stress oxydatif et dans le maintien de la souplesse de la peau.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins nutritionnels, à vos soins de beauté et à vos préparations d''aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -5993,6 +6359,12 @@ Lorsqu''elle est destinée à un usage alimentaire, elle apporte également des 
 
 ## 🥗 Le Saviez-vous ?
 L''arganier (Argania spinosa) est un arbre emblématique du sud-ouest marocain. Son huile, surnommée « l''or liquide du Maroc », est obtenue à partir des amandons contenus dans ses fruits et est reconnue dans le monde entier pour sa richesse en vitamine E et en composés antioxydants.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -6081,6 +6453,12 @@ Sa richesse exceptionnelle en oméga-7, en caroténoïdes et en vitamine E contr
 
 ## 🥗 Le Saviez-vous ?
 L''huile issue de la pulpe des baies d''argousier est très différente de celle obtenue à partir des graines. Elle est l''une des très rares huiles végétales naturellement riches en acide palmitoléique (oméga-7), un acide gras présent dans le sébum humain. Cette particularité explique sa remarquable affinité avec la peau et son intérêt dans les soins dermocosmétiques haut de gamme.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -6171,6 +6549,12 @@ En soin, elle nourrit intensément les peaux et les cheveux tout en constituant 
 ## 🥗 Le Saviez-vous ?
 L''avocat est l''un des rares fruits naturellement riches en matières grasses de grande qualité.
 Son huile contient principalement de l''acide oléique (oméga-9), des phytostérols, des caroténoïdes et de la vitamine E, des composés particulièrement appréciés en nutrition et en dermocosmétique pour leurs propriétés protectrices et nourrissantes.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins nutritionnels, à vos soins de beauté et à vos préparations d''aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -6263,6 +6647,12 @@ Elle constitue enfin un excellent support pour les huiles essentielles dans les 
 ## 🥗 Le Saviez-vous ?
 La Bourrache est l''une des plantes les plus riches en acide γ-linolénique (GLA), un oméga-6 rare. Cette composition exceptionnelle explique pourquoi son huile est si recherchée pour les soins des peaux matures et pour le bien-être féminin.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en beauté, en bien-être et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -6347,6 +6737,12 @@ Sa concentration remarquable en caroténoïdes et en vitamine E contribue à pr�
 
 ## 🥗 Le Saviez-vous ?
 Le buriti (Mauritia flexuosa) est un palmier emblématique de l''Amazonie, parfois surnommé « l''arbre de vie ». Son huile est l''une des plus riches en β-carotène parmi les huiles végétales, ce qui lui confère sa couleur rouge-orangé caractéristique et explique son intérêt dans les soins de beauté naturels.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -6437,6 +6833,12 @@ Elle est particulièrement recommandée pour les peaux sensibles, matures ou dé
 ## 🥗 Le Saviez-vous ?
 Surnommée « l''huile de beauté des Japonaises », l''huile de Camélia est utilisée depuis des siècles pour préserver la douceur de la peau et la brillance des cheveux. Sa richesse naturelle en acide oléique et en squalène explique sa remarquable affinité avec la peau et sa pénétration rapide sans laisser de film gras.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles végétales et des synergies les plus adaptées à vos besoins en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -6520,6 +6922,12 @@ Grâce à son excellent équilibre entre oméga-9, oméga-6 et oméga-3, l''Huil
 
 ## 🥗 Le Saviez-vous ?
 Le canola est une variété de colza spécialement sélectionnée pour sa très faible teneur en acide érucique et en glucosinolates. Développé au Canada, son nom provient de l''expression "Canadian Oil, Low Acid", en référence à cette sélection variétale destinée aux usages alimentaires.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -6609,6 +7017,12 @@ En alimentation, elle s''intègre idéalement à une alimentation équilibrée l
 ## 🥗 Le Saviez-vous ?
 Le Carthame (Carthamus tinctorius) est cultivé depuis l''Antiquité. Autrefois utilisé comme plante tinctoriale, il est aujourd''hui recherché pour son huile naturellement riche en acide linoléique (oméga-6), un acide gras essentiel qui participe au maintien de la structure normale de la peau et s''intègre dans une alimentation variée et équilibrée.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos objectifs nutritionnels, à vos soins de beauté et à vos préparations d''aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -6694,6 +7108,12 @@ L''Huile Végétale de Cassis Bio est une huile d''exception grâce à sa riches
 
 ## 🥗 Le Saviez-vous ?
 L''huile de graines de cassis est l''une des rares huiles végétales à associer naturellement une teneur élevée en acide gamma-linolénique (GLA) et en acide alpha-linolénique (ALA). Cette composition lipidique exceptionnelle lui confère une place privilégiée parmi les huiles végétales les plus riches en acides gras essentiels.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -6784,6 +7204,12 @@ En cosmétique, elle est particulièrement recommandée pour les peaux sèches e
 ## 🥗 Le Saviez-vous ?
 L''huile de coco est naturellement solide en dessous d''environ 24 à 25 °C et devient liquide au-dessus de cette température. Ce changement d''état est parfaitement naturel et n''altère en rien sa qualité ni ses propriétés.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins nutritionnels, à vos soins de beauté et à vos préparations d''aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -6870,6 +7296,12 @@ L''Huile Végétale de Céleri Bio est une huile rare qui apporte des acides gra
 ## 🥗 Le Saviez-vous ?
 Le céleri est cultivé depuis l''Antiquité pour ses qualités culinaires et nutritionnelles. Si l''huile essentielle de graines de céleri est bien connue en aromathérapie, l''huile végétale obtenue par pression à froid des graines reste beaucoup plus rare et est principalement appréciée pour sa composition en acides gras insaturés et en vitamine E.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -6953,6 +7385,12 @@ Sa richesse en acides gras insaturés et en composés antioxydants en fait une h
 
 ## 🥗 Le Saviez-vous ?
 Le fenugrec est cultivé depuis l''Antiquité dans le bassin méditerranéen et en Asie. Ses graines sont traditionnellement utilisées en alimentation et en phytothérapie. L''huile obtenue par pression à froid est plus rare que le macérât huileux et permet de préserver les constituants lipidiques naturellement présents dans les graines.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -7038,6 +7476,12 @@ L''Huile Végétale de Framboise Bio est particulièrement adaptée aux peaux se
 ## 🥗 Le Saviez-vous ?
 Les graines de framboise renferment une huile naturellement riche en oméga-3, en vitamine E et en polyphénols. Cette composition explique son intérêt en cosmétique naturelle, notamment pour les soins des peaux délicates et exposées aux agressions extérieures.
 À noter : Bien que certaines études de laboratoire aient exploré un effet d''absorption des UV par l''huile de graines de framboise, les données actuelles sont insuffisantes pour la considérer comme un écran solaire. Elle ne remplace donc pas une protection solaire adaptée.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -7128,6 +7572,12 @@ En aromathérapie, quelques gouttes incorporées à une autre huile végétale p
 ## 🥗 Le Saviez-vous ?
 Le germe représente la partie vivante du grain de blé. Bien qu''il ne constitue qu''une faible proportion du grain, il concentre une grande partie de ses nutriments, notamment la vitamine E, des phytostérols et des acides gras essentiels. Cette richesse en fait une huile particulièrement appréciée pour les soins nutritionnels et cosmétiques.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la mieux adaptée à vos besoins nutritionnels, à vos soins de beauté et à vos préparations d''aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -7213,6 +7663,12 @@ Elle trouve sa place aussi bien dans une alimentation équilibrée que dans les 
 
 ## 🥗 Le Saviez-vous ?
 Le germe de maïs représente une faible partie du grain, mais il concentre une grande partie de ses lipides, de sa vitamine E et de ses phytostérols. C''est cette richesse naturelle qui explique la valeur nutritionnelle de l''huile de germe de maïs.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -7301,6 +7757,12 @@ Associée à sa richesse en vitamine E et en caroténoïdes, cette composition e
 
 ## 🥗 Le Saviez-vous ?
 Les baies d''argousier permettent d''obtenir deux huiles végétales distinctes : l''huile de pulpe, riche en oméga-7, et l''huile de graines, particulièrement riche en oméga-3 et oméga-6. Cette complémentarité fait de l''argousier une plante unique dans le monde des huiles végétales.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -7394,6 +7856,12 @@ En cosmétique, elle apporte nutrition et confort aux peaux sèches et aux cheve
 L''huile de graines de lin est l''une des sources végétales les plus riches en acide α-linolénique (ALA), un oméga-3 essentiel que l''organisme ne peut pas fabriquer.
 Une consommation régulière, dans le cadre d''une alimentation variée et équilibrée, contribue à un meilleur équilibre entre les apports en oméga-3 et en oméga-6.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins nutritionnels, à vos soins de beauté et à vos préparations d''aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -7477,6 +7945,12 @@ L''Huile Végétale de Jojoba est l''une des meilleures huiles de soin au quotid
 
 ## 🥗 Le Saviez-vous ?
 Contrairement à la plupart des huiles végétales, l''huile de Jojoba est en réalité une cire liquide végétale. Cette particularité lui confère une excellente stabilité à l''oxydation et explique sa remarquable affinité avec la peau, dont elle imite en partie la composition lipidique de surface.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos soins de beauté, à vos préparations d''aromathérapie et à votre routine de bien-être.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Medicines Agency (EMA).
@@ -7563,6 +8037,12 @@ L''Huile Végétale de Kukui Bio est une excellente alliée des peaux sèches, s
 
 ## 🥗 Le Saviez-vous ?
 Originaire d''Hawaï, le kukui est considéré comme un arbre emblématique de la culture polynésienne. Son huile est traditionnellement utilisée pour nourrir la peau et protéger les cheveux. Grâce à sa richesse en oméga-3 et en oméga-6, elle demeure aujourd''hui une référence en cosmétique naturelle.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -7655,6 +8135,12 @@ Sa pénétration rapide et son toucher sec en font également un excellent suppo
 ## 🥗 Le Saviez-vous ?
 Le macadamia est originaire d''Australie et produit l''une des noix les plus riches en acides gras mono-insaturés. Son huile est particulièrement remarquable par sa teneur en acide palmitoléique (oméga-7), un acide gras naturellement présent dans le sébum humain, dont la concentration diminue progressivement avec l''âge.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -7743,6 +8229,12 @@ Elle constitue également un excellent support pour les huiles essentielles dest
 ## 🥗 Le Saviez-vous ?
 Le mûrier est surtout connu pour ses fruits et ses feuilles utilisées dans l''alimentation du ver à soie. Ses graines permettent également d''obtenir une huile végétale rare, appréciée pour sa richesse en acides gras essentiels et en composés antioxydants.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en beauté, en bien-être et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -7828,6 +8320,12 @@ Elle s''intègre aussi bien dans une alimentation équilibrée que dans les soin
 
 ## 🥗 Le Saviez-vous ?
 La nigelle (Nigella sativa), également appelée cumin noir, est cultivée depuis plus de 2 000 ans. Son huile est traditionnellement utilisée dans les cultures méditerranéennes, africaines et moyen-orientales. La thymoquinone, son principal composé bioactif, fait aujourd''hui l''objet de nombreuses recherches scientifiques pour son intérêt biologique.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -7915,6 +8413,12 @@ a texture légère et son excellente affinité avec la peau en font un soin quot
 
 ## 🥗 Le Saviez-vous ?
 Les noyaux d''abricot renferment une amande riche en huile. Grâce à sa forte teneur en acides gras insaturés, en vitamine E et en caroténoïdes, cette huile est appréciée pour apporter éclat et confort à la peau, tout en laissant un toucher particulièrement soyeux.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -8005,6 +8509,12 @@ En usage alimentaire, elle s''intègre dans une alimentation équilibrée afin d
 ## 🥗 Le Saviez-vous ?
 L''onagre est surnommée « la primevère du soir » car ses fleurs s''ouvrent principalement au crépuscule. Son huile est l''une des rares huiles végétales naturellement riches en acide γ-linolénique (GLA), un oméga-6 spécifique particulièrement recherché en nutrition et en dermocosmétique.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins nutritionnels, à vos soins de beauté et à vos préparations d''aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -8091,6 +8601,12 @@ Son toucher sec et sa pénétration rapide en font une excellente huile de soin 
 
 ## 🥗 Le Saviez-vous ?
 Les graines de concombre renferment une huile légère, naturellement riche en acides gras insaturés, en vitamine E et en phytostérols. Très appréciée en cosmétique naturelle, elle laisse la peau douce, souple et confortable, sans sensation grasse.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -8181,6 +8697,12 @@ Grâce à sa richesse en phytostérols et en antioxydants, elle trouve égalemen
 Les pépins de courge sont naturellement riches en phytostérols, des composés végétaux largement étudiés pour leur intérêt nutritionnel.
 L''huile obtenue par première pression à froid permet de préserver une grande partie de ces constituants ainsi que sa vitamine E et ses antioxydants naturels.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -8270,6 +8792,12 @@ Grâce à sa richesse en acide punicique et en antioxydants naturels, elle est p
 ## 🥗 Le Saviez-vous ?
 L''huile de Pépins de Grenade est l''une des très rares huiles végétales naturellement riches en acide punicique, également appelé oméga-5. Ce profil lipidique exceptionnel en fait une huile particulièrement recherchée dans les soins de la peau et les formulations cosmétiques haut de gamme.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -8355,6 +8883,12 @@ Grâce à sa richesse en acides gras essentiels et en vitamine E, l''Huile Vég�
 
 ## 🥗 Le Saviez-vous ?
 Les pépins de raisin renferment naturellement des polyphénols et d''autres composés antioxydants reconnus pour leur capacité à contribuer à la protection des cellules contre le stress oxydatif. L''huile qui en est issue est également appréciée pour sa forte teneur en acide linoléique (oméga-6), un acide gras essentiel impliqué dans le maintien de l''intégrité de la peau.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE sont à votre disposition pour vous conseiller dans le choix de l''huile végétale la plus adaptée à vos besoins nutritionnels, à vos soins de beauté et à vos préparations d''aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -8445,6 +8979,12 @@ Elle est particulièrement adaptée aux soins des peaux matures, ternes ou expos
 ## 🥗 Le Saviez-vous ?
 Les graines de tomate renferment une huile naturellement riche en lycopène, un pigment de la famille des caroténoïdes, ainsi qu''en vitamine E et en acides gras insaturés. Cette composition lui confère un fort potentiel antioxydant et explique son intérêt croissant dans les formulations cosmétiques haut de gamme.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -8533,6 +9073,12 @@ En raison de sa viscosité élevée, elle est souvent plus agréable à utiliser
 ## 🥗 Le Saviez-vous ?
 L''huile de Ricin est composée à près de 90 % d''acide ricinoléique, un acide gras très rare dans le règne végétal. C''est cette composition exceptionnelle qui lui confère sa texture épaisse et son intérêt particulier dans les soins capillaires et cosmétiques.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles végétales et des synergies les plus adaptées à vos besoins en beauté, en bien-être et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -8620,6 +9166,12 @@ Grâce à sa texture riche, elle est idéale en bain d''huile avant le shampooin
 
 ## 🥗 Le Saviez-vous ?
 Le Ricin Noir est obtenu selon une méthode traditionnelle consistant à torréfier les graines avant leur extraction. Cette technique donne à l''huile sa couleur foncée caractéristique et explique sa popularité dans les soins capillaires, notamment dans les Caraïbes et en Afrique.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles végétales et des synergies les plus adaptées à vos besoins en beauté, en bien-être et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Medicines Agency (EMA).
@@ -8712,6 +9264,12 @@ L''Huile Végétale de Rose Musquée est une référence incontournable pour les
 ## 🥗 Le Saviez-vous ?
 La Rose Musquée est cultivée pour ses fruits, appelés cynorrhodons, dont les graines fournissent une huile naturellement riche en acides gras essentiels et en caroténoïdes. Cette composition explique son intérêt particulier pour les soins de la peau et son utilisation fréquente dans les cosmétiques destinés aux peaux matures et fragilisées.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos soins de beauté, à vos préparations d''aromathérapie et à vos besoins spécifiques.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
 - Organisation mondiale de la Santé (OMS).
@@ -8796,6 +9354,12 @@ Grâce à sa teneur en γ-oryzanol et en vitamine E, elle trouve naturellement s
 
 ## 🥗 Le Saviez-vous ?
 Le γ-oryzanol est un composé naturellement présent dans le son de riz. Il est constitué d''un mélange d''esters d''acides féruliques et de phytostérols et contribue à la réputation de l''huile de son de riz pour ses propriétés antioxydantes et son intérêt en nutrition et en cosmétique.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix de l''huile végétale la plus adaptée à vos besoins en nutrition, en santé, en bien-être, en beauté et en aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les Huiles Végétales PUR''ESSENCE sont soigneusement sélectionnées pour leur qualité exceptionnelle et leur richesse naturelle en acides gras essentiels, vitamines et composés bioactifs. Obtenues à partir de matières premières rigoureusement choisies, elles s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en constituant d''excellents supports pour les huiles essentielles dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -8939,6 +9503,10 @@ Diluer la synergie dans une huile végétale PUR''ESSENCE adaptée puis applique
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Pour optimiser les résultats, utilisez cette synergie quotidiennement dans le cadre d''une routine complète associant un nettoyage doux, une hydratation adaptée et une alimentation équilibrée.
 Les peaux à tendance acnéique bénéficient également d''une bonne gestion du stress, d''un sommeil de qualité et d''une réduction des aliments à forte charge glycémique. La régularité des soins est un facteur essentiel pour obtenir une amélioration progressive de l''aspect de la peau.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, huiles végétales, hydrolats et conseils nutritionnels les mieux adaptés à votre type de peau et à vos objectifs de bien-être.
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ éd.).
@@ -9104,6 +9672,12 @@ Uniquement sur les conseils d''un professionnel de santé qualifié.
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le stress oxydatif résulte d''un déséquilibre entre la production de radicaux libres et les capacités naturelles de défense de l''organisme. Cette synergie s''intègre dans une approche globale comprenant une alimentation riche en végétaux colorés, une activité physique régulière, un sommeil de qualité et une bonne gestion du stress. Son utilisation gagne à être associée aux produits nutritionnels PUR''ESSENCE afin d''optimiser l''accompagnement de l''équilibre cellulaire.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, huiles végétales, tisanes et conseils nutritionnels les mieux adaptés à vos besoins afin de vous proposer une approche personnalisée de l''équilibre métabolique.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
@@ -9276,6 +9850,12 @@ Diluer la synergie dans une huile végétale PUR''ESSENCE adaptée puis applique
 La régularité est la clé du succès. Pour optimiser les résultats, appliquez cette synergie quotidiennement dès les premiers signes de tension cutanée ou en prévention des périodes à risque.
 Associez-la à une huile végétale riche en acides gras essentiels, telle que la Rose Musquée ou l''Argan, et adoptez une alimentation riche en protéines, vitamines antioxydantes et minéraux favorisant le maintien d''une peau saine.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre peau, afin de vous proposer une prise en charge personnalisée et globale.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
 - Battaglia S. – The Complete Guide to Aromatherapy.
@@ -9443,6 +10023,12 @@ Diffuser quelques gouttes dans un diffuseur adapté afin de créer une atmosphè
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 La vitalité sexuelle est influencée par de nombreux facteurs, notamment la qualité du sommeil, le niveau de stress, l''activité physique, l''équilibre hormonal, l''alimentation et la qualité de la relation de couple.
 Cette synergie s''intègre dans une approche globale du bien-être intime et ne remplace pas une évaluation médicale lorsque les difficultés sont persistantes, s''aggravent ou s''accompagnent d''autres symptômes.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre situation, dans le respect de vos besoins et de votre intimité.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
@@ -9633,6 +10219,12 @@ Uniquement sur les conseils d''un professionnel de santé qualifié.
 Les ballonnements sont souvent liés à une combinaison de facteurs alimentaires, digestifs et comportementaux. Une mastication insuffisante, des repas trop copieux, le stress ou une consommation excessive de boissons gazeuses peuvent favoriser leur apparition.
 Cette synergie accompagne le confort digestif dans le cadre d''une approche globale incluant une alimentation adaptée, une bonne hydratation, une activité physique régulière et une gestion du stress.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales, des hydrolats, des tisanes et des conseils nutritionnels les mieux adaptés à votre confort digestif.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
 - Battaglia S. – The Complete Guide to Aromatherapy.
@@ -9805,6 +10397,12 @@ Suivant les recommandations et les conseils d''un professionnel de santé qualif
 Aucune huile essentielle ne permet, à elle seule, de faire fondre les graisses. Cette synergie est conçue pour accompagner un programme de gestion du poids en soutenant la digestion, le drainage et le métabolisme dans le cadre d''une approche globale.
 Les meilleurs résultats sont obtenus en l''associant à une alimentation équilibrée, une activité physique régulière, une bonne hydratation et un sommeil de qualité.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, huiles végétales, tisanes et conseils nutritionnels les mieux adaptés à votre objectif de gestion du poids.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
 - Battaglia S. – The Complete Guide to Aromatherapy.
@@ -9974,6 +10572,12 @@ Diluer la synergie dans une huile végétale PUR''ESSENCE adaptée puis masser l
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 La cellulite est un phénomène multifactoriel associant des modifications du tissu adipeux, de la microcirculation et de la structure du tissu conjonctif. Les meilleurs résultats sont obtenus en associant cette synergie à des massages réguliers, une activité physique adaptée, une alimentation équilibrée et une bonne hydratation. La régularité des soins est essentielle pour accompagner l''amélioration progressive de l''aspect de la peau.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à vos objectifs de silhouette et de bien-être.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
 - Battaglia S. – The Complete Guide to Aromatherapy.
@@ -10141,6 +10745,12 @@ Suivant les recommandations et les conseils d''un professionnel de santé qualif
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le confort gastrique repose sur une alimentation adaptée, une bonne mastication, la gestion du stress et des horaires de repas réguliers. Cette synergie aromatique accompagne le bien-être digestif dans le cadre d''une approche globale de santé. Elle ne remplace pas une prise en charge médicale en cas de maladie digestive.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre confort digestif.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
@@ -10316,6 +10926,12 @@ Diluer la synergie dans une huile végétale PUR''ESSENCE puis masser délicatem
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le confort menstruel est favorisé par une approche globale intégrant une alimentation équilibrée, une bonne hydratation, une activité physique régulière et une gestion du stress. Cette synergie aromatique accompagne naturellement le bien-être féminin au cours du cycle menstruel et s''intègre parfaitement dans une routine de soins personnalisée. Elle ne remplace pas un avis médical en cas de douleurs très intenses, de saignements inhabituels ou de troubles persistants.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre bien-être féminin.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
@@ -10506,6 +11122,12 @@ Quelques gouttes préalablement dispersées dans une base adaptée pour favorise
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le confort musculaire et articulaire repose sur une approche globale associant une activité physique adaptée, une alimentation équilibrée, une bonne hydratation et un temps de récupération suffisant. Cette synergie aromatique accompagne naturellement ces mesures d''hygiène de vie. En cas de douleur intense, persistante, de traumatisme important, de gonflement marqué ou de limitation importante des mouvements, une consultation médicale est indispensable.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre confort musculaire et articulaire.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
 - Battaglia S. The Complete Guide to Aromatherapy.
@@ -10677,6 +11299,12 @@ Diluer la synergie dans une huile végétale PUR''ESSENCE puis masser délicatem
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le confort des nerfs périphériques dépend également d''une bonne santé métabolique, d''une alimentation équilibrée, d''un apport suffisant en vitamines du groupe B et d''une activité physique régulière. Cette synergie aromatique accompagne le bien-être neuro-musculaire dans le cadre d''une approche globale de santé. Elle ne remplace pas une prise en charge médicale en présence de symptômes neurologiques persistants ou évolutifs.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre confort nerveux périphérique.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
 - Battaglia S. The Complete Guide to Aromatherapy.
@@ -10847,6 +11475,12 @@ Suivant les recommandations et les conseils d''un professionnel de santé qualif
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le confort urinaire et intime repose sur une bonne hydratation, une hygiène adaptée, une alimentation équilibrée et le respect de la flore naturelle.
 Cette synergie aromatique accompagne le bien-être de la sphère uro-génitale dans une approche globale de santé. Elle ne remplace pas un traitement médical lorsqu''une infection est diagnostiquée.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre confort urinaire et intime.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
@@ -11021,6 +11655,12 @@ Uniquement sur les conseils d''un professionnel de santé qualifié.
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le confort prostatique dépend également d''une bonne hygiène de vie, d''une alimentation équilibrée, d''une activité physique régulière et d''un suivi médical adapté avec l''avancée en âge. Cette synergie aromatique accompagne le bien-être de la sphère prostatique dans une approche globale de santé. Elle ne remplace pas un diagnostic ni un traitement médical lorsque cela est nécessaire.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre bien-être prostatique.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
@@ -11206,6 +11846,12 @@ Suivant les recommandations et les conseils d''un professionnel de santé qualif
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Une fatigue persistante ou inhabituelle peut révéler une affection sous-jacente (anémie, troubles thyroïdiens, diabète, infection, troubles du sommeil, etc.). Si la fatigue dure plusieurs semaines, s''aggrave ou s''accompagne d''autres symptômes, il est recommandé de consulter un professionnel de santé. Cette synergie accompagne le bien-être et la récupération, mais ne remplace pas un diagnostic médical ni un traitement adapté.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à vos besoins de vitalité et de récupération.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
 - Battaglia S. – The Complete Guide to Aromatherapy.
@@ -11358,6 +12004,12 @@ Diluer la synergie dans une huile végétale PUR''ESSENCE adaptée puis applique
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Les hémorroïdes sont souvent favorisées par la constipation, les efforts de poussée, la grossesse, le surpoids ou une station assise prolongée. Cette synergie accompagne le confort local dans le cadre d''une approche globale.
 En cas de douleurs intenses, de saignements répétés ou de symptômes persistants, une consultation médicale est indispensable afin d''éliminer une autre cause et de mettre en place une prise en charge adaptée.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre confort circulatoire.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
@@ -11537,6 +12189,12 @@ Uniquement sur les conseils d''un professionnel de santé qualifié.
 Le bon fonctionnement du système immunitaire dépend de nombreux facteurs : qualité de l''alimentation, sommeil, activité physique, gestion du stress et état nutritionnel.
 Cette synergie aromatique accompagne les défenses naturelles dans le cadre d''une approche globale du bien-être. En cas de fièvre persistante, de symptômes sévères ou d''infection nécessitant une prise en charge médicale, il est indispensable de consulter un professionnel de santé.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à vos besoins et à votre vitalité.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
 - Battaglia S. – The Complete Guide to Aromatherapy.
@@ -11712,6 +12370,12 @@ Déposer quelques gouttes sur un mouchoir ou un diffuseur personnel et respirer 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le sommeil est un pilier essentiel de la santé. Une alimentation équilibrée, une bonne gestion du stress, une activité physique régulière et des habitudes de coucher constantes sont indispensables pour préserver un sommeil de qualité.
 Cette synergie aromatique accompagne le processus naturel d''endormissement et le bien-être nocturne, mais ne remplace pas une prise en charge médicale lorsqu''un trouble du sommeil persiste.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils d''hygiène de vie les mieux adaptés à votre sommeil et à votre équilibre nerveux.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
@@ -11902,6 +12566,12 @@ Diluer la synergie dans une huile végétale PUR''ESSENCE adaptée puis masser l
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Les jambes lourdes sont favorisées par la chaleur, la station debout prolongée, la sédentarité, le surpoids et certaines prédispositions familiales. Cette synergie aromatique accompagne le confort circulatoire au quotidien. En cas de douleur importante, d''œdème soudain, de rougeur, de chaleur locale ou de suspicion de thrombose veineuse, une consultation médicale est indispensable.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre confort circulatoire.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
 - Battaglia S. – The Complete Guide to Aromatherapy.
@@ -12076,6 +12746,12 @@ Respirer quelques instants avant une séance d''étude, de lecture ou de travail
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 La mémoire et la concentration dépendent d''un sommeil de qualité, d''une alimentation équilibrée, d''une bonne gestion du stress et d''une stimulation intellectuelle régulière. Cette synergie aromatique accompagne les fonctions cognitives dans le cadre d''une approche globale de santé. En cas de troubles persistants de la mémoire ou de la concentration, un avis médical est recommandé.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à vos besoins cognitifs.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
 - Battaglia S. The Complete Guide to Aromatherapy.
@@ -12248,6 +12924,12 @@ Respirer quelques instants lorsque le besoin de retrouver un état de calme se f
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le stress chronique peut avoir des répercussions sur le sommeil, la concentration, la digestion et le bien-être général. Cette synergie aromatique accompagne les mécanismes naturels d''adaptation de l''organisme et favorise un retour au calme dans le cadre d''une approche globale intégrant une bonne hygiène de vie. Elle ne remplace pas une prise en charge médicale ou psychologique lorsque les symptômes sont sévères ou persistants.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre équilibre nerveux.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
 - Battaglia S. The Complete Guide to Aromatherapy.
@@ -12331,6 +13013,12 @@ Cette synergie associe deux huiles exceptionnellement riches en GLA (bourrache e
 
 ## 🥗 Le Saviez-vous ?
 Le GLA (acide gamma-linolénique) est un acide gras polyinsaturé naturellement présent en quantité importante dans les huiles de bourrache et d''onagre. Le jojoba, quant à lui, est une cire liquide végétale dont la composition est proche du sébum humain, ce qui favorise une excellente affinité avec la peau. La vitamine E naturelle complète cette synergie en contribuant à protéger les cellules contre le stress oxydatif et à préserver la stabilité des huiles.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies les mieux adaptées à vos besoins en santé, nutrition, bien-être, beauté et aromathérapie.
+
+## Signature officielle PUR''ESSENCE
+Les synergies PUR''ESSENCE sont élaborées à partir d''ingrédients rigoureusement sélectionnés pour leur qualité et leur complémentarité. Elles associent des huiles végétales et des composés naturels afin de s''intégrer dans une démarche globale de santé, de nutrition, de bien-être et de beauté, dans le respect des bonnes pratiques d''utilisation.
 
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA).
@@ -12504,6 +13192,12 @@ Diluer la synergie dans une huile végétale PUR''ESSENCE puis masser les articu
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le confort articulaire repose sur une approche globale associant une alimentation riche en nutriments protecteurs, une activité physique adaptée, un poids de santé et des soins locaux réguliers. Cette synergie aromatique accompagne naturellement la mobilité et le bien-être des articulations, sans se substituer à un suivi médical lorsque celui-ci est nécessaire.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre confort articulaire.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
 - Battaglia S. The Complete Guide to Aromatherapy.
@@ -12654,6 +13348,12 @@ Diluer la synergie dans une huile végétale PUR''ESSENCE adaptée puis applique
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 La beauté de la peau dépend autant des soins externes que de l''équilibre nutritionnel, de l''hydratation, du sommeil et de la protection contre les agressions environnementales. Cette synergie aromatique accompagne les mécanismes naturels de régénération cutanée et s''intègre parfaitement dans une routine complète de soin de la peau.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils personnalisés pour préserver durablement la beauté et le confort de votre peau.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
@@ -12826,6 +13526,12 @@ Suivant les orientations et les conseils d''un professionnel de santé qualifié
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le foie joue un rôle essentiel dans le métabolisme, la digestion et les mécanismes naturels de détoxification de l''organisme. Cette synergie aromatique accompagne ses fonctions physiologiques dans le cadre d''une bonne hygiène de vie. Elle ne remplace pas un avis médical ni un traitement spécifique en cas de maladie hépatique.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre bien-être hépatique.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
 - Battaglia S. The Complete Guide to Aromatherapy.
@@ -12996,6 +13702,12 @@ En diffusion atmosphérique pour favoriser une ambiance propice à la détente.
 La prévention cardiovasculaire repose avant tout sur le contrôle des facteurs de risque modifiables : hypertension artérielle, diabète, dyslipidémie, tabagisme, sédentarité et alimentation déséquilibrée.
 Cette synergie aromatique s''intègre dans une démarche globale de bien-être et ne doit jamais retarder une consultation médicale ni remplacer un traitement prescrit. En présence de signes évocateurs d''un AVC (faiblesse brutale d''un côté du corps, troubles de la parole, déformation du visage, perte soudaine de la vision ou de l''équilibre), une prise en charge médicale d''urgence est indispensable.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre situation, en complément du suivi assuré par votre équipe soignante.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
 - Battaglia S. – The Complete Guide to Aromatherapy.
@@ -13153,6 +13865,12 @@ Respirer quelques instants lors des périodes de tension émotionnelle ou d''inc
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 La ménopause est une étape physiologique naturelle de la vie de la femme. Une alimentation équilibrée, une activité physique régulière, un sommeil de qualité et une bonne gestion du stress contribuent largement au bien-être durant cette période. Cette synergie aromatique accompagne cette transition de façon naturelle, en complément d''une hygiène de vie adaptée. Elle ne remplace pas un suivi médical lorsque les symptômes sont importants ou persistants.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre bien-être féminin.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
@@ -13321,6 +14039,12 @@ Diluer la synergie dans une huile végétale PUR''ESSENCE puis masser l''abdomen
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 La graisse abdominale est influencée par l''alimentation, l''activité physique, le sommeil et le niveau de stress. Cette synergie aromatique accompagne les programmes de rééquilibrage alimentaire et de contrôle du poids en favorisant le confort digestif, une sensation de ventre plus plat et une silhouette plus harmonieuse. Pour des résultats durables, elle doit être associée à une alimentation adaptée et à une pratique régulière d''exercices physiques.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à vos objectifs de silhouette et de bien-être digestif.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
@@ -13526,6 +14250,12 @@ Utiliser dans un diffuseur adapté selon les recommandations du fabricant afin d
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 Le confort respiratoire repose sur une approche globale associant une bonne hygiène de vie, une alimentation riche en antioxydants, une hydratation suffisante et un environnement sain. Cette synergie aromatique accompagne naturellement les voies respiratoires et les bronches, en particulier pendant les périodes hivernales et les changements de saison. Elle ne remplace pas une prise en charge médicale en cas de difficultés respiratoires importantes, de fièvre persistante ou de symptômes sévères.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils personnalisés pour préserver durablement votre confort respiratoire.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. Essential Oil Safety (2ᵉ édition).
 - Battaglia S. The Complete Guide to Aromatherapy.
@@ -13715,6 +14445,12 @@ Diluer la synergie dans une huile végétale PUR''ESSENCE adaptée puis masser l
 Une bonne circulation repose sur une approche globale. En complément des massages aromatiques, il est recommandé de pratiquer une activité physique régulière, de maintenir un poids de santé, de limiter les périodes d''immobilité et de porter, lorsque cela est indiqué, des bas de compression prescrits par un professionnel de santé.
 Cette synergie accompagne le confort circulatoire mais ne remplace pas la prise en charge médicale des maladies veineuses.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre confort circulatoire.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
 - Battaglia S. – The Complete Guide to Aromatherapy.
@@ -13887,6 +14623,12 @@ Suivant les recommandations et les conseils d''un professionnel de santé qualif
 Le diabète est une maladie chronique complexe dont la prise en charge repose sur une alimentation adaptée, une activité physique régulière, un suivi médical et, lorsque cela est nécessaire, un traitement médicamenteux.
 Cette synergie aromatique est conçue pour accompagner le bien-être métabolique et s''intègre dans une approche globale. Elle ne remplace jamais les traitements prescrits ni le suivi médical.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre équilibre métabolique.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
 - Battaglia S. – The Complete Guide to Aromatherapy.
@@ -14038,6 +14780,12 @@ Diffuser ponctuellement dans une pièce bien ventilée afin de créer une atmosp
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''hypertension artérielle est un facteur de risque cardiovasculaire qui nécessite un suivi médical régulier. Cette synergie aromatique accompagne le bien-être cardiovasculaire et la gestion du stress, mais elle ne remplace jamais les traitements prescrits ni les mesures hygiéno-diététiques recommandées. Toute modification d''un traitement antihypertenseur doit être décidée avec un professionnel de santé.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre bien-être cardiovasculaire.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
 
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
@@ -14195,6 +14943,12 @@ Uniquement sur les conseils d''un professionnel de santé qualifié.
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''équilibre du cholestérol dépend principalement de l''alimentation, de l''activité physique, du poids corporel, du sommeil et de certains facteurs génétiques. Cette synergie aromatique est conçue pour accompagner une démarche globale de santé cardiovasculaire. Elle ne remplace ni les mesures hygiéno-diététiques, ni les traitements prescrits lorsque ceux-ci sont nécessaires. Un suivi régulier du bilan lipidique avec votre professionnel de santé reste indispensable.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des synergies aromatiques, des huiles végétales et des conseils nutritionnels les mieux adaptés à votre équilibre cardiovasculaire et métabolique.
+
+## Signature officielle PUR''ESSENCE
+Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l''aromathérapie scientifique, en associant des huiles essentielles 100 % pures et naturelles, rigoureusement sélectionnées pour leur complémentarité. Elles s''intègrent dans une démarche globale de santé, de bien-être et de prévention, en complément d''une alimentation équilibrée et d''une bonne hygiène de vie.
+
 ## 📚 Références scientifiques
 - Tisserand R., Young R. – Essential Oil Safety (2ᵉ édition).
 - Battaglia S. – The Complete Guide to Aromatherapy.
@@ -14273,7 +15027,11 @@ L''orchidée blanche est universellement associée à la pureté, à l''élégan
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Absolue d''Orchidée Blanche Bio est une matière première d''exception, recherchée pour son parfum floral d''une rare élégance et son caractère résolument luxueux. Elle apporte une dimension sensorielle incomparable aux soins cosmétiques et aux créations de parfumerie naturelle.
-Chez PUR''ESSENCE, nous la recommandons pour élaborer des huiles de beauté, des sérums et des compositions parfumées destinés à offrir une expérience unique de raffinement, de douceur et de bien-être.','/images/produits/absolue-d-orchidee-blanche.webp',false,true,1360),
+Chez PUR''ESSENCE, nous la recommandons pour élaborer des huiles de beauté, des sérums et des compositions parfumées destinés à offrir une expérience unique de raffinement, de douceur et de bien-être.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des absolues, huiles essentielles, huiles végétales et synergies les mieux adaptées à vos besoins en santé, bien-être, beauté et parfumerie naturelle.
+Contactez l''équipe PUR''ESSENCE et découvrez toute la délicatesse de l''Absolue d''Orchidée Blanche Bio, une essence florale rare qui incarne la pureté, l''élégance et l''excellence.','/images/produits/absolue-d-orchidee-blanche.webp',false,true,1360),
 ('absolue-de-lotus','Absolue de Lotus','Originaire d''Inde, où il est considéré comme un symbole de pureté, de sagesse et d''élévation spirituelle, le Lotus (Nelumbo nucifera) est une fleur sacrée depuis des…','Originaire d''Inde, où il est considéré comme un symbole de pureté, de sagesse et d''élévation spirituelle, le Lotus (Nelumbo nucifera) est une fleur sacrée depuis des millénaires. L''Absolue de Lotus Bio PUR''ESSENCE est obtenue à partir de fleurs soigneusement sélectionnées afin de préserver toute la richesse de leur parfum exceptionnel.
 
 Très prisée en haute parfumerie et dans les soins cosmétiques de luxe, elle séduit par sa fragrance florale raffinée, délicatement poudrée et profondément apaisante.','hydrolat-absolue','relaxation','Nelumbo nucifera','Lotus Absolute','Inde','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Inde"}, {"label": "Partie utilisée", "value": "Fleurs"}, {"label": "Mode d''obtention", "value": "Extraction des fleurs, suivie d''une purification permettant d''obtenir une absolue hautement concentrée."}, {"label": "Famille olfactive", "value": "Florale • Poudrée • Douce • Exotique • Élégante"}, {"label": "Conditionnements disponibles", "value": "• 5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -14346,7 +15104,11 @@ Dans les traditions indienne et asiatique, le lotus est le symbole de la pureté
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Absolue de Lotus Bio est l''une des matières aromatiques les plus prestigieuses de la parfumerie naturelle. Son parfum subtil, floral et poudré apporte une dimension sensorielle unique aux soins de beauté et aux compositions olfactives haut de gamme.
-Chez PUR''ESSENCE, nous la recommandons pour les rituels de bien-être, les soins cosmétiques premium et les créations parfumées destinées à offrir une véritable expérience de luxe et de sérénité.','/images/produits/absolue-de-lotus.webp',false,true,1370),
+Chez PUR''ESSENCE, nous la recommandons pour les rituels de bien-être, les soins cosmétiques premium et les créations parfumées destinées à offrir une véritable expérience de luxe et de sérénité.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des absolues, huiles essentielles, huiles végétales et synergies les mieux adaptées à vos besoins en santé, bien-être, beauté et parfumerie naturelle.
+Contactez l''équipe PUR''ESSENCE et découvrez toute la noblesse de l''Absolue de Lotus Bio, une essence florale d''exception inspirée de la tradition millénaire de l''Inde.','/images/produits/absolue-de-lotus.webp',false,true,1370),
 ('hydrolat-d-hamamelis','Hydrolat d''Hamamélis','Issu des vastes forêts canadiennes, l''Hydrolat d''Hamamélis Bio PUR''ESSENCE est obtenu par distillation à la vapeur d''eau des feuilles et des jeunes rameaux de…','Issu des vastes forêts canadiennes, l''Hydrolat d''Hamamélis Bio PUR''ESSENCE est obtenu par distillation à la vapeur d''eau des feuilles et des jeunes rameaux de Hamamelis virginiana. Réputé pour sa grande douceur, il est particulièrement apprécié dans les soins quotidiens des peaux sensibles, mixtes et grasses. Rafraîchissant et tonifiant, il trouve également sa place dans les routines de bien-être et les soins destinés à favoriser le confort des jambes et la fraîcheur cutanée.','hydrolat-absolue','beaute','Hamamelis virginiana','Witch Hazel Hydrosol','Canada','100 ml • 200 ml • 500 ml',null,'[{"label": "Origine", "value": "Canada"}, {"label": "Partie distillée", "value": "Feuilles et jeunes rameaux"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau – Hydrolat 100 % pur et biologique"}, {"label": "Famille olfactive", "value": "Herbacée • Fraîche • Légèrement boisée"}, {"label": "Conditionnements disponibles", "value": "100 ml • 200 ml • 500 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
 - Contribue au confort des jambes fatiguées.
 - Favorise une agréable sensation de fraîcheur cutanée.
@@ -14415,7 +15177,11 @@ Originaire d''Amérique du Nord, l''Hamamélis est surnommé « l''arbuste aux s
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Hydrolat d''Hamamélis Bio est un incontournable des soins naturels du visage et des jambes. Grâce à sa douceur, il convient à un usage quotidien pour rafraîchir, tonifier et apporter une agréable sensation de confort à la peau.
-Chez PUR''ESSENCE, nous le recommandons particulièrement aux personnes ayant une peau mixte à grasse, sensible ou recherchant un soin tonique naturel. Associé aux huiles végétales de Jojoba, de Calophylle ou de Pépins de Raisin, il s''intègre parfaitement dans une routine de beauté et de bien-être.','/images/produits/hydrolat-d-hamamelis.webp',false,true,1380),
+Chez PUR''ESSENCE, nous le recommandons particulièrement aux personnes ayant une peau mixte à grasse, sensible ou recherchant un soin tonique naturel. Associé aux huiles végétales de Jojoba, de Calophylle ou de Pépins de Raisin, il s''intègre parfaitement dans une routine de beauté et de bien-être.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Chaque peau est unique. Les experts PUR''ESSENCE vous accompagnent dans le choix des hydrolats, des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
+Contactez l''équipe PUR''ESSENCE pour découvrir toute la fraîcheur et la douceur de l''Hydrolat d''Hamamélis Bio et bénéficier de conseils personnalisés pour votre routine de soins naturels.','/images/produits/hydrolat-d-hamamelis.webp',false,true,1380),
 ('oleoresine-de-piment','Oléorésine de Piment','Produite à partir de piments biologiques cultivés en Jamaïque, l''Oléorésine de Piment Bio PUR''ESSENCE est un extrait végétal hautement concentré, apprécié pour son…','Produite à partir de piments biologiques cultivés en Jamaïque, l''Oléorésine de Piment Bio PUR''ESSENCE est un extrait végétal hautement concentré, apprécié pour son intensité aromatique et sa richesse naturelle en capsaïcinoïdes.
 
 Elle est principalement destinée aux préparations cosmétiques et aux applications techniques nécessitant une très faible quantité de produit. Son pouvoir chauffant remarquable en fait un ingrédient recherché dans les soins de massage destinés au confort musculaire et articulaire.','hydrolat-absolue','sante','Capsicum frutescens L. (ou Capsicum annuum selon la variété utilisée)','Chili Oleoresin','Jamaïque','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Jamaïque"}, {"label": "Partie utilisée", "value": "Fruits mûrs"}, {"label": "Mode d''obtention", "value": "Extraction des fruits, suivie de l''élimination du solvant conformément aux normes de qualité, afin d''obtenir une oléorésine concentrée."}, {"label": "Aspect", "value": "Liquide visqueux à rouge foncé"}, {"label": "Famille olfactive", "value": "Épicée • Chaude • Piquante"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -14490,7 +15256,10 @@ Le piment est cultivé en Jamaïque depuis plusieurs siècles et occupe une plac
 
 ## 👨‍⚕️ Conseil de l''Expert PUR''ESSENCE
 L''Oléorésine de Piment Bio est un extrait végétal très concentré qui s''adresse principalement aux utilisateurs expérimentés et aux formulateurs de soins naturels. Grâce à son effet chauffant marqué, elle constitue un excellent ingrédient pour les huiles de massage destinées au confort musculaire et articulaire.
-Chez PUR''ESSENCE, nous recommandons de toujours la diluer soigneusement dans une huile végétale adaptée et de respecter les précautions d''emploi afin de profiter pleinement de ses qualités tout en préservant le confort de la peau.','/images/produits/oleoresine-de-piment.webp',false,true,1390),
+Chez PUR''ESSENCE, nous recommandons de toujours la diluer soigneusement dans une huile végétale adaptée et de respecter les précautions d''emploi afin de profiter pleinement de ses qualités tout en préservant le confort de la peau.
+
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des oléorésines, huiles essentielles, huiles végétales et synergies les mieux adaptées à vos besoins. Contactez notre équipe pour bénéficier de conseils personnalisés et découvrir des formulations naturelles de haute qualité.','/images/produits/oleoresine-de-piment.webp',false,true,1390),
 ('vitamine-e-naturelle','Vitamine E Naturelle','La Vitamine E Naturelle PUR''ESSENCE est une forme concentrée de tocophérols d''origine végétale.','La Vitamine E Naturelle PUR''ESSENCE est une forme concentrée de tocophérols d''origine végétale. Reconnue pour son puissant pouvoir antioxydant, elle est largement utilisée en nutrition, en cosmétique et en aromathérapie.
 
 Elle contribue à protéger les cellules contre le stress oxydatif et participe à la préservation de la qualité des huiles végétales en limitant leur oxydation.
@@ -14557,6 +15326,12 @@ En cosmétique, quelques gouttes suffisent pour enrichir un soin et renforcer so
 ## 🥗 Le Saviez-vous ?
 La vitamine E désigne une famille de composés comprenant les tocophérols et les tocotriénols. Les formes naturelles sont particulièrement recherchées pour leur activité biologique et leur utilisation en nutrition et en cosmétique. Elles jouent également un rôle important dans la stabilité des huiles végétales riches en acides gras insaturés.
 
+## 📞 Besoin d''un accompagnement personnalisé ?
+Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles végétales, de la Vitamine E naturelle et des huiles essentielles les mieux adaptées à vos besoins en santé, nutrition, bien-être et beauté.
+
+## Signature officielle PUR''ESSENCE
+Les produits PUR''ESSENCE sont soigneusement sélectionnés pour leur qualité exceptionnelle et leur richesse naturelle en composés bioactifs. Ils s''intègrent parfaitement dans une démarche globale de santé, de nutrition, de bien-être et de beauté, tout en respectant les bonnes pratiques d''utilisation.
+
 ## 📚 Références scientifiques
 - European Food Safety Authority (EFSA). Vitamin E and protection of cells from oxidative stress.
 - Organisation mondiale de la Santé (OMS).
@@ -14564,13 +15339,3 @@ La vitamine E désigne une famille de composés comprenant les tocophérols et l
 - Codex Alimentarius.
 - Publications scientifiques indexées dans PubMed sur les tocophérols, les tocotriénols et la vitamine E naturelle.','/images/produits/vitamine-e-naturelle.webp',false,true,1400)
 on conflict (slug) do nothing;
-
--- Photos ajoutées ensuite (images de l'ancien site)
-update public.products p set image_url = '/images/produits/' || p.slug || '.webp'
-where p.image_url is null
-  and p.slug in ('basilic-tropical','cypres','gaultherie-couchee','menthe-poivree','oliban','palmarosa');
-
--- Photos (anciennes étiquettes, en attendant les nouvelles)
-update public.products p set image_url = '/images/produits/' || p.slug || '.webp'
-where p.image_url is null
-  and p.slug in ('ail','cannelle','carotte','cedre','citronnelle','clou-de-girofle','curcuma','eucalyptus-globulus','genevrier');

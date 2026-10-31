@@ -17,7 +17,7 @@ Réalisé par Yung's Agency.
 | Contact (enregistré en base + WhatsApp), carte Mimboman | Coordonnées : numéros (Cameroun / Canada), email, adresses, horaires, réseaux, chiffres clés |
 | Mentions légales et avertissement santé, sitemap, robots | |
 
-Le catalogue compte **141 produits** issus des fiches techniques du client : 69 huiles essentielles, 35 huiles végétales, 32 synergies, 4 hydrolats ou absolues et la vitamine E. 63 produits ont déjà leur photo, dans `public/images/produits/`. Tant que Supabase n'est pas branché, le site public fonctionne avec ce catalogue (`src/data/seed-products.ts`). Les formulaires et l'admin ont besoin de la base.
+Le catalogue compte **141 produits** issus des fiches techniques du client : 69 huiles essentielles, 35 huiles végétales, 32 synergies, 4 hydrolats ou absolues et la vitamine E. 72 produits ont déjà leur photo, dans `public/images/produits/`. Tant que Supabase n'est pas branché, le site public fonctionne avec ce catalogue (`src/data/seed-products.ts`). Les formulaires et l'admin ont besoin de la base.
 
 ## Mise en route
 
@@ -39,7 +39,7 @@ Le catalogue compte **141 produits** issus des fiches techniques du client : 69 
 
 ## À compléter par le client
 
-- 78 photos manquantes (les prix ne sont pas affichés pour l'instant ; le champ existe dans l'admin) (filtre « Sans photo » dans l'admin).
+- 69 photos manquantes (les prix ne sont pas affichés pour l'instant ; le champ existe dans l'admin) (filtre « Sans photo » dans l'admin).
 - 4 synergies importées **non publiées** car elles visent des maladies (AVC, glycémie, tension, cholestérol) : à valider avant publication.
 - Vrai numéro WhatsApp Canada (Admin → Coordonnées). Il est masqué tant que le champ est vide.
 - Photos de l'équipe et des résultats avant/après, liens des réseaux sociaux.

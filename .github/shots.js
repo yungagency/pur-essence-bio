@@ -1,5 +1,5 @@
 const {chromium}=require('playwright');const fs=require('fs');
-const pages=['/produits/synergie-insomnie','/produits/ail','/mentions-legales','/commande','/','/produits','/produits/neroli','/produits/synergie-insomnie','/produits/argan','/produits/lavande-vraie','/services','/a-propos','/avis','/consultation','/contact','/mentions-legales','/admin/login','/page-inexistante'];
+const pages=['/produits/celeri-huile-essentielle','/produits/synergie-insomnie','/produits/ail','/mentions-legales','/commande','/','/produits','/produits/neroli','/produits/synergie-insomnie','/produits/argan','/produits/lavande-vraie','/services','/a-propos','/avis','/consultation','/contact','/mentions-legales','/admin/login','/page-inexistante'];
 (async()=>{const b=await chromium.launch();let txt='';
 for(const [n,w,h] of [['d',1366,900],['m',390,844]]){const p=await b.newPage({viewport:{width:w,height:h}});
  const errs=[];p.on('console',m=>{if(m.type()==='error')errs.push(m.text())});p.on('pageerror',e=>errs.push(e.message));
@@ -10,6 +10,9 @@ for(const [n,w,h] of [['d',1366,900],['m',390,844]]){const p=await b.newPage({vi
   txt+=`\n\n##### [${n}] ${u} [${st}] overflowX=${ovf} broken=${JSON.stringify(broken)} errors=${JSON.stringify(errs)}\n`;
   if(n==='d')txt+=(await p.innerText('body')).slice(0,5000);
  }}
+// accueil grand écran
+ for(const [w,h] of [[1920,1080],[1280,720]]){const p=await b.newPage({viewport:{width:w,height:h}});await p.goto('http://localhost:3000/',{waitUntil:'networkidle'});await p.waitForTimeout(500);await p.screenshot({path:'out/home_'+w+'.jpg',type:'jpeg',quality:60});
+  txt+=`\nHERO ${w}: `+JSON.stringify(await p.$eval('.hero-photo',e=>{const r=e.getBoundingClientRect();return [r.width,r.height]}));}
 // parcours panier
  for(const [n,w,h] of [['d',1366,900],['m',390,844]]){const p=await b.newPage({viewport:{width:w,height:h}});const errs=[];p.on('pageerror',e=>errs.push(e.message));
   await p.goto('http://localhost:3000/produits/neroli',{waitUntil:'networkidle'});await p.click('text=10 ml');await p.click('button[aria-label=Plus]');await p.click('text=Ajouter au panier');await p.waitForTimeout(300);
