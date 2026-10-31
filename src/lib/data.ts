@@ -25,7 +25,7 @@ export const DEFAULT_SETTINGS: Settings = {
 const SEED_FAQS: Faq[] = [
   { id: 'f1', question: 'Combien de temps dure une consultation ?', answer: 'Une consultation dure en moyenne 30 à 45 minutes.', published: true, sort: 0 },
   { id: 'f2', question: 'Puis-je consulter à distance ?', answer: 'Oui, par appel téléphonique ou appel vidéo WhatsApp.', published: true, sort: 1 },
-  { id: 'f3', question: 'Les huiles essentielles sont-elles sans danger ?', answer: "Ce sont des produits très concentrés : ils doivent être dilués et utilisés avec précaution. Nos conseils ne remplacent pas l'avis d'un médecin.", published: true, sort: 2 },
+  { id: 'f3', question: 'Les huiles essentielles sont-elles sans danger ?', answer: "Ce sont des produits très concentrés : ils doivent être dilués et utilisés avec précaution.", published: true, sort: 2 },
 ];
 
 export const getSettings = cache(async (): Promise<Settings> => {

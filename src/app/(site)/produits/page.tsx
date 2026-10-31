@@ -12,7 +12,9 @@ export default async function ProduitsPage() {
   const products = await getProducts();
   return (
     <>
-      <section className="page-hero hero-static" style={{ height: 'auto', minHeight: 280, padding: '4rem 0 2rem' }}>
+      <section className="page-hero hero-photo hero-produits" style={{ height: 'auto', minHeight: 280, padding: '4rem 0 2rem' }}>
+        <div className="page-hero-bg" style={{ backgroundImage: "url('/images/ambiance/produits-bandeau.webp')" }} aria-hidden="true" />
+        <div className="page-hero-overlay" aria-hidden="true" />
         <div className="container page-hero-content reveal">
           <span className="eyebrow">Catalogue</span>
           <h1>Nos produits naturels</h1>
