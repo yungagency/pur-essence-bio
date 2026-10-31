@@ -267,7 +267,7 @@ insert into public.faqs (question, answer, sort) values
  ('Combien de temps dure une consultation ?', 'Une consultation dure en moyenne 30 à 45 minutes. La première séance peut être un peu plus longue, le temps de bien comprendre vos besoins.', 0),
  ('La consultation est-elle payante ?', 'Contactez-nous pour connaître les tarifs en vigueur et les conditions de la première consultation.', 1),
  ('Puis-je consulter à distance ?', 'Oui. Les consultations peuvent se faire à la boutique à Yaoundé, par appel téléphonique ou par appel vidéo WhatsApp.', 2),
- ('Les huiles essentielles sont-elles sans danger ?', 'Ce sont des produits naturels très concentrés : ils doivent être dilués et utilisés avec précaution. Certaines huiles sont déconseillées aux femmes enceintes ou allaitantes, aux jeunes enfants et aux personnes épileptiques. Nos conseils ne remplacent pas l''avis d''un médecin.', 3),
+ ('Les huiles essentielles sont-elles sans danger ?', 'Ce sont des produits naturels très concentrés : ils doivent être dilués et utilisés avec précaution. Certaines huiles sont déconseillées aux femmes enceintes ou allaitantes, aux jeunes enfants et aux personnes épileptiques.', 3),
  ('Comment se passe le suivi ?', 'Après votre consultation, nous restons joignables sur WhatsApp pour répondre à vos questions et ajuster vos routines si nécessaire.', 4),
  ('Comment commander ?', 'Choisissez vos produits puis cliquez sur « Commander sur WhatsApp » : votre message est pré-rempli. Nous vous confirmons la disponibilité, le prix et la livraison.', 5);
 -- Le catalogue (141 produits issus des fiches techniques) est dans supabase/seed-produits.sql : à exécuter juste après ce fichier.

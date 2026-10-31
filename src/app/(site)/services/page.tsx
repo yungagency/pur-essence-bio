@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const SERVICES = [
   {
     icon: 'fa-leaf',
-    img: '/images/ambiance/spa.webp',
+    img: '/images/ambiance/service-consultation.webp',
     title: 'Consultation en aromathérapie',
     text: 'Un entretien pour comprendre vos besoins et vous orienter vers les huiles adaptées, avec leur mode d’emploi.',
     items: ['Écoute de vos besoins', 'Recommandations d’huiles adaptées', 'Mode d’utilisation détaillé', 'Suivi sur WhatsApp'],
@@ -19,7 +19,7 @@ const SERVICES = [
   },
   {
     icon: 'fa-spa',
-    img: '/images/ambiance/lavande.webp',
+    img: '/images/ambiance/service-bien-etre.webp',
     title: 'Conseils bien-être',
     text: 'Intégrer les huiles essentielles à votre routine : détente, sommeil, respiration, énergie.',
     items: ['Routine personnalisée', 'Conseils de dilution', 'Réponses à vos questions', 'Support continu via WhatsApp'],
@@ -27,7 +27,7 @@ const SERVICES = [
   },
   {
     icon: 'fa-wand-magic-sparkles',
-    img: '/images/ambiance/monstera.webp',
+    img: '/images/ambiance/service-beaute.webp',
     title: 'Accompagnement beauté naturelle',
     text: 'Visage, cheveux, corps : des recettes simples à base d’huiles essentielles et végétales.',
     items: ['Choix selon votre type de peau', 'Recettes cosmétiques maison', 'Sélection de produits adaptés', 'Suivi des résultats'],
@@ -35,7 +35,7 @@ const SERVICES = [
   },
   {
     icon: 'fa-book-open',
-    img: '/images/ambiance/conseillere.webp',
+    img: '/images/ambiance/service-ateliers.webp',
     title: 'Ateliers',
     text: 'Apprendre à utiliser les huiles essentielles en sécurité, en petit groupe. Ouverts aux particuliers et aux professionnels.',
     items: ['Ateliers pratiques en petit groupe', 'Supports fournis', 'Bases de l’aromathérapie', 'Dates annoncées sur nos réseaux'],

@@ -20,8 +20,7 @@ export default async function MentionsPage() {
         <h2 style={{ fontSize: '1.2rem', margin: '1.5rem 0 .5rem' }}>Avertissement santé</h2>
         <p className="muted">
           Les huiles essentielles sont des substances naturelles très concentrées. Les informations présentées sur ce site
-          (usages traditionnels, conseils d'utilisation) sont données à titre informatif. Elles ne constituent ni un
-          diagnostic, ni un traitement, et ne remplacent pas l'avis d'un médecin ou d'un pharmacien. Toujours diluer avant
+          (usages traditionnels, conseils d'utilisation) sont données à titre informatif. Toujours diluer avant
           application cutanée, ne pas avaler sans avis d'un professionnel, tenir hors de portée des enfants. Demandez conseil
           avant usage en cas de grossesse, d'allaitement, d'épilepsie, d'allergie, chez l'enfant ou en cas de traitement en
           cours.

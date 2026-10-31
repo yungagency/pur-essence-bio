@@ -44,10 +44,6 @@ export default async function ConsultationPage() {
       <section className="section bg-ivory organic-bg">
         <div className="container" style={{ maxWidth: 760, position: 'relative', zIndex: 1 }}>
           <ConsultationForm />
-          <div className="notice" style={{ marginTop: '1.5rem' }}>
-            Nos consultations portent sur l'usage des huiles essentielles et le bien-être. Elles ne remplacent pas une
-            consultation médicale : en cas de symptômes, de grossesse ou de traitement en cours, parlez-en à votre médecin.
-          </div>
         </div>
       </section>
 
