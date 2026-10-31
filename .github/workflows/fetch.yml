@@ -8,8 +8,8 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           mkdir -p /tmp/a
-          cd /tmp && npm init -y >/dev/null && npm i playwright@1 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
-          cp $GITHUB_WORKSPACE/.github/fetch.js /tmp/f.js && node /tmp/f.js $GITHUB_WORKSPACE/.github/ids.txt || true
-          cd $GITHUB_WORKSPACE
+          for id in 1515377905703-c4788e51af15 1620733723572-11c53f73a416 1761718210089-ba3bb5ccb54f 1556760544-74068565f05c 1492552181161-62217fc3076d 1595871522483-00a17611a5e3 1760445529648-9c8af38a0bb3; do
+            curl -sSL -o /tmp/a/$id.jpg "https://images.unsplash.com/photo-$id?w=1800&q=82&fm=jpg" || echo fail $id
+          done
           ls -la /tmp/a
           git checkout --orphan ci-assets && git rm -rqf . && cp /tmp/a/* . && git add -A && git -c user.name=ci -c user.email=ci@x commit -qm assets && git push -f origin ci-assets
