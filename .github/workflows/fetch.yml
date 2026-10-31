@@ -1,0 +1,15 @@
+name: fetch
+on: { push: { branches: [ci-fetch] } }
+permissions: { contents: write }
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p /tmp/a
+          while read id; do [ -z "$id" ] && continue
+            curl -sSL -o "/tmp/a/$id.jpg" "https://unsplash.com/photos/$id/download?force=true&w=1600" || echo "fail $id"
+          done < .github/ids.txt
+          ls -la /tmp/a
+          git checkout --orphan ci-assets && git rm -rqf . && cp /tmp/a/* . && git add -A && git -c user.name=ci -c user.email=ci@x commit -qm assets && git push -f origin ci-assets
