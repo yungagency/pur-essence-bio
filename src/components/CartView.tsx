@@ -11,7 +11,31 @@ export default function CartView({ whatsappCm, whatsappCa, siteUrl }: Props) {
   const [name, setName] = useState('');
   const [place, setPlace] = useState('');
   const [note, setNote] = useState('');
-  const [sent, setSent] = useState(false);
+  const [sentMsg, setSentMsg] = useState<{ msg: string; count: number } | null>(null);
+
+  if (sentMsg) {
+    return (
+      <div className="cart-empty cart-sent" role="status">
+        <i className="fab fa-whatsapp" aria-hidden="true"></i>
+        <p>
+          <strong>Votre commande ({sentMsg.count} article{sentMsg.count > 1 ? 's' : ''}) a été transmise à WhatsApp.</strong>
+          <br />
+          Validez l'envoi dans WhatsApp : nous vous répondons avec les prix, la disponibilité et la livraison. Votre panier a
+          été vidé.
+        </p>
+        <div className="btn-line">
+          {whatsappCm && (
+            <a className="button button-outline" href={waLink(whatsappCm, sentMsg.msg)} target="_blank" rel="noopener">
+              Rouvrir le message WhatsApp
+            </a>
+          )}
+          <Link href="/produits" className="button button-primary" onClick={() => setSentMsg(null)}>
+            Continuer mes achats
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   if (items.length === 0) {
     return (
@@ -37,6 +61,15 @@ export default function CartView({ whatsappCm, whatsappCa, siteUrl }: Props) {
   ]
     .filter((l): l is string => l !== null)
     .join('\n');
+
+  /** Le lien WhatsApp s'ouvre (nouvel onglet), puis le panier est vidé. */
+  const send = () => {
+    const count = cartCount(items);
+    setTimeout(() => {
+      setSentMsg({ msg, count });
+      cart.clear();
+    }, 150);
+  };
 
   return (
     <div className="cart-layout">
@@ -96,26 +129,18 @@ export default function CartView({ whatsappCm, whatsappCa, siteUrl }: Props) {
           <textarea id="cart-note" value={note} onChange={(e) => setNote(e.target.value)} maxLength={300} rows={2} />
         </div>
         {whatsappCm && (
-          <a className="button button-primary" style={{ width: '100%' }} href={waLink(whatsappCm, msg)} target="_blank" rel="noopener" onClick={() => setSent(true)}>
+          <a className="button button-primary" style={{ width: '100%' }} href={waLink(whatsappCm, msg)} target="_blank" rel="noopener" onClick={send}>
             <i className="fab fa-whatsapp"></i> Envoyer sur WhatsApp
           </a>
         )}
         {whatsappCa && (
-          <a className="button button-outline" style={{ width: '100%', marginTop: '.6rem' }} href={waLink(whatsappCa, msg)} target="_blank" rel="noopener" onClick={() => setSent(true)}>
+          <a className="button button-outline" style={{ width: '100%', marginTop: '.6rem' }} href={waLink(whatsappCa, msg)} target="_blank" rel="noopener" onClick={send}>
             🇨🇦 Envoyer depuis le Canada
           </a>
         )}
         <p className="muted small" style={{ marginTop: '.8rem' }}>
-          Rien n'est payé ici : nous vous répondons sur WhatsApp avec les prix, la disponibilité et la livraison.
+          Rien n'est payé ici : nous vous répondons sur WhatsApp avec les prix, la disponibilité et la livraison. Le panier se vide après l'envoi.
         </p>
-        {sent && (
-          <div className="form-msg ok" role="status">
-            Message envoyé ?{' '}
-            <button type="button" className="link-button" onClick={() => cart.clear()}>
-              Vider le panier
-            </button>
-          </div>
-        )}
       </div>
     </div>
   );

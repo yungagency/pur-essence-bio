@@ -64,8 +64,16 @@ function Blocks({ blocks }: { blocks: Block[] }) {
   );
 }
 
-export default function Fiche({ source }: { source: string }) {
+export default function Fiche({ source, title }: { source: string; title?: string }) {
   const sections = parse(source);
+  // Première ligne qui ne fait que répéter le nom du produit (« Huile Végétale d'Argan Bio ») : inutile.
+  const first = sections[0];
+  if (first && !first.title && first.blocks[0]?.t === 'p') {
+    const txt = first.blocks[0].text;
+    const looksLikeTitle = txt.length < 70 && !/[.:!?]$/.test(txt) && (!title || txt.toLowerCase().includes(title.toLowerCase().split(' ')[0]));
+    if (looksLikeTitle) first.blocks.shift();
+    if (first.blocks.length === 0) sections.shift();
+  }
   if (sections.length === 0) return null;
   return (
     <div className="fiche">
@@ -85,7 +93,7 @@ export default function Fiche({ source }: { source: string }) {
             </div>
           </details>
         ) : (
-          <div key={i} className="fiche-body">
+          <div key={i} className="fiche-intro">
             <Blocks blocks={s.blocks} />
           </div>
         )

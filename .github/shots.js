@@ -18,6 +18,15 @@ for(const [n,w,h] of [['d',1366,900],['m',390,844]]){const p=await b.newPage({vi
   await p.goto('http://localhost:3000/commande',{waitUntil:'networkidle'});await p.waitForTimeout(400);
   await p.screenshot({path:'out/'+n+'_cart_page.jpg',type:'jpeg',quality:60,fullPage:true});
   const href=await p.$eval('.cart-send a',a=>a.href).catch(e=>'NO LINK '+e.message);
+  await p.$eval('.cart-send a',a=>a.removeAttribute('target')).catch(()=>{});
+  await p.route('https://wa.me/**',r=>r.abort());
+  await p.click('.cart-send a').catch(()=>{});await p.waitForTimeout(800);
+  if(p.url().indexOf('/commande')<0) await p.goto('http://localhost:3000/commande',{waitUntil:'networkidle'});
+  await p.screenshot({path:'out/'+n+'_cart_sent.jpg',type:'jpeg',quality:60});
+  const left=await p.evaluate(()=>localStorage.getItem('pe-cart-v1'));
+  await p.goto('http://localhost:3000/produits/cypres',{waitUntil:'networkidle'});
+  const cyp=await p.$eval('.product-media img',i=>i.naturalWidth).catch(e=>'ERR');
+  txt+=`\nCART_AFTER_SEND=${left} CYPRES_IMG_WIDTH=${cyp}`;
   txt+=`\n\n##### CART [${n}] errors=${JSON.stringify(errs)} badge=${await p.$eval('.cart-badge',e=>e.textContent).catch(()=>'none')}\nWA=${decodeURIComponent(href)}`;
  }
 fs.writeFileSync('out/text.txt',txt);await b.close();})();

@@ -100,7 +100,15 @@ export default async function AboutPage() {
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={imgSrc(m.photo_url) ?? ''} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   ) : (
-                    <i className="fas fa-user"></i>
+                    <span className="team-initials" aria-hidden="true">
+                      {m.name
+                        .replace(/^(M\.|Mme|Dr\.?)\s+/i, '')
+                        .split(/\s+/)
+                        .map((w) => w[0])
+                        .join('')
+                        .slice(0, 2)
+                        .toUpperCase()}
+                    </span>
                   )}
                 </div>
                 <div className="team-info">
