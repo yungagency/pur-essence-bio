@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useMemo, useState } from 'react';
-import { useSearchParams } from 'next/navigation';
 import ProductCard from './ProductCard';
 import { CATEGORY_LABELS, USAGE_LABELS } from '@/lib/types';
 import type { Product } from '@/lib/types';
@@ -10,10 +9,15 @@ function norm(s: string) {
 }
 
 export default function ProductCatalog({ products }: { products: Product[] }) {
-  const params = useSearchParams();
   const [q, setQ] = useState('');
-  const [cat, setCat] = useState(params.get('categorie') ?? '');
-  const [use, setUse] = useState(params.get('usage') ?? '');
+  const [cat, setCat] = useState('');
+  const [use, setUse] = useState('');
+  // Filtres passés dans l'adresse (?categorie=…&usage=…) : lus après l'affichage, pour que la page reste pré-rendue.
+  useEffect(() => {
+    const sp = new URLSearchParams(window.location.search);
+    setCat(sp.get('categorie') ?? '');
+    setUse(sp.get('usage') ?? '');
+  }, []);
   const PAGE = 24;
   const [limit, setLimit] = useState(PAGE);
   useEffect(() => setLimit(PAGE), [q, cat, use]);

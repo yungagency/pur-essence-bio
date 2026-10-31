@@ -4,6 +4,7 @@ import { getSettings } from '@/lib/data';
 import { telHref, waLink } from '@/lib/format';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/contact' },
   title: 'Contact',
   description: "Contactez Pur'Essence à Yaoundé (Mimboman) : téléphone, WhatsApp, email et formulaire de contact.",
 };

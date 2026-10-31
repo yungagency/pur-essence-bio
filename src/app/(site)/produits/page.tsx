@@ -4,6 +4,7 @@ import ProductCatalog from '@/components/ProductCatalog';
 import { getProducts } from '@/lib/data';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/produits' },
   title: 'Nos produits',
   description: "Catalogue Pur'Essence : huiles essentielles et mélanges naturels (lavande, eucalyptus, menthe poivrée, palmarosa…). Commande sur WhatsApp.",
 };

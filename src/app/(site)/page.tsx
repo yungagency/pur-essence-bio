@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
+import { preload } from 'react-dom';
 import ProductCard from '@/components/ProductCard';
 import Quiz from '@/components/Quiz';
 import { getApprovedReviews, getProducts, getSettings } from '@/lib/data';
@@ -10,6 +12,13 @@ const UNIVERS = [
   { icon: 'fa-flask', color: '#8a6fb0', title: 'Synergies', text: 'Des formules prêtes à l’emploi : sommeil, digestion, peau, articulations…', q: '?categorie=synergie' },
   { icon: 'fa-spa', color: '#b98b5e', title: 'Hydrolats & absolues', text: 'Hamamélis, lotus, orchidée blanche : douceur et parfums d’exception.', q: '?categorie=hydrolat-absolue' },
 ];
+
+export const metadata: Metadata = {
+  title: { absolute: "Pur'Essence | Huiles essentielles et huiles végétales bio à Yaoundé" },
+  description:
+    "Huiles essentielles, huiles végétales et synergies aromatiques bio à Yaoundé (Mimboman). Conseils personnalisés, consultations en aromathérapie, commande sur WhatsApp et livraison partout dans le monde.",
+  alternates: { canonical: '/' },
+};
 
 const STRIP = [
   { icon: 'fa-leaf', title: '100 % naturel', text: 'Purs et authentiques' },
@@ -26,6 +35,7 @@ const WHY = [
 ];
 
 export default async function HomePage() {
+  preload('/images/ambiance/conseillere.webp', { as: 'image', fetchPriority: 'high' });
   const [products, reviews, settings] = await Promise.all([getProducts(), getApprovedReviews(3), getSettings()]);
   const featured = products.filter((p) => p.featured).slice(0, 6);
 

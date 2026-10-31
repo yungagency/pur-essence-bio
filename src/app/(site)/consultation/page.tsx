@@ -4,6 +4,7 @@ import Faq from '@/components/Faq';
 import { getFaqs } from '@/lib/data';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/consultation' },
   title: 'Consultation en aromathérapie',
   description: "Réservez une consultation en aromathérapie avec Pur'Essence, à Yaoundé ou à distance (téléphone, WhatsApp).",
 };

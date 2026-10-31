@@ -2,7 +2,11 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getSettings } from '@/lib/data';
 
-export const metadata: Metadata = { title: 'Mentions légales et précautions', robots: { index: true } };
+export const metadata: Metadata = {
+  title: 'Mentions légales et précautions',
+  description: "Mentions légales du site Pur'Essence : éditeur, hébergement, conception, avertissement sur l'usage des huiles essentielles.",
+  alternates: { canonical: '/mentions-legales' },
+};
 
 export default async function MentionsPage() {
   const s = await getSettings();
