@@ -9,7 +9,7 @@ jobs:
       - run: |
           mkdir -p /tmp/a
           cd /tmp && npm init -y >/dev/null && npm i playwright@1 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
-          node $GITHUB_WORKSPACE/.github/fetch.js $GITHUB_WORKSPACE/.github/ids.txt
+          cp $GITHUB_WORKSPACE/.github/fetch.js /tmp/f.js && node /tmp/f.js $GITHUB_WORKSPACE/.github/ids.txt || true
           cd $GITHUB_WORKSPACE
           ls -la /tmp/a
           git checkout --orphan ci-assets && git rm -rqf . && cp /tmp/a/* . && git add -A && git -c user.name=ci -c user.email=ci@x commit -qm assets && git push -f origin ci-assets
