@@ -62,13 +62,10 @@ export default function CartView({ whatsappCm, whatsappCa, siteUrl }: Props) {
     .filter((l): l is string => l !== null)
     .join('\n');
 
-  /** Le lien WhatsApp s'ouvre (nouvel onglet), puis le panier est vidé. */
+  /** Vidé dès le clic : le lien WhatsApp garde le message déjà rédigé, même si WhatsApp s'ouvre dans le même onglet. */
   const send = () => {
-    const count = cartCount(items);
-    setTimeout(() => {
-      setSentMsg({ msg, count });
-      cart.clear();
-    }, 150);
+    setSentMsg({ msg, count: cartCount(items) });
+    cart.clear();
   };
 
   return (
