@@ -30,7 +30,7 @@ export default function ProductImage({
     <div className={`product-thumb${src && !failed ? '' : ' is-placeholder'}`} data-cat={category}>
       {src && !failed ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={src} alt={alt} loading={eager ? 'eager' : 'lazy'} onError={() => setFailed(true)} />
+        <img src={src} alt={alt} width={900} height={900} loading={eager ? 'eager' : 'lazy'} fetchPriority={eager ? 'high' : 'auto'} decoding="async" onError={() => setFailed(true)} />
       ) : (
         <div className="ph-inner">
           <i className={`fas ${ICONS[category ?? ''] ?? 'fa-leaf'} ph`} aria-hidden="true"></i>

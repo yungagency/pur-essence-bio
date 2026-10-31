@@ -10,8 +10,23 @@ import { niceLabel } from '@/lib/format';
 import { buildMentionIndex, listMentions } from '@/lib/mentions';
 import Linked from '@/components/Linked';
 import { CATEGORY_LABELS, USAGE_LABELS } from '@/lib/types';
+import { SITE_URL } from '@/lib/site';
 
 type Props = { params: Promise<{ slug: string }> };
+
+/** « Huile essentielle de Lavande Vraie », « Huile végétale d'Argan »… */
+function fullName(p: { name: string; category: string }) {
+  const name = p.name.replace(/\s*\((huile essentielle|huile végétale)\)$/i, '');
+  const kind = p.category === 'huile-essentielle' ? 'Huile essentielle' : p.category === 'huile-vegetale' ? 'Huile végétale' : '';
+  if (!kind) return p.name;
+  return /^[aeiouyhâéèêîôûAEIOUYHÂÉÈÊÎÔÛ]/.test(name) ? `${kind} d'${name}` : `${kind} de ${name}`;
+}
+
+/** Coupe un texte sans couper un mot. */
+function cut(s: string, n: number) {
+  if (s.length <= n) return s;
+  return s.slice(0, n).replace(/\s+\S*$/, '') + '…';
+}
 
 export async function generateStaticParams() {
   const products = await getProducts();
@@ -22,11 +37,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const p = await getProduct(slug);
   if (!p) return { title: 'Produit introuvable' };
-  const prefix = p.category === 'huile-essentielle' ? 'Huile essentielle de ' : p.category === 'huile-vegetale' ? 'Huile végétale de ' : '';
+  const title = `${fullName(p)}${p.latin_name ? ` (${p.latin_name})` : ''}`;
+  const description = cut(p.short || p.description, 158);
+  const image = p.image_url || '/images/og-default.jpg';
   return {
-    title: `${prefix}${p.name}${p.latin_name ? ` (${p.latin_name})` : ''}`,
-    description: (p.short || p.description).slice(0, 160),
-    openGraph: p.image_url ? { images: [p.image_url] } : undefined,
+    title,
+    description,
+    alternates: { canonical: `/produits/${p.slug}` },
+    openGraph: { type: 'website', title, description, url: `/produits/${p.slug}`, images: [{ url: image, alt: p.name }] },
   };
 }
 
@@ -39,7 +57,7 @@ export default async function ProductPage({ params }: Props) {
     .filter((x) => x.slug !== p.slug && x.category === p.category && x.usage === p.usage)
     .sort((a, b) => Number(!!b.image_url) - Number(!!a.image_url))
     .slice(0, 4);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pur-essence.vercel.app';
+  const siteUrl = SITE_URL;
   const identity = (p.identity ?? []).filter((i) => i.value);
   const idx = buildMentionIndex(all.map((x) => ({ slug: x.slug, name: x.name })));
   const names = new Map(all.map((x) => [x.slug, x.name]));
@@ -50,6 +68,32 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <section className="section bg-ivory" style={{ paddingTop: '2.5rem' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Product',
+              name: fullName(p),
+              description: cut(p.short || p.description, 300),
+              image: p.image_url ? [`${SITE_URL}${p.image_url.startsWith('/') ? '' : '/'}${p.image_url}`] : undefined,
+              brand: { '@type': 'Brand', name: "Pur'Essence" },
+              category: CATEGORY_LABELS[p.category] ?? p.category,
+              url: `${SITE_URL}/produits/${p.slug}`,
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Accueil', item: SITE_URL },
+                { '@type': 'ListItem', position: 2, name: 'Produits', item: `${SITE_URL}/produits` },
+                { '@type': 'ListItem', position: 3, name: p.name, item: `${SITE_URL}/produits/${p.slug}` },
+              ],
+            },
+          ]).replace(/</g, '\\u003c'),
+        }}
+      />
       <div className="container">
         <nav className="breadcrumb" aria-label="Fil d'Ariane">
           <Link href="/">Accueil</Link> › <Link href="/produits">Produits</Link> ›{' '}

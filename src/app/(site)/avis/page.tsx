@@ -5,6 +5,7 @@ import { Results, Stats } from '@/components/TrustBlocks';
 import { formatDate } from '@/lib/format';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/avis' },
   title: 'Avis clients',
   description: "Les avis de nos clients sur les produits et conseils Pur'Essence. Partagez aussi votre expérience.",
 };

@@ -2425,3 +2425,7 @@ a.mention:hover { text-decoration-color: var(--accent); }
 .hero-produits { min-height: 340px !important; }
 .hero-produits .page-hero-bg { background-size: auto 100%; background-repeat: repeat-x; background-position: center; }
 .hero-produits .page-hero-overlay { background: linear-gradient(180deg, rgba(247,242,234,.78) 0%, rgba(247,242,234,.84) 65%, rgba(247,242,234,1) 100%); }
+
+/* Contraste des sur-titres (accessibilité) */
+.eyebrow { color: #8a6a2e; }
+.diagnostic-section .eyebrow { color: var(--gold-light, #e3c98f); }

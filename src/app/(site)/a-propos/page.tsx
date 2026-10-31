@@ -5,6 +5,7 @@ import { Certifications } from '@/components/TrustBlocks';
 import { imgSrc } from '@/lib/format';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/a-propos' },
   title: 'À propos',
   description: "L'histoire de Pur'Essence, née à Yaoundé : notre mission, nos valeurs et notre équipe.",
 };

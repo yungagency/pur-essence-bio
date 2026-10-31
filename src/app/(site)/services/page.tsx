@@ -4,6 +4,7 @@ import { getSettings } from '@/lib/data';
 import { waLink } from '@/lib/format';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services' },
   title: 'Services',
   description: "Consultation en aromathérapie, conseils bien-être, accompagnement beauté naturelle et ateliers : les services Pur'Essence à Yaoundé.",
 };

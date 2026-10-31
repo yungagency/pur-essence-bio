@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
+import { SITE_URL } from '@/lib/site';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://pur-essence.vercel.app';
+const inter = Inter({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -11,7 +13,8 @@ export const metadata: Metadata = {
   },
   description:
     "Pur'Essence : huiles essentielles, huiles végétales et mélanges naturels à Yaoundé (Mimboman). Conseils personnalisés, consultations en aromathérapie et commande sur WhatsApp.",
-  openGraph: { type: 'website', locale: 'fr_FR', siteName: "Pur'Essence" },
+  openGraph: { type: 'website', locale: 'fr_FR', siteName: "Pur'Essence", images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: "Pur'Essence, huiles essentielles" }] },
+  twitter: { card: 'summary_large_image' },
 };
 
 export const viewport: Viewport = { themeColor: '#566d4e' };
@@ -20,12 +23,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
       </head>
-      <body>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

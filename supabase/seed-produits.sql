@@ -1401,7 +1401,7 @@ Correctement utilisée et intégrée dans des synergies personnalisées, elle ap
 
 ## 📞 Besoin d''un accompagnement personnalisé ?
 Chaque personne possède des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les plus adaptées à vos objectifs de santé, de bien-être et de beauté.
-Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir toutes les possibilités offertes par l''aromathérapie PUR''ESSENCE.',null,false,true,170),
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir toutes les possibilités offertes par l''aromathérapie PUR''ESSENCE.','/images/produits/citron.webp',false,true,170),
 ('citronnelle','Citronnelle','Originaire d''Indonésie, l''huile essentielle de Citronnelle PUR''ESSENCE est reconnue dans le monde entier pour son parfum frais et citronné ainsi que pour son…','Originaire d''Indonésie, l''huile essentielle de Citronnelle PUR''ESSENCE est reconnue dans le monde entier pour son parfum frais et citronné ainsi que pour son remarquable pouvoir répulsif contre les moustiques et autres insectes.
 
 En aromathérapie, elle est également appréciée pour favoriser le confort musculaire et articulaire, purifier l''air ambiant et contribuer à une atmosphère saine et agréable.','huile-essentielle','sante','Cymbopogon winterianus','Citronella Essential Oil','Indonésie','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "Indonésie"}, {"label": "Partie distillée", "value": "Parties aériennes (feuilles)"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Citronnée • Herbacée • Fraîche"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -3076,7 +3076,7 @@ Grâce à ses nombreuses possibilités de synergies avec les huiles essentielles
 
 ## 📞 Besoin d''un accompagnement personnalisé ?
 Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
-Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir tout le potentiel de l''huile essentielle de Lavande Vraie dans votre démarche de santé naturelle.',null,false,true,350),
+Contactez notre équipe pour bénéficier d''un accompagnement personnalisé et découvrir tout le potentiel de l''huile essentielle de Lavande Vraie dans votre démarche de santé naturelle.','/images/produits/lavande-vraie.webp',false,true,350),
 ('lavandin','Lavandin','Cultivé dans les magnifiques champs de Provence, en France, le Lavandin (Lavandula × intermedia) est un hybride naturel issu de la Lavande vraie (Lavandula…','Cultivé dans les magnifiques champs de Provence, en France, le Lavandin (Lavandula × intermedia) est un hybride naturel issu de la Lavande vraie (Lavandula angustifolia) et de la Lavande aspic (Lavandula latifolia).
 
 Son rendement élevé en huile essentielle et son parfum floral, frais et puissant en font l''une des huiles essentielles les plus utilisées au monde. Polyvalente, elle est particulièrement appréciée pour favoriser la détente, accompagner le confort musculaire, purifier l''air ambiant et contribuer au bien-être quotidien de toute la famille.','huile-essentielle','relaxation','Lavandula × intermedia','Lavandin Essential Oil','France','5 ml • 10 ml • 15 ml',null,'[{"label": "Origine", "value": "France"}, {"label": "Partie distillée", "value": "Sommités fleuries"}, {"label": "Mode d''obtention", "value": "Distillation à la vapeur d''eau"}, {"label": "Famille olfactive", "value": "Florale • Aromatique • Camphrée • Fraîche"}, {"label": "Conditionnements disponibles", "value": "5 ml • 10 ml • 15 ml"}]'::jsonb,'## ❤️ Bienfaits pour la santé
@@ -4338,7 +4338,7 @@ Chez PUR''ESSENCE, nous recommandons de l''intégrer dans des synergies personna
 
 ## 📞 Besoin d''un accompagnement personnalisé ?
 Chaque personne présente des besoins spécifiques. Les experts PUR''ESSENCE vous accompagnent dans le choix des huiles essentielles, des huiles végétales et des synergies les mieux adaptées à vos objectifs de santé, de bien-être et de beauté.
-Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle d''Origan Bio dans votre démarche de santé naturelle, de bien-être et de beauté.',null,false,true,490),
+Contactez notre équipe PUR''ESSENCE pour bénéficier de conseils personnalisés et découvrir tout le potentiel de l''huile essentielle d''Origan Bio dans votre démarche de santé naturelle, de bien-être et de beauté.','/images/produits/origan.webp',false,true,490),
 ('palmarosa','Palmarosa','Originaire d''Inde, l''huile essentielle de Palmarosa Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des parties aériennes fleuries de Cymbopogon…','Originaire d''Inde, l''huile essentielle de Palmarosa Bio PUR''ESSENCE est obtenue par distillation à la vapeur d''eau des parties aériennes fleuries de Cymbopogon martinii var. motia, cultivé selon les principes de l''agriculture biologique.
 
 Son parfum délicatement floral, aux notes évoquant la rose fraîche, en fait une huile essentielle très appréciée en aromathérapie, en cosmétique naturelle et en parfumerie.
@@ -10408,7 +10408,7 @@ Les Synergies Aromatiques PUR''ESSENCE sont élaborées selon les principes de l
 - Battaglia S. – The Complete Guide to Aromatherapy.
 - ESCOP Monographs.
 - European Medicines Agency (EMA) – Monographies des plantes médicinales concernées.
-- Articles scientifiques indexés dans PubMed sur Artemisia dracunculus, Piper nigrum et Citrus × paradisi.',null,false,true,1090),
+- Articles scientifiques indexés dans PubMed sur Artemisia dracunculus, Piper nigrum et Citrus × paradisi.','/images/produits/synergie-brule-graisses.webp',false,true,1090),
 ('synergie-cellulite-peau-d-orange','Synergie Cellulite & Peau d''Orange','La Synergie Aromatique Cellulite & Peau d''Orange PUR''ESSENCE associe quatre huiles essentielles 100 % pures et naturelles rigoureusement sélectionnées pour leur…','La Synergie Aromatique Cellulite & Peau d''Orange PUR''ESSENCE associe quatre huiles essentielles 100 % pures et naturelles rigoureusement sélectionnées pour leur complémentarité dans les soins de la silhouette.
 
 Cette formulation contribue à accompagner les mécanismes physiologiques impliqués dans le drainage, la microcirculation et le maintien de la fermeté cutanée.

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { getSettings } from '@/lib/data';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/confidentialite' },
   title: 'Politique de confidentialité',
   description: "Comment Pur'Essence collecte, utilise et protège vos données personnelles, et comment exercer vos droits.",
 };

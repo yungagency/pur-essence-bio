@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import CartView from '@/components/CartView';
 import { getSettings } from '@/lib/data';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/commande' },
   title: 'Mon panier',
   description: "Rassemblez vos produits Pur'Essence et envoyez votre commande en un seul message WhatsApp.",
   robots: { index: false },
@@ -17,7 +19,7 @@ const STEPS = [
 
 export default async function CommandePage() {
   const s = await getSettings();
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pur-essence.vercel.app';
+  const siteUrl = SITE_URL;
   return (
     <>
       <section className="section bg-ivory" style={{ paddingTop: '2.5rem' }}>
