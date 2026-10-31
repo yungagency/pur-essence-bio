@@ -1,5 +1,5 @@
 const {chromium}=require('playwright');const fs=require('fs');
-const pages=['/commande','/','/produits','/produits/neroli','/produits/synergie-insomnie','/produits/argan','/produits/lavande-vraie','/services','/a-propos','/avis','/consultation','/contact','/mentions-legales','/admin/login','/page-inexistante'];
+const pages=['/produits/synergie-insomnie','/produits/ail','/mentions-legales','/commande','/','/produits','/produits/neroli','/produits/synergie-insomnie','/produits/argan','/produits/lavande-vraie','/services','/a-propos','/avis','/consultation','/contact','/mentions-legales','/admin/login','/page-inexistante'];
 (async()=>{const b=await chromium.launch();let txt='';
 for(const [n,w,h] of [['d',1366,900],['m',390,844]]){const p=await b.newPage({viewport:{width:w,height:h}});
  const errs=[];p.on('console',m=>{if(m.type()==='error')errs.push(m.text())});p.on('pageerror',e=>errs.push(e.message));
@@ -25,6 +25,9 @@ for(const [n,w,h] of [['d',1366,900],['m',390,844]]){const p=await b.newPage({vi
   await p.goto('http://localhost:3000/produits/cypres',{waitUntil:'networkidle'});
   const cyp=await p.$eval('.product-media img',i=>i.naturalWidth).catch(e=>'ERR');
   txt+=`\nCART_AFTER_SEND=${left} CYPRES_IMG_WIDTH=${cyp}`;
+  await p.goto('http://localhost:3000/produits/synergie-insomnie',{waitUntil:'networkidle'});
+  txt+=`\nKEYWORDS=${JSON.stringify(await p.$$eval('.keyword',a=>a.map(x=>x.textContent.trim()+'>'+x.getAttribute('href'))))} MENTIONS=${await p.$$eval('a.mention',a=>a.length)}`;
+  await p.click('.keyword >> nth=0');await p.waitForLoadState('networkidle');txt+=` CLICK→${p.url()}`;
   txt+=`\n\n##### CART [${n}] errors=${JSON.stringify(errs)} badge=${await p.$eval('.cart-badge',e=>e.textContent).catch(()=>'none')}\nWA=${decodeURIComponent(href)}`;
  }
 fs.writeFileSync('out/text.txt',txt);await b.close();})();

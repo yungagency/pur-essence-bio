@@ -1,3 +1,6 @@
+import Linked from './Linked';
+import type { MentionIndex } from '@/lib/mentions';
+
 /**
  * Affiche une fiche produit écrite en texte simple :
  *   ## Titre de section   → section repliable
@@ -38,14 +41,16 @@ function parse(src: string): Section[] {
 
 const OPEN_BY_DEFAULT = ['bienfaits pour la santé', 'conseils d', 'précaution', 'composition', 'objectifs', 'actifs nutritionnels'];
 
-function Blocks({ blocks }: { blocks: Block[] }) {
+function Blocks({ blocks, idx, exclude }: { blocks: Block[]; idx?: MentionIndex; exclude?: string }) {
+  const seen = new Set<string>();
+  const L = (text: string) => <Linked text={text} idx={idx} seen={seen} exclude={exclude} />;
   return (
     <>
       {blocks.map((b, i) =>
         b.t === 'ul' ? (
           <ul key={i} className="fiche-list">
             {b.items.map((it, j) => (
-              <li key={j}>{it}</li>
+              <li key={j}>{L(it)}</li>
             ))}
           </ul>
         ) : b.t === 'h3' ? (
@@ -57,14 +62,24 @@ function Blocks({ blocks }: { blocks: Block[] }) {
             {b.text}
           </p>
         ) : (
-          <p key={i}>{b.text}</p>
+          <p key={i}>{L(b.text)}</p>
         )
       )}
     </>
   );
 }
 
-export default function Fiche({ source, title }: { source: string; title?: string }) {
+export default function Fiche({
+  source,
+  title,
+  idx,
+  exclude,
+}: {
+  source: string;
+  title?: string;
+  idx?: MentionIndex;
+  exclude?: string;
+}) {
   const sections = parse(source);
   // Première ligne qui ne fait que répéter le nom du produit (« Huile Végétale d'Argan Bio ») : inutile.
   const first = sections[0];
@@ -89,12 +104,12 @@ export default function Fiche({ source, title }: { source: string; title?: strin
               <i className="fas fa-chevron-down" aria-hidden="true"></i>
             </summary>
             <div className="fiche-body">
-              <Blocks blocks={s.blocks} />
+              <Blocks blocks={s.blocks} idx={idx} exclude={exclude} />
             </div>
           </details>
         ) : (
           <div key={i} className="fiche-intro">
-            <Blocks blocks={s.blocks} />
+            <Blocks blocks={s.blocks} idx={idx} exclude={exclude} />
           </div>
         )
       )}

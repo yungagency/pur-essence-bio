@@ -14569,3 +14569,8 @@ on conflict (slug) do nothing;
 update public.products p set image_url = '/images/produits/' || p.slug || '.webp'
 where p.image_url is null
   and p.slug in ('basilic-tropical','cypres','gaultherie-couchee','menthe-poivree','oliban','palmarosa');
+
+-- Photos (anciennes étiquettes, en attendant les nouvelles)
+update public.products p set image_url = '/images/produits/' || p.slug || '.webp'
+where p.image_url is null
+  and p.slug in ('ail','cannelle','carotte','cedre','citronnelle','clou-de-girofle','curcuma','eucalyptus-globulus','genevrier');

@@ -14,10 +14,9 @@ export default function Logo({ light = false }: { light?: boolean }) {
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src="/images/logo.png"
+      src={light ? '/images/logo-light.png' : '/images/logo.png'}
       alt="Pur'Essence"
       className="logo"
-      style={light ? { filter: 'brightness(10)' } : undefined}
       onError={() => setFailed(true)}
     />
   );

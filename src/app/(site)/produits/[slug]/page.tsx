@@ -7,6 +7,8 @@ import ProductCard from '@/components/ProductCard';
 import ProductImage from '@/components/ProductImage';
 import { getProduct, getProducts, getSettings } from '@/lib/data';
 import { niceLabel } from '@/lib/format';
+import { buildMentionIndex, listMentions } from '@/lib/mentions';
+import Linked from '@/components/Linked';
 import { CATEGORY_LABELS, USAGE_LABELS } from '@/lib/types';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -39,6 +41,12 @@ export default async function ProductPage({ params }: Props) {
     .slice(0, 4);
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pur-essence.vercel.app';
   const identity = (p.identity ?? []).filter((i) => i.value);
+  const idx = buildMentionIndex(all.map((x) => ({ slug: x.slug, name: x.name })));
+  const names = new Map(all.map((x) => [x.slug, x.name]));
+  // Synergies : huiles qui la composent, en mots-clés cliquables.
+  const compo = p.fiche?.match(/##[^\n]*composition[^\n]*\n([\s\S]*?)(?=\n## |$)/i)?.[1] ?? '';
+  const ingredients = p.category === 'synergie' && compo ? listMentions(compo, idx, p.slug) : [];
+  const presentationSeen = new Set<string>();
 
   return (
     <section className="section bg-ivory" style={{ paddingTop: '2.5rem' }}>
@@ -72,6 +80,19 @@ export default async function ProductPage({ params }: Props) {
               url={`${siteUrl}/produits/${p.slug}`}
             />
 
+            {ingredients.length > 0 && (
+              <div className="keywords">
+                <p className="identity-title">Huiles de cette synergie</p>
+                <div className="keyword-list">
+                  {ingredients.map((s) => (
+                    <Link key={s} href={`/produits/${s}`} className="keyword">
+                      <i className="fas fa-leaf" aria-hidden="true"></i> {names.get(s)}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {identity.length > 0 && (
               <div className="identity-card" style={{ marginTop: '1.2rem' }}>
                 <p className="identity-title">Carte d'identité</p>
@@ -97,14 +118,14 @@ export default async function ProductPage({ params }: Props) {
                 <h2>Présentation</h2>
                 {p.description.split(/\n\s*\n/).map((para, i) => (
                   <p key={i} style={{ marginBottom: '.8rem' }}>
-                    {para}
+                    <Linked text={para} idx={idx} seen={presentationSeen} exclude={p.slug} />
                   </p>
                 ))}
               </>
             )}
 
             {p.fiche ? (
-              <Fiche source={p.fiche} title={p.name} />
+              <Fiche source={p.fiche} title={p.name} idx={idx} exclude={p.slug} />
             ) : (
               <>
                 {p.benefits.length > 0 && (
