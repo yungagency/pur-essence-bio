@@ -15,14 +15,14 @@ const STRIP = [
   { icon: 'fa-leaf', title: '100 % naturel', text: 'Purs et authentiques' },
   { icon: 'fa-flask', title: 'Science & tradition', text: 'Formulés avec expertise' },
   { icon: 'fa-user-doctor', title: 'Consultation', text: 'En boutique ou à distance' },
-  { icon: 'fa-truck', title: 'Livraison', text: 'Cameroun et Canada' },
+  { icon: 'fa-truck', title: 'Livraison', text: 'Partout dans le monde' },
 ];
 
 const WHY = [
   { icon: 'fa-seedling', title: 'Produits naturels', text: '100% d’ingrédients naturels, sans additifs chimiques ni conservateurs nocifs.' },
   { icon: 'fa-shield-alt', title: 'Qualité contrôlée', text: 'Chaque lot est testé en laboratoire pour garantir pureté et efficacité.' },
   { icon: 'fa-user-md', title: 'Conseils personnalisés', text: 'Des experts en aromathérapie vous accompagnent dans vos choix.' },
-  { icon: 'fa-shipping-fast', title: 'Livraison rapide', text: 'Recevez vos commandes rapidement partout au Cameroun et au Canada.' },
+  { icon: 'fa-shipping-fast', title: 'Livraison rapide', text: 'Nous livrons vos commandes partout dans le monde.' },
 ];
 
 export default async function HomePage() {
