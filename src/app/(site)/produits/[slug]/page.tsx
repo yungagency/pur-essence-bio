@@ -6,6 +6,7 @@ import OrderBox from '@/components/OrderBox';
 import ProductCard from '@/components/ProductCard';
 import ProductImage from '@/components/ProductImage';
 import { getProduct, getProducts, getSettings } from '@/lib/data';
+import { niceLabel } from '@/lib/format';
 import { CATEGORY_LABELS, USAGE_LABELS } from '@/lib/types';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -32,7 +33,10 @@ export default async function ProductPage({ params }: Props) {
   const [p, all, s] = await Promise.all([getProduct(slug), getProducts(), getSettings()]);
   if (!p) notFound();
 
-  const similar = all.filter((x) => x.slug !== p.slug && x.category === p.category && x.usage === p.usage).slice(0, 4);
+  const similar = all
+    .filter((x) => x.slug !== p.slug && x.category === p.category && x.usage === p.usage)
+    .sort((a, b) => Number(!!b.image_url) - Number(!!a.image_url))
+    .slice(0, 4);
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pur-essence.vercel.app';
   const identity = (p.identity ?? []).filter((i) => i.value);
 
@@ -45,13 +49,13 @@ export default async function ProductPage({ params }: Props) {
         </nav>
         <div className="product-page">
           <div className="product-media">
-            <ProductImage url={p.image_url} alt={p.name} label={p.name} category={p.category} />
+            <ProductImage url={p.image_url} alt={p.name} label={p.name} category={p.category} eager />
           </div>
           <div>
             <div className="chips">
               <span className="chip">{CATEGORY_LABELS[p.category] ?? p.category}</span>
               <span className="chip">{USAGE_LABELS[p.usage] ?? p.usage}</span>
-              {p.domain && <span className="chip">{p.domain}</span>}
+              {p.domain && <span className="chip">{niceLabel(p.domain)}</span>}
             </div>
             <h1>{p.name}</h1>
             {p.latin_name && <p className="latin">{p.latin_name}</p>}
@@ -100,7 +104,7 @@ export default async function ProductPage({ params }: Props) {
             )}
 
             {p.fiche ? (
-              <Fiche source={p.fiche} />
+              <Fiche source={p.fiche} title={p.name} />
             ) : (
               <>
                 {p.benefits.length > 0 && (

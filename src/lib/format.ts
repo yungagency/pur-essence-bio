@@ -32,3 +32,11 @@ export function slugify(s: string): string {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
 }
+
+/** « ÉQUILIBRE NERVEUX » → « Équilibre nerveux » (les libellés tout en majuscules des fiches). */
+export function niceLabel(s: string) {
+  const t = s.trim();
+  if (t !== t.toUpperCase()) return t;
+  const low = t.toLocaleLowerCase('fr-FR');
+  return low.charAt(0).toLocaleUpperCase('fr-FR') + low.slice(1);
+}

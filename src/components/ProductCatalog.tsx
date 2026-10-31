@@ -25,12 +25,14 @@ export default function ProductCatalog({ products }: { products: Product[] }) {
 
   const list = useMemo(() => {
     const nq = norm(q.trim());
-    return products.filter(
+    return products
+      .filter(
       (p) =>
         (!nq || norm(`${p.name} ${p.short} ${p.latin_name ?? ''} ${p.domain ?? ''}`).includes(nq)) &&
         (!cat || p.category === cat) &&
         (!use || p.usage === use)
-    );
+      )
+      .sort((a, b) => Number(!!b.image_url) - Number(!!a.image_url));
   }, [products, q, cat, use]);
 
   return (
