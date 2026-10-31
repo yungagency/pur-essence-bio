@@ -238,7 +238,7 @@ insert into public.settings (key, value) values
 on conflict (key) do nothing;
 
 insert into public.team (name, role, sort) values
-  ('M. AWAWO William', 'PDG', 0),
+  ('Dr William AWAWO', 'Consultant', 0),
   ('Dr. Nathalie M.', 'Responsable Qualité', 1),
   ('Amina B.', 'Conseillère Bien-être', 2),
   ('Emmanuel T.', 'Expert Botanique', 3);
@@ -247,7 +247,7 @@ insert into public.certifications (label, icon, sort) values
   ('Bio Certifié', 'fa-leaf', 0),
   ('Testé en Laboratoire', 'fa-flask', 1),
   ('Non Testé sur Animaux', 'fa-paw', 2),
-  ('Made in Cameroun & Canada', 'fa-flag', 3),
+  ('Made in Canada', 'fa-flag', 3),
   ('Éco-Responsable', 'fa-recycle', 4),
   ('ISO 9001', 'fa-certificate', 5);
 

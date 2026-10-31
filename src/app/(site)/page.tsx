@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 const STRIP = [
   { icon: 'fa-leaf', title: '100 % naturel', text: 'Purs et authentiques' },
-  { icon: 'fa-flask', title: 'Science & tradition', text: 'Formulés avec expertise' },
+  { icon: 'fa-flag', title: 'Made in Canada', text: 'Produits fabriqués au Canada' },
   { icon: 'fa-user-doctor', title: 'Consultation', text: 'En boutique ou à distance' },
   { icon: 'fa-truck', title: 'Livraison', text: 'Partout dans le monde' },
 ];

@@ -3,7 +3,7 @@
 import type { Certification, Result, Review, TeamMember } from '@/lib/types';
 
 export const seedTeam: TeamMember[] = [
-  { id: 't1', name: 'M. AWAWO William', role: 'PDG', photo_url: null, published: true, sort: 0 },
+  { id: 't1', name: 'Dr William AWAWO', role: 'Consultant', photo_url: null, published: true, sort: 0 },
   { id: 't2', name: 'Dr. Nathalie M.', role: 'Responsable Qualité', photo_url: null, published: true, sort: 1 },
   { id: 't3', name: 'Amina B.', role: 'Conseillère Bien-être', photo_url: null, published: true, sort: 2 },
   { id: 't4', name: 'Emmanuel T.', role: 'Expert Botanique', photo_url: null, published: true, sort: 3 },
@@ -13,7 +13,7 @@ export const seedCertifications: Certification[] = [
   { id: 'c1', label: 'Bio Certifié', icon: 'fa-leaf', published: true, sort: 0 },
   { id: 'c2', label: 'Testé en Laboratoire', icon: 'fa-flask', published: true, sort: 1 },
   { id: 'c3', label: 'Non Testé sur Animaux', icon: 'fa-paw', published: true, sort: 2 },
-  { id: 'c4', label: 'Made in Cameroun & Canada', icon: 'fa-flag', published: true, sort: 3 },
+  { id: 'c4', label: 'Made in Canada', icon: 'fa-flag', published: true, sort: 3 },
   { id: 'c5', label: 'Éco-Responsable', icon: 'fa-recycle', published: true, sort: 4 },
   { id: 'c6', label: 'ISO 9001', icon: 'fa-certificate', published: true, sort: 5 },
 ];
